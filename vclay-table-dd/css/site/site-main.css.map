@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "site-main.css",
+	"sources": [
+		"site-main.scss"
+	],
+	"sourcesContent": [
+		"/**\n* Clay 3.9.0\n*\n* Copyright 2020, Liferay, Inc.\n* All rights reserved.\n* MIT license\n*/\n// @import \"../atlas-variables\";\n\n// @import \"site\";"
+	],
+	"names": [],
+	"mappings": "AAAA;;;;;;EAME"
+}

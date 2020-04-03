@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - Versions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css" />
+	<script src="./site-js/version-list.js"></script>
+</head>
+<body>
+	<div class="clay-version-list-container">
+		<div class="clay-version-list-title">Clay 3 CSS</div>
+		<div>Select Version</div>
+		<select id="clayVersionList"></select>
+	</div>
+
+	<script>
+		if (localStorageAvailable()) {
+			localStorage.removeItem('nate.lexiconHref');
+			localStorage.removeItem('nate.lexiconSiteHref');
+		}
+	</script>
+</body>
+</html>
