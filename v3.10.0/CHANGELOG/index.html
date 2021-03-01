@@ -1,0 +1,752 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - CHANGELOG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/site/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../css/site/site-main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/collapsible-search.js"></script>
+	<script src="../js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="row" id="headerTopBar">
+			<div class="container-fluid">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
+					<span class="docs-icon-bar docs-icon-bar-1"></span>
+					<span class="docs-icon-bar docs-icon-bar-2"></span>
+					<span class="docs-icon-bar docs-icon-bar-3"></span>
+				</button>
+
+				<h4 class="title"><a href="../..">Clay CSS</a> <span class="label label-primary lexicon-version">v3.10.0</span></h4>
+
+				<button class="btn btn-primary btn-sm d-sm-none d-md-block" data-nav-hidden="false" id="siteNavToggle" type="button">Hide Nav</button>
+
+<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+			<use xlink:href="../images/icons/icons.svg#cog"></use>
+		</svg>
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">Site Settings</div>
+		<form>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleAtlas" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Atlas</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Site CSS</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="dropdown-section">
+				<button class="btn btn-secondary btn-block" id="resetSiteConfig">Reset Settings</button>
+			</div>
+		</form>
+	</div>
+</div>
+			</div>
+		</header>
+
+		<section class="container-fluid main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../">Home</a>
+</li>
+<li class=""><span class="nav-title">API</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/api-mixins">Clay CSS Mixins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Colors</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/colors">Colors</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../content/button-group">Button Group</a>
+</li>
+<li class=""><a class="nav-title" href="../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../content/card-interactive">Card Interactive</a>
+</li>
+<li class=""><a class="nav-title" href="../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../content/dropdowns-autocomplete">Dropdowns (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/dropdowns-drill-down">Dropdowns (Drill Down)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/empty-state">Empty State</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-autocomplete">Form Elements (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-clay-reorder">Form Elements (Clay Reorder)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-time">Form Elements (Clay Time)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-color-picker">Form Elements (Color Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-custom">Form Elements (Custom)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-date-picker">Form Elements (Date Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-dual-listbox">Form Elements (Dual Listbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-multiselect">Form Elements (Multi Select)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-elements-range">Form Elements (Range)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/form-group">Form Group</a>
+</li>
+<li class=""><a class="nav-title" href="../content/grid">Grid</a>
+</li>
+<li class=""><a class="nav-title" href="../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/images-aspect-ratio">Images (Aspect Ratios)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/images-and-thumbnails">Images and Thumbnails</a>
+</li>
+<li class=""><a class="nav-title" href="../content/links">Links</a>
+</li>
+<li class=""><a class="nav-title" href="../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../content/loaders">Loading Indicators</a>
+</li>
+<li class=""><a class="nav-title" href="../content/menu-bar-vertical-decorated">Menubar (Vertical Navigation with Decorator)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/menu-bar-vertical">Menubar (Vertical)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../content/multi-step-nav">Multi Step Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../content/nav-pills">Nav Pills</a>
+</li>
+<li class=""><a class="nav-title" href="../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../content/nav-underline">Nav Underline</a>
+</li>
+<li class=""><a class="nav-title" href="../content/navbar">Navbar</a>
+</li>
+<li class=""><a class="nav-title" href="../content/application-bar">Navbar (Application Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/management-bar">Navbar (Management Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/navigation-bar">Navbar (Navigation Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../content/sheet">Sheet</a>
+</li>
+<li class=""><a class="nav-title" href="../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../content/slideout">Slideout</a>
+</li>
+<li class=""><a class="nav-title" href="../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../content/tables-drag">Tables (Drag and Drop)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/tbar">Tbar (Toolbar)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/tbar-stacked">Tbar Stacked (Vertical Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../content/toggle-switch">Toggle Switch</a>
+</li>
+<li class=""><a class="nav-title" href="../content/utilities">Utilities</a>
+</li>
+<li class=""><a class="nav-title" href="../content/utilities-c-focus-inset">Utilities (C Focus Inset)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/utilities-c-inner">Utilities (C Inner)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/typography">Typography</a>
+</li>
+<li class=""><a class="nav-title" href="../content/typography-kbd">Typography (Kbd)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Visual Tests</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../content/test-card-custom-fields-view">Card Custom Fields View</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-card-type-template">Card Type Template Use Case</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-card-view-template">Card View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-card-view-template-info-panel">Card View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-upload-documents">Documents Upload</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-form-group-sm">Form Group Sm</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-form-hierarchy">Form Hierarchy</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-labels">Labels</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-list-view-template">List View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-list-view-template-info-panel">List View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-localizable-input-field">Localizable Input Field</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-subnav-tbar">Subnav Tbar</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-table-custom-field-list">Table Custom Field List</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-table-valign">Table Valign</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-table-view-template">Table View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-table-view-template-info-panel">Table View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-toggle-switch-old">Toggle Switch (Old)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-users-and-organizations">Users and Organizations</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-users-and-organizations-user-card">Users and Organizations (User Card)</a>
+</li>
+<li class=""><a class="nav-title" href="../content/test-users-and-organizations-form-vertical-navigation">Users and Organizations Form Vertical Navigation</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="active"><a class="nav-title" href="../CHANGELOG">CHANGELOG</a>
+</li>
+<li class="nav-static-link"><a class="nav-title" href="https://github.com/liferay/lexicon">GitHub</a>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title mt-5" id="beginContent" tabindex="-1">
+			CHANGELOG
+
+			
+		</h1>
+
+		<div class="col-md-12"><h1 id="change-log">Change Log</h1>
+<p>All notable changes to this project will be documented in this file.
+See <a href="https://conventionalcommits.org">Conventional Commits</a> for commit guidelines.</p>
+<h1 id="3-10-0-2020-04-24-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.9.0...@clayui/css@3.10.0">3.10.0</a> (2020-04-24)</h1>
+<h3 id="bug-fixes"><a class="heading-anchor" href="#bug-fixes"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>@clayui/css:</strong> Button Group Vertical <code>.btn-monospaced</code> shouldn&#x2019;t shrink inside <code>autofit-col</code> (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/5fcc7b5">5fcc7b5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3063">#3063</a></li>
+<li><strong>@clayui/css:</strong> Forms <code>.form-control-sm</code> and <code>.form-control-lg</code> should have correct left and right padding (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/21688d6">21688d6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3110">#3110</a></li>
+<li><strong>@clayui/css:</strong> Forms small form elements should have 4px border-radius (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/686c662">686c662</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3105">#3105</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-autofit-row</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/9e4d297">9e4d297</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-button-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/411901c">411901c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3164">#3164</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-modal-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/f38eeaa">f38eeaa</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-panel-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/63ae6ee">63ae6ee</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-tbar-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/cfc3727">cfc3727</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-after-highlight-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/7b519b7">7b519b7</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3164">#3164</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-container</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/4b07121">4b07121</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3164">#3164</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-dropdown-item-variant</code> and <code>clay-dropdown-menu-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/815354a">815354a</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-input-group-stacked</code> and <code>clay-input-group-text-variant</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/6da73e1">6da73e1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3164">#3164</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-link</code> and <code>clay-text-typography</code> deprecated keys should win to preserve backward compatibility (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/5c9a20b">5c9a20b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3164">#3164</a></li>
+<li><strong>@clayui/css:</strong> SVG Icons update cog.svg to new style for better contrast (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/adc6580">adc6580</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3085">#3085</a></li>
+<li><strong>@clayui/css:</strong> SVG Icons updates <code>angle-down</code>, <code>angle-left</code>, <code>angle-right</code>, and <code>angle-up</code> by reducing anchor points in the SVG (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/b040734">b040734</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3131">#3131</a></li>
+</ul>
+<h3 id="features"><a class="heading-anchor" href="#features"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-after-highlight-variant</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/480b85b">480b85b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-autofit-row</code> should use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/1c12aac">1c12aac</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-close</code> should match <code>clay-link</code> to preserve compatibility between the two (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/f44e459">f44e459</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-dropdown-item-variant</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/9f63d87">9f63d87</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-dropdown-menu-variant</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/2e66512">2e66512</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-input-group-text-variant</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/08c0dd8">08c0dd8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-modal-variant</code> should use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/15c4f3f">15c4f3f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixin <code>clay-panel-variant</code> should use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/98fedd5">98fedd5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-button-variant</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/3fcabd5">3fcabd5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-close</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/83ea47a">83ea47a</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-container</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/31b82d8">31b82d8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-link</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/32b2299">32b2299</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-row</code> should use <code>clay-css</code> mixin because it provides more options (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/b15a98a">b15a98a</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-text-typography</code> use <code>clay-css</code> mixin to generate properties (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/cdd429c">cdd429c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> Mixins adds <code>clay-table-drag-variant</code> with options <code>cell</code>, <code>c-drag</code>, <code>c-dragging-before</code>, <code>c-dragging-after</code>, <code>c-droppable-before</code>, <code>c-droppable-after</code> (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/81622df">81622df</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2934">#2934</a></li>
+<li><strong>@clayui/css:</strong> Mixins map deprecated <code>clay-button-size</code> to <code>clay-button-variant</code> (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/a98b49b">a98b49b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3075">#3075</a></li>
+<li><strong>@clayui/css:</strong> SVG Icons adds disk (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/dbd2c5d">dbd2c5d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3080">#3080</a></li>
+<li><strong>@clayui/css:</strong> SVG Icons adds search-plus (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/5859d71">5859d71</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3091">#3091</a></li>
+<li><strong>@clayui/css:</strong> SVG Icons update <code>disk</code>. we will change the corners to straight so that it matches the rest of the icons (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/11e614d">11e614d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3080">#3080</a></li>
+<li><strong>@clayui/css:</strong> Tables adds <code>.table-drag</code>, <code>.table-dragging</code>, <code>.table-clone</code> base styles for drag and drop table columns (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/fff748a">fff748a</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2934">#2934</a></li>
+<li><strong>clayui.com:</strong> source md/mdx files from package directories (<a href="https://github.com/liferay/clay/tree/master/packages/clay-css/commit/fc6e798">fc6e798</a>)</li>
+</ul>
+<h1 id="3-9-0-2020-03-26-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.8.0...@clayui/css@3.9.0">3.9.0</a> (2020-03-26)</h1>
+<h3 id="bug-fixes-1"><a class="heading-anchor" href="#bug-fixes-1"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>@clayui/css:</strong> Atlas Custom Checkbox and Radio should be 16px x 16px (<a href="https://github.com/liferay/clay/commit/7a16efa">7a16efa</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3026">#3026</a></li>
+<li><strong>@clayui/css:</strong> Forms <code>input[type=&quot;range&quot;]</code> focus border artifact in Chrome and remove padding (<a href="https://github.com/liferay/clay/commit/37c86d9">37c86d9</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/1179">#1179</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-css</code> only loop through properties that are passed via Sass map instead of listing everything (<a href="https://github.com/liferay/clay/commit/b2f5496">b2f5496</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2990">#2990</a></li>
+<li><strong>@clayui/css:</strong> override specific styles for rtl support (<a href="https://github.com/liferay/clay/commit/dce5d81">dce5d81</a>)</li>
+</ul>
+<h3 id="features-1"><a class="heading-anchor" href="#features-1"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>@clayui/css:</strong> SVG Icons add Malaysian flag (<a href="https://github.com/liferay/clay/commit/37e26c6">37e26c6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/3017">#3017</a></li>
+</ul>
+<h3 id="reverts"><a class="heading-anchor" href="#reverts"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Reverts</h3>
+<ul>
+<li><strong>@clayui/css:</strong> override specific styles for rtl support (<a href="https://github.com/liferay/clay/commit/5125a62">5125a62</a>)</li>
+</ul>
+<h1 id="3-8-0-2020-03-12-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.7.0...@clayui/css@3.8.0">3.8.0</a> (2020-03-12)</h1>
+<h3 id="bug-fixes-2"><a class="heading-anchor" href="#bug-fixes-2"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>@clayui/css:</strong> SVG Icons update the flag of Slovakia (<a href="https://github.com/liferay/clay/commit/91d5cd0">91d5cd0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2996">#2996</a></li>
+<li><strong>clay-css:</strong> Aspect Ratio <code>.aspect-ratio-item</code> should be aligned to the left when parent container has <code>text-align: center</code> (<a href="https://github.com/liferay/clay/commit/bf2f992">bf2f992</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/833">#833</a></li>
+<li><strong>clay-css:</strong> Clay Base Form Select Element icon should display. Bootstrap changed the way they handle svg&#x2019;s as background-images at <a href="https://github.com/twbs/bootstrap/commit/c26e68427c06477cacdc4a75d92e5bd22476b4bb">https://github.com/twbs/bootstrap/commit/c26e68427c06477cacdc4a75d92e5bd22476b4bb</a> (<a href="https://github.com/liferay/clay/commit/27241af">27241af</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-button-variant</code> deprecate <code>hover-z-index</code>, <code>focus-z-index</code>, <code>disabled-z-index</code>, <code>active-z-index</code> and use the Sass maps instead (<a href="https://github.com/liferay/clay/commit/96b650b">96b650b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-css</code> background-attachment should accept key <code>bg-attachment</code> or <code>background-attachment</code> (<a href="https://github.com/liferay/clay/commit/b07e570">b07e570</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-css</code> background-color should accept key <code>bg</code> or <code>background-color</code> (<a href="https://github.com/liferay/clay/commit/b55e7bc">b55e7bc</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Removes Bootstrap 4&#x2019;s gnarly <code>select.form-control:not([multiple]):not([size])</code> selector overwrite. This selector was removed in Bootstrap 4.1.3. See <a href="https://github.com/twbs/bootstrap/commit/f426a67394010b5cc0235c845b744e2711f81e59">https://github.com/twbs/bootstrap/commit/f426a67394010b5cc0235c845b744e2711f81e59</a> (<a href="https://github.com/liferay/clay/commit/a209ac6">a209ac6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> SVG Icons modify <code>tablet-landscape</code> and <code>tablet-portrait</code> they were off by a couple pixels (<a href="https://github.com/liferay/clay/commit/9c3e266">9c3e266</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2970">#2970</a></li>
+</ul>
+<h3 id="features-2"><a class="heading-anchor" href="#features-2"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>@clayui/css:</strong> Labels adds <code>label-inverse-*</code> to invert label colors (<a href="https://github.com/liferay/clay/commit/340ce27">340ce27</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2975">#2975</a></li>
+<li><strong>@clayui/css:</strong> Mixins <code>clay-label-variant</code> use <code>clay-css</code> mixin in each selector instead of individually declaring properties (<a href="https://github.com/liferay/clay/commit/d456db6">d456db6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2975">#2975</a></li>
+<li><strong>clay-css:</strong> Adds Clay Dual Listbox (Old Input Move Boxes) component (<a href="https://github.com/liferay/clay/commit/18b3905">18b3905</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Adds Clay Reorder component. A <code>select[multiple]</code> element with buttons that rearrange <code>option</code>s inside <code>select[multiple]</code> (<a href="https://github.com/liferay/clay/commit/7ba7584">7ba7584</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Adds Empty State component (<a href="https://github.com/liferay/clay/commit/a159135">a159135</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/833">#833</a></li>
+<li><strong>clay-css:</strong> Adds images for Empty State in <code>src/images/images</code> (<a href="https://github.com/liferay/clay/commit/df33ac1">df33ac1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/833">#833</a></li>
+<li><strong>clay-css:</strong> Form Select Element use <code>clay-select-variant</code> mixin to generate styles and consolidate repeated selectors (<a href="https://github.com/liferay/clay/commit/4a381a0">4a381a0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Global Variables add <code>$component-focus-inset-box-shadow</code> for reusable focus inset box-shadows across components (<a href="https://github.com/liferay/clay/commit/5008674">5008674</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2954">#2954</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-button-variant</code> use <code>clay-css</code> mixin for applying <code>hover</code>, <code>focus</code>, <code>disabled</code>, <code>active</code>, <code>active-class-after</code>, <code>active-focus</code>. (<a href="https://github.com/liferay/clay/commit/22a6be1">22a6be1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-css</code> adds option to pass in <code>scrollbar-width</code> for future proofing this property. It&#x2019;s available in Firefox 64+ (<a href="https://github.com/liferay/clay/commit/4fbe1df">4fbe1df</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-form-control-variant</code> use <code>clay-css</code> mixin in each selector instead of individually declaring properties (<a href="https://github.com/liferay/clay/commit/f4ce3e1">f4ce3e1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-select-variant</code> use <code>clay-css</code> mixin in each selector instead of individually declaring properties (<a href="https://github.com/liferay/clay/commit/485afb4">485afb4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2896">#2896</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-sidebar-variant</code> add option to configure <code>.sidebar</code>, <code>.sidebar-panel</code>, <code>.sidebar-header</code>, <code>.sidebar-body</code>, <code>.sidebar-footer</code>, <code>.nav-nested</code>, <code>.sidebar-list-group .list-group-item</code>, <code>.sidebar-list-group .sticker</code>, <code>.sidebar-list-group .sticker-secondary</code> via Sass maps and <code>clay-css</code> mixin (<a href="https://github.com/liferay/clay/commit/994c7bd">994c7bd</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-tbar-variant</code> use <code>clay-css</code> mixin for applying base <code>tbar</code>, <code>strong</code>, <code>.tbar-item</code>, <code>.tbar-section</code> styles (<a href="https://github.com/liferay/clay/commit/a25959b">a25959b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Mixins adds <code>clay-slideout-variant</code> with options to configure <code>c-slideout-shown</code>, <code>c-slideout-tbar-shown</code>, <code>c-slideout-tbar-shown-sidebar</code>, <code>sidebar</code>, <code>sidebar-c-slideout-show</code>, <code>sidebar-c-slideout-transition</code>, <code>tbar-stacked</code>, <code>tbar-stacked-c-slideout-show</code>, <code>tbar-stacked-c-slideout-transition</code> (<a href="https://github.com/liferay/clay/commit/95ae58e">95ae58e</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Sidebar adds <code>.sidebar-dark</code> variant and Sass map <code>$sidebar-dark</code> which uses <code>clay-sidebar-variant</code> mixin (<a href="https://github.com/liferay/clay/commit/df14c79">df14c79</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Slideout adds new component <code>.c-slideout</code>, <code>.c-slideout-transition-in</code>, <code>.c-slideout-transition-out</code>, <code>.c-slideout-fixed</code>, <code>.c-slideout-absolute</code>, <code>.c-slideout-start</code>, <code>.c-slideout-end</code> (<a href="https://github.com/liferay/clay/commit/50491e2">50491e2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Tbar adds <code>.tbar-stacked</code> for Lexicon&#x2019;s Vertical Bar Pattern and variants <code>.tbar-light</code>, <code>.tbar-dark-l2</code>, .tbar-dark-d1` (<a href="https://github.com/liferay/clay/commit/7bd2ac6">7bd2ac6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2903">#2903</a></li>
+<li><strong>clay-css:</strong> Utilities adds <code>.c-focus-inset</code> for inner focus styles (<a href="https://github.com/liferay/clay/commit/33ca179">33ca179</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2954">#2954</a></li>
+</ul>
+<h1 id="3-7-0-2020-02-28-">3.7.0 (2020-02-28)</h1>
+<h3 id="bug-fixes-3"><a class="heading-anchor" href="#bug-fixes-3"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>clay css:</strong> Adds <code>clay-time</code> component (Time Picker) (<a href="https://github.com/liferay/clay/commit/74b2326">74b2326</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/1424">#1424</a></li>
+<li><strong>clay css:</strong> Forms add <code>.disabled</code> to <code>.form-control</code> to style elements that use <code>div</code> (<a href="https://github.com/liferay/clay/commit/5d36450">5d36450</a>)</li>
+<li><strong>clay css:</strong> Management Bar <code>.navbar-text</code> should break to new line when there is not enough space (<a href="https://github.com/liferay/clay/commit/40ba156">40ba156</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2085">#2085</a></li>
+<li><strong>clay css:</strong> Mixin <code>clay-form-control-variant</code> add <code>align-items</code>, <code>flex-wrap</code>, <code>justify-content</code>, <code>max-width</code>, <code>min-height</code>, <code>text-transform</code> (<a href="https://github.com/liferay/clay/commit/0b5cb01">0b5cb01</a>)</li>
+<li><strong>clay-css:</strong> Add border-spacing, border-collapse not working in IE (<a href="https://github.com/liferay/clay/commit/9d12922">9d12922</a>)</li>
+<li><strong>clay-css:</strong> Adds <code>!optional</code> flag to <code>[@extend](https://github.com/extend)</code> for components that are extending selectors/placeholders outside of their respective component file (<a href="https://github.com/liferay/clay/commit/403a0c2">403a0c2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2881">#2881</a></li>
+<li><strong>clay-css:</strong> Atlas Custom Control disabled label color should be the same as <code>$input-label-disabled-color</code> (<a href="https://github.com/liferay/clay/commit/a160132">a160132</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> Atlas Dropdown change <code>.dropdown-header</code> and <code>.dropdown-subheader</code> color to <a href="https://github.com/liferay/clay/commit/f901ce8">#272833</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2812">#2812</a></li>
+<li><strong>clay-css:</strong> Atlas Form Validation <code>.form-feedback-item</code> and <code>.form-text</code> should be semi-bold (<a href="https://github.com/liferay/clay/commit/798be68">798be68</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2328">#2328</a></li>
+<li><strong>clay-css:</strong> Atlas Globals tweak <code>$success</code>, <code>$success-d1</code>, <code>$success-l1</code>, <code>$danger-d</code> hex values to match Lexicon exactly (<a href="https://github.com/liferay/clay/commit/5b50860">5b50860</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2820">#2820</a></li>
+<li><strong>clay-css:</strong> Atlas Nav Tabs and Nav Underline should use <code>$font-weight-semi-bold</code>. Nav Underline should be 32px tall and underline color should be <code>$primary-l1</code> (<a href="https://github.com/liferay/clay/commit/6cdffef">6cdffef</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2388">#2388</a></li>
+<li><strong>clay-css:</strong> Badges <code>.badge &gt; .c-inner</code> only set margins and overwrite inherited max-width property (<a href="https://github.com/liferay/clay/commit/52ee10f">52ee10f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Button <code>.btn-unstyled</code> should reset sizes for <code>.btn-sm</code> and <code>.btn-lg</code> (<a href="https://github.com/liferay/clay/commit/896c21a">896c21a</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2475">#2475</a></li>
+<li><strong>clay-css:</strong> Buttons use <code>math-sign</code> function for calculating negative margins on <code>.btn .c-inner</code> to prevent invalid CSS output like <code>margin: - -;</code> (<a href="https://github.com/liferay/clay/commit/1ca34e4">1ca34e4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Custom Control add Sass maps <code>$custom-control-label</code>, <code>$custom-control-label-disabled</code>, <code>$custom-control-label-text</code> and map deprecated <code>$custom-control-description-*</code> to them so our namespace matches Bootstrap&#x2019;s. It was renamed toward end of Bootstrap beta in 6a54b4a (<a href="https://github.com/liferay/clay/commit/e41dcf5">e41dcf5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Deprecate <code>.sheet-lg</code> and <code>$sheet-lg-max-width</code> in favor of <code>.container .sheet</code> pattern (<a href="https://github.com/liferay/clay/commit/2e1e82c">2e1e82c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2655">#2655</a></li>
+<li><strong>clay-css:</strong> Dropdown Item <code>.disabled</code> should have <code>cursor: not-allowed</code> and move <code>pointer-events: none</code> to <code>.disabled:active</code> (<a href="https://github.com/liferay/clay/commit/28cb857">28cb857</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> Form Validation Feedback space between icon and text should be 4px (<a href="https://github.com/liferay/clay/commit/e1d0e09">e1d0e09</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2075">#2075</a></li>
+<li><strong>clay-css:</strong> Globals added <code>_globals-z-index.scss</code> to list z-index variables used in Bootstrap/ClayCSS (<a href="https://github.com/liferay/clay/commit/e12ee48">e12ee48</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2339">#2339</a></li>
+<li><strong>clay-css:</strong> List Group double borders in <code>list-group-item-flex</code> caused by Bootstrap 4.4.1 22f6b37 (<a href="https://github.com/liferay/clay/commit/1221279">1221279</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2785">#2785</a></li>
+<li><strong>clay-css:</strong> Mixin <code>clay-input-group-stacked</code> should use child combinator styles only apply direct descendants (<a href="https://github.com/liferay/clay/commit/0f3d82e">0f3d82e</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2384">#2384</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-button-size</code>, <code>clay-button-variant</code>, <code>clay-close</code>, <code>clay-label-size</code>, <code>clay-link</code>, <code>clay-menubar-vertical-expand</code>, <code>clay-navbar-size</code>, <code>clay-panel-variant</code>, <code>clay-tbar-variant</code> should only set margins for <code>c-inner</code> (<a href="https://github.com/liferay/clay/commit/61ac029">61ac029</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-dropdown-item-variant</code> only set margins and overwrite inherited width property for <code>c-inner</code> (<a href="https://github.com/liferay/clay/commit/be5d06c">be5d06c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Modal Footer use <code>justify-content: flex-start</code> instead of Bootstrap&#x2019;s <code>flex-end</code> to work around IE11 rendering issues with <code>modal-item</code>&#x2018;s (<a href="https://github.com/liferay/clay/commit/2be40c2">2be40c2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2873">#2873</a></li>
+<li><strong>clay-css:</strong> Modals Atlas change widths of <code>.modal-sm</code>, <code>modal</code>, and <code>modal-lg</code> to <code>320px</code>, <code>600px</code>, <code>896px</code> respectively (<a href="https://github.com/liferay/clay/commit/3c0c7c9">3c0c7c9</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2367">#2367</a></li>
+<li><strong>clay-css:</strong> Nav <code>.nav-justified</code> should work with <code>button</code> (<a href="https://github.com/liferay/clay/commit/fd5e3d0">fd5e3d0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2237">#2237</a></li>
+<li><strong>clay-css:</strong> Navigation Bar and Management Bar focus styles should match across each component (<a href="https://github.com/liferay/clay/commit/5d0ecf9">5d0ecf9</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2900">#2900</a></li>
+<li><strong>clay-css:</strong> New SVG Icon reset (<a href="https://github.com/liferay/clay/commit/4c85071">4c85071</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2146">#2146</a></li>
+<li><strong>clay-css:</strong> SVG Icons add deprecation note to <code>announcement</code>, <code>sticky</code>, <code>urgent</code> (<a href="https://github.com/liferay/clay/commit/3eaec3a">3eaec3a</a>)</li>
+<li>broken markdown lists (<a href="https://github.com/liferay/clay/commit/d1adc7e">d1adc7e</a>)</li>
+<li><strong>clay-css:</strong> SVG Icons deprecate <code>import-export</code> and <code>embed</code> in favor of <code>order-arrow</code> and <code>code</code> respectively (<a href="https://github.com/liferay/clay/commit/956d668">956d668</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2419">#2419</a></li>
+<li><strong>clay-css:</strong> SVG Icons reduce the size by remove inessential attributes and comments (<a href="https://github.com/liferay/clay/commit/e3d7120">e3d7120</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2309">#2309</a></li>
+<li><strong>clay-css:</strong> SVG Icons renamed <code>announcement</code>, <code>sticky</code>, and <code>urgent</code> to <code>megaphone-full</code>, <code>pin-full</code>, and <code>bell-full</code> respectively (<a href="https://github.com/liferay/clay/commit/e89b1f0">e89b1f0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2119">#2119</a></li>
+<li><strong>clay-css:</strong> Table Header (th) should be aligned left by default in Safari (<a href="https://github.com/liferay/clay/commit/6a6c9a4">6a6c9a4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2219">#2219</a></li>
+<li><strong>clay-css:</strong> Use <code>selector-unify</code> to combine parent selectors with nested element selectors in mixins and components (<a href="https://github.com/liferay/clay/commit/cb8e0a2">cb8e0a2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2392">#2392</a></li>
+<li><strong>css:</strong> allow newline characters to display properly for tooltips (<a href="https://github.com/liferay/clay/commit/2265d10">2265d10</a>)</li>
+</ul>
+<h3 id="features-3"><a class="heading-anchor" href="#features-3"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>@clayui/css:</strong> add new SVG icons <code>arrow-end</code>, <code>arrow-join</code>, <code>arrow-split</code>, <code>arrow-start</code>, <code>arrow-xor</code>, <code>circle</code>, <code>diamond</code> and <code>square</code> (<a href="https://github.com/liferay/clay/commit/3e69b1e">3e69b1e</a>)</li>
+<li><strong>clay-css:</strong> add new change-list-disabled SVG icon (<a href="https://github.com/liferay/clay/commit/a02d20c">a02d20c</a>)</li>
+<li><strong>clay-css:</strong> Add usable mixins from bourbon under <code>_vendor-prefixes.scss</code> (<a href="https://github.com/liferay/clay/commit/91feecb">91feecb</a>)</li>
+<li><strong>clay-css:</strong> Alert adds <code>.alert-btn</code>, <code>.alert-autofit-row</code>, <code>.alert-footer</code>, and <code>.alert .btn-group-item</code> (<a href="https://github.com/liferay/clay/commit/5212f50">5212f50</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2765">#2765</a></li>
+<li><strong>clay-css:</strong> Aspect Ratio adds <code>.aspect-ratio-item-top-left</code> (<a href="https://github.com/liferay/clay/commit/6981a23">6981a23</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Atlas change <code>$indigo</code> to <a href="https://github.com/liferay/clay/commit/0be9e04">#7785</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2960">#2960</a></li>
+<li><strong>clay-css:</strong> Atlas Form Validation add styles for readonly input success, error, and warning states (<a href="https://github.com/liferay/clay/commit/faf5748">faf5748</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2715">#2715</a></li>
+<li><strong>clay-css:</strong> Atlas Forms input readonly should have white background and no focus box shadow (<a href="https://github.com/liferay/clay/commit/db77870">db77870</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2425">#2425</a></li>
+<li><strong>clay-css:</strong> Atlas Global Variables make <code>h1</code> - <code>h6</code> font sizes the same as 2.x (<a href="https://github.com/liferay/clay/commit/0e0f9a0">0e0f9a0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2864">#2864</a></li>
+<li><strong>clay-css:</strong> Atlas Globals adds <code>$enable-lexicon-flat-colors</code> to change base colors to match Lexicon Flat Color palette, set to <code>false</code> to revert back to old colors (<a href="https://github.com/liferay/clay/commit/69fcdb2">69fcdb2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/E83E8">#E83E8</a> <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2726">#2726</a></li>
+<li><strong>clay-css:</strong> Badge adds <code>.c-inner</code> pattern for <code>.badge</code>, <code>.badge-item</code>, and <code>.badge .close</code> (<a href="https://github.com/liferay/clay/commit/01b7aee">01b7aee</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Buttons adds <code>.c-inner</code> pattern for <code>.btn</code>, <code>.btn-unstyled</code>, <code>.btn-monospaced</code>, <code>.btn-sm</code>, <code>.btn-lg</code> (<a href="https://github.com/liferay/clay/commit/d810b02">d810b02</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Card add support for <code>.c-inner</code> (<a href="https://github.com/liferay/clay/commit/5303bdf">5303bdf</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Card adds <code>.card-type-asset.product-card</code> (<a href="https://github.com/liferay/clay/commit/c6be980">c6be980</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Card adds support for <code>.card</code> <code>.aspect-ratio-item-top-left</code>, <code>.aspect-ratio-item-top-center</code>, <code>.aspect-ratio-item-top-right</code>, <code>.aspect-ratio-item-right-middle</code>, <code>.aspect-ratio-item-bottom-right</code>, <code>.aspect-ratio-item-bottom-center</code>, <code>.aspect-ratio-item-bottom-left</code> (<a href="https://github.com/liferay/clay/commit/930ee92">930ee92</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Clay Range add <code>clay-range-thumb</code> slider head overlay to make it easier to grab via js and position tooltip inside of it (<a href="https://github.com/liferay/clay/commit/d3dbcbd">d3dbcbd</a>)</li>
+<li><strong>clay-css:</strong> Clay Time added focus styles for <code>.clay-time .form-control-inset</code> (<a href="https://github.com/liferay/clay/commit/5c0c447">5c0c447</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2299">#2299</a></li>
+<li><strong>clay-css:</strong> Custom Control added <code>.custom-control-primary</code> to help increase visual hierarchy of a <code>custom-control</code> (<a href="https://github.com/liferay/clay/commit/cc0275d">cc0275d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Custom Control adds <code>$custom-control-description-font-weight</code> and sets font-weight to normal in Atlas (<a href="https://github.com/liferay/clay/commit/3d2af5c">3d2af5c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Custom Forms <code>.custom-control</code> should have <code>text-align: left</code> so text is next to input if parent container has <code>text-align: center</code> (<a href="https://github.com/liferay/clay/commit/4615041">4615041</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Dropdown add <code>.c-inner</code> pattern for <code>.dropdown-item</code>, <code>.dropdown-menu-indicator-start</code>, and <code>.dropdown-menu-indicator-end</code> (<a href="https://github.com/liferay/clay/commit/d9c40e6">d9c40e6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Dropdown add styles for <code>.dropdown-item .c-kbd</code> (<a href="https://github.com/liferay/clay/commit/8668050">8668050</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2906">#2906</a></li>
+<li><strong>clay-css:</strong> Dropdown Section add specific styles for nested <code>custom-control</code>s (<a href="https://github.com/liferay/clay/commit/573a860">573a860</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> enable-c-inner: true by default (<a href="https://github.com/liferay/clay/commit/81ea040">81ea040</a>)</li>
+<li><strong>clay-css:</strong> Forms Clay Multiselect <code>.form-control-tag-group</code> should have Clear All button and be aligned in the middle (<a href="https://github.com/liferay/clay/commit/3df613c">3df613c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2335">#2335</a></li>
+<li><strong>clay-css:</strong> Forms support <code>label</code> element without <code>for</code> attribute. <code>label</code> needs the class <code>.form-control-label</code> and text must be wrapped in an element with class <code>.form-control-label-text</code> (<a href="https://github.com/liferay/clay/commit/d0fff7f">d0fff7f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2242">#2242</a></li>
+<li><strong>clay-css:</strong> Global Functions added <code>clay-max</code> to return the maximum between two values and also accepts null values (<a href="https://github.com/liferay/clay/commit/0852a9e">0852a9e</a>)</li>
+<li><strong>clay-css:</strong> Global Functions added <code>map-deep-merge()</code> that merges keys and values from deeply nested Sass maps (<a href="https://github.com/liferay/clay/commit/1f21cac">1f21cac</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2403">#2403</a></li>
+<li><strong>clay-css:</strong> Icons add support for <code>.c-inner</code> in <code>.collapse-icon</code> (<a href="https://github.com/liferay/clay/commit/679fcea">679fcea</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Input Group adds support for <code>.c-inner</code> to <code>.input-group-inset-item .btn</code> (<a href="https://github.com/liferay/clay/commit/60fc69b">60fc69b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Label adds <code>.c-inner</code> pattern for <code>.label</code>, <code>.label-lg</code>, and <code>.label-item</code> (<a href="https://github.com/liferay/clay/commit/bbde2ec">bbde2ec</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Links <code>component-action</code> add support for <code>.c-inner</code>, declare properties from <code>%link-monospaced</code> in Sass map <code>$component-action</code> and remove <code>[@extend](https://github.com/extend) %link-monospaced</code> (<a href="https://github.com/liferay/clay/commit/2f84f48">2f84f48</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Links <code>link-monospaced</code> should use <code>clay-link</code> mixin, add Sass map <code>$link-monospaced</code>, add support for <code>.c-inner</code> (<a href="https://github.com/liferay/clay/commit/c9b3da3">c9b3da3</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Links <code>link-outline</code> should use <code>clay-link</code> mixin, add Sass map <code>$link-outline</code>, add support for <code>.c-inner</code> (<a href="https://github.com/liferay/clay/commit/37e6598">37e6598</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> List Group <code>.list-group-item-action</code> should support <code>.c-inner</code> (<a href="https://github.com/liferay/clay/commit/6add193">6add193</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> List Group add <code>.list-group-sm</code> modifier to make <code>.list-group-item</code> shorter (<a href="https://github.com/liferay/clay/commit/edd8c40">edd8c40</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2423">#2423</a></li>
+<li><strong>clay-css:</strong> Menubar added <code>.menubar-vertical-expand-md.menubar-decorated</code> and <code>.menubar-vertical-expand-lg.menubar-decorated</code> (<a href="https://github.com/liferay/clay/commit/e46b52c">e46b52c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2822">#2822</a></li>
+<li><strong>clay-css:</strong> Mixin <code>clay-navbar-size</code> add <code>.c-inner</code> support for <code>.navbar-toggler</code>, <code>.navbar-toggler-link</code>, <code>.navbar-brand</code>, <code>.nav-btn</code>, <code>.nav-btn-monospaced</code>, <code>.nav-link</code>, <code>.nav-link-monospaced</code> (<a href="https://github.com/liferay/clay/commit/95c8e1c">95c8e1c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-button-size</code>, <code>clay-button-variant</code> add support for <code>.c-inner</code> and <code>.lexicon-icon</code> (<a href="https://github.com/liferay/clay/commit/f37f31d">f37f31d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-button-size</code>, <code>clay-button-variant</code>, <code>clay-close</code>, <code>clay-dropdown-item-variant</code>, <code>clay-label-size</code>, <code>clay-link</code> adds option to pass <code>$c-inner</code> through Sass map (<a href="https://github.com/liferay/clay/commit/66d3827">66d3827</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-button-variant</code> adds configs <code>z-index</code>, <code>hover-z-index</code>, <code>focus-z-index</code>, <code>disabled-z-index</code> and <code>active-z-index</code> (<a href="https://github.com/liferay/clay/commit/9f729d5">9f729d5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-close</code> add <code>.c-inner</code> pattern (<a href="https://github.com/liferay/clay/commit/8d355c8">8d355c8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-dropdown-item-variant</code> adds options to configure <code>autofit-row</code>, <code>c-kbd-inline</code>, <code>hover-c-kbd-inline</code>, <code>focus-c-kbd-inline</code>, <code>active-c-kbd-inline</code>, <code>active-class-c-kbd-inline</code>, <code>disabled-c-kbd-inline</code> (<a href="https://github.com/liferay/clay/commit/b2e743d">b2e743d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2906">#2906</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-form-control-variant</code> add options to configure <code>$selection-bg</code>, <code>$selection-color</code>, and should also output <code>.focus</code> styles (<a href="https://github.com/liferay/clay/commit/ec5663c">ec5663c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2299">#2299</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-link</code> <code>.c-inner</code> should use parent&#x2019;s <code>max-width</code> (<a href="https://github.com/liferay/clay/commit/0fe271d">0fe271d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-link</code> add <code>.c-inner</code> pattern (<a href="https://github.com/liferay/clay/commit/09c5628">09c5628</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-link</code> added position, padding, and disabled-active-pointer-events (<a href="https://github.com/liferay/clay/commit/4d78c67">4d78c67</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2540">#2540</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-link</code> adds config <code>margin</code>, <code>max-height</code>, <code>min-height</code>, <code>min-width</code> (<a href="https://github.com/liferay/clay/commit/516c9e8">516c9e8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins <code>clay-menubar-vertical-expand</code> adds support for <code>.menubar-toggler .c-inner</code> through Sass map <code>toggler-c-inner</code> (<a href="https://github.com/liferay/clay/commit/cd81488">cd81488</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>clay-autofit-row</code> for custom <code>.autofit-row</code> and <code>.autofit-col</code> spacing (<a href="https://github.com/liferay/clay/commit/cf3bafa">cf3bafa</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2765">#2765</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>clay-line-clamp</code> for truncating text based on number of lines (<a href="https://github.com/liferay/clay/commit/525f3d1">525f3d1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2058">#2058</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>clay-range-input-variant</code> for creating <code>.clay-range-input</code> variants (<a href="https://github.com/liferay/clay/commit/55e59eb">55e59eb</a>)</li>
+<li><strong>clay-css:</strong> Mixins added <code>mixins/_globals.scss</code> file and mixin <code>clay-css</code> for outputting any css property (<a href="https://github.com/liferay/clay/commit/af0da9f">af0da9f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2822">#2822</a></li>
+<li><strong>clay-css:</strong> Mixins clay-container adds option to configure cursor (<a href="https://github.com/liferay/clay/commit/6f6fb78">6f6fb78</a>)</li>
+<li><strong>clay-css:</strong> Modals add <code>.modal-item-group</code>, <code>.modal-item-group-first</code>, <code>.modal-item-group-last</code>, <code>.modal-item-group-only</code>, <code>.modal-item-shrink</code>, and modify <code>.modal-item</code> to accommodate more use cases like truncating long text (<a href="https://github.com/liferay/clay/commit/72d9083">72d9083</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2844">#2844</a></li>
+<li><strong>clay-css:</strong> Modals added fixed height modals <code>.modal-height-sm</code>, <code>.modal-height-md</code>, <code>.modal-height-lg</code>, <code>.modal-height-xl</code> that sets heights <code>250px</code>, <code>450px</code>, <code>650px</code>, <code>800px</code> respectively (<a href="https://github.com/liferay/clay/commit/de5d10d">de5d10d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2395">#2395</a></li>
+<li><strong>clay-css:</strong> Multi Step Nav add <code>.c-inner</code> support for <code>.multi-step-icon</code> (<a href="https://github.com/liferay/clay/commit/81c4924">81c4924</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Nav add <code>.c-inner</code> support for <code>.nav-btn</code>, <code>.nav-btn-monospaced</code>, and <code>.nav-link-monospaced</code> (<a href="https://github.com/liferay/clay/commit/e2ca2ea">e2ca2ea</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Nav add support for <code>.c-inner</code> in <code>.nav-link</code> (<a href="https://github.com/liferay/clay/commit/f3d19f0">f3d19f0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Nav add support for <code>.nav-link.btn-unstyled</code> (<a href="https://github.com/liferay/clay/commit/3dcbf47">3dcbf47</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2540">#2540</a></li>
+<li><strong>clay-css:</strong> Navbar add support for <code>.nav-item .dropdown</code> so <code>.dropdown-toggle</code> is sized and positioned properly (<a href="https://github.com/liferay/clay/commit/124ee8b">124ee8b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2900">#2900</a></li>
+<li><strong>clay-css:</strong> new SVG Icon test (<a href="https://github.com/liferay/clay/commit/acb9f57">acb9f57</a>)</li>
+<li><strong>clay-css:</strong> Pagination add <code>.c-inner</code> support for <code>.pagination-sm</code> and <code>.pagination-lg</code> (<a href="https://github.com/liferay/clay/commit/7464fe3">7464fe3</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Panel add <code>.c-inner</code> support for <code>.panel-header</code>, <code>.panel-header.collapse-icon</code>, <code>.panel-group-flush .panel-header</code>, <code>.panel-group-flush .collapse-icon</code> (<a href="https://github.com/liferay/clay/commit/507dfee">507dfee</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Range added <code>clay-range</code> component (<a href="https://github.com/liferay/clay/commit/142700f">142700f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2157">#2157</a></li>
+<li><strong>clay-css:</strong> Range added tooltip and fix styles in IE11 (<a href="https://github.com/liferay/clay/commit/a9e6137">a9e6137</a>)</li>
+<li><strong>clay-css:</strong> Sheet add <code>.c-inner</code> support for <code>.sheet-subtitle</code>, <code>.sheet-subtitle.collapse-icon</code> (<a href="https://github.com/liferay/clay/commit/9aafb11">9aafb11</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> SVG Icon added <code>device-check</code> (<a href="https://github.com/liferay/clay/commit/80396b4">80396b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2757">#2757</a></li>
+<li><strong>clay-css:</strong> SVG Icon source format <code>change-list-disabled</code> (<a href="https://github.com/liferay/clay/commit/dd8f2f2">dd8f2f2</a>)</li>
+<li><strong>clay-css:</strong> SVG Icons add <code>books.svg</code> (<a href="https://github.com/liferay/clay/commit/5fb502d">5fb502d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2905">#2905</a></li>
+<li><strong>clay-css:</strong> SVG Icons add <code>social-instagram</code> and <code>social-vimeo</code> (<a href="https://github.com/liferay/clay/commit/a879b3d">a879b3d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2695">#2695</a></li>
+<li><strong>clay-css:</strong> SVG Icons add briefcase (<a href="https://github.com/liferay/clay/commit/0216f1c">0216f1c</a>)</li>
+<li><strong>clay-css:</strong> SVG Icons add Google (<a href="https://github.com/liferay/clay/commit/4a34678">4a34678</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2581">#2581</a></li>
+<li><strong>clay-css:</strong> SVG Icons add hdd.svg (<a href="https://github.com/liferay/clay/commit/5052c5f">5052c5f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2582">#2582</a></li>
+<li><strong>clay-css:</strong> SVG Icons add sign-in (<a href="https://github.com/liferay/clay/commit/1c31dbb">1c31dbb</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2580">#2580</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>credit-card</code> and <code>catalog</code> (<a href="https://github.com/liferay/clay/commit/0d8e359">0d8e359</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2739">#2739</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>heart-full</code> (<a href="https://github.com/liferay/clay/commit/38edecf">38edecf</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2690">#2690</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>import</code> and <code>import-list</code> (<a href="https://github.com/liferay/clay/commit/4cf09f1">4cf09f1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2683">#2683</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>liferay-ac</code> (<a href="https://github.com/liferay/clay/commit/6c76834">6c76834</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2727">#2727</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>order-arrow-left</code> and <code>order-arrow-right</code> (<a href="https://github.com/liferay/clay/commit/4a86eac">4a86eac</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2688">#2688</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>times-circle-full</code> and <code>times-small</code> (<a href="https://github.com/liferay/clay/commit/9be9456">9be9456</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2691">#2691</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>truck</code> (<a href="https://github.com/liferay/clay/commit/76b19e0">76b19e0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2689">#2689</a></li>
+<li><strong>clay-css:</strong> SVG Icons added cloud (<a href="https://github.com/liferay/clay/commit/001e644">001e644</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2742">#2742</a></li>
+<li><strong>clay-css:</strong> SVG Icons adds <code>document-pending</code> (<a href="https://github.com/liferay/clay/commit/24067d8">24067d8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2724">#2724</a></li>
+<li><strong>clay-css:</strong> SVG Icons deprecate <code>twitter</code> and add <code>social-twitter</code> (<a href="https://github.com/liferay/clay/commit/eb5e2c0">eb5e2c0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2697">#2697</a></li>
+<li><strong>clay-css:</strong> SVG Icons update <code>times</code> to be thicker (<a href="https://github.com/liferay/clay/commit/4632b83">4632b83</a>)</li>
+<li><strong>clay-css:</strong> Tbar add <code>.c-inner</code> support for <code>.tbar-link</code>, <code>.tbar-link-monospaced</code>, <code>.tbar-btn</code>, <code>.tbar-btn-monospaced</code> (<a href="https://github.com/liferay/clay/commit/9560bef">9560bef</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Type adds <code>.c-kbd</code> to style <code>kbd</code> element with light/dark theme and sizes sm/lg (<a href="https://github.com/liferay/clay/commit/26db8b6">26db8b6</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2906">#2906</a></li>
+<li><strong>clay-css:</strong> Update Bootstrap CSS to 4.4.1, Bootstrap JS 4.4.0, Popper.js 1.16.0 (<a href="https://github.com/liferay/clay/commit/491620d">491620d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2785">#2785</a></li>
+<li><strong>clay-css:</strong> Use <code>map-deep-merge</code> to merge Sass maps in Clay CSS (<a href="https://github.com/liferay/clay/commit/d69858d">d69858d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2403">#2403</a></li>
+<li><strong>clay-css:</strong> Utilities <code>.c-inner</code> should inherit sizing styles from parent (<a href="https://github.com/liferay/clay/commit/7dd8f58">7dd8f58</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+<li><strong>clay-css:</strong> Utilities add duplicate of Bootstrap&#x2019;s spacing utilities prefixed with <code>c-</code> and without the <code>!important</code> flag (<a href="https://github.com/liferay/clay/commit/e12e7b4">e12e7b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2725">#2725</a></li>
+<li><strong>clay-css:</strong> Utilities adds <code>.c-inner</code> wrapper for use inside interactive elements to have better control over focus styles on click (<a href="https://github.com/liferay/clay/commit/9616e49">9616e49</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2763">#2763</a></li>
+</ul>
+<h1 id="3-6-0-2020-02-13-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.5.0...@clayui/css@3.6.0">3.6.0</a> (2020-02-13)</h1>
+<h3 id="bug-fixes-4"><a class="heading-anchor" href="#bug-fixes-4"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>clay-css:</strong> Navigation Bar and Management Bar focus styles should match across each component (<a href="https://github.com/liferay/clay/commit/5d0ecf9">5d0ecf9</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2900">#2900</a></li>
+</ul>
+<h3 id="features-4"><a class="heading-anchor" href="#features-4"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>clay-css:</strong> Aspect Ratio adds <code>.aspect-ratio-item-top-left</code> (<a href="https://github.com/liferay/clay/commit/6981a23">6981a23</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Card adds <code>.card-type-asset.product-card</code> (<a href="https://github.com/liferay/clay/commit/c6be980">c6be980</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Card adds support for <code>.card</code> <code>.aspect-ratio-item-top-left</code>, <code>.aspect-ratio-item-top-center</code>, <code>.aspect-ratio-item-top-right</code>, <code>.aspect-ratio-item-right-middle</code>, <code>.aspect-ratio-item-bottom-right</code>, <code>.aspect-ratio-item-bottom-center</code>, <code>.aspect-ratio-item-bottom-left</code> (<a href="https://github.com/liferay/clay/commit/930ee92">930ee92</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Custom Forms <code>.custom-control</code> should have <code>text-align: left</code> so text is next to input if parent container has <code>text-align: center</code> (<a href="https://github.com/liferay/clay/commit/4615041">4615041</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2843">#2843</a></li>
+<li><strong>clay-css:</strong> Modals add <code>.modal-item-group</code>, <code>.modal-item-group-first</code>, <code>.modal-item-group-last</code>, <code>.modal-item-group-only</code>, <code>.modal-item-shrink</code>, and modify <code>.modal-item</code> to accommodate more use cases like truncating long text (<a href="https://github.com/liferay/clay/commit/72d9083">72d9083</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2844">#2844</a></li>
+<li><strong>clay-css:</strong> Navbar add support for <code>.nav-item .dropdown</code> so <code>.dropdown-toggle</code> is sized and positioned properly (<a href="https://github.com/liferay/clay/commit/124ee8b">124ee8b</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2900">#2900</a></li>
+<li><strong>clay-css:</strong> SVG Icons add <code>books.svg</code> (<a href="https://github.com/liferay/clay/commit/5fb502d">5fb502d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2905">#2905</a></li>
+</ul>
+<h1 id="3-5-0-2020-01-31-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.2.0...@clayui/css@3.5.0">3.5.0</a> (2020-01-31)</h1>
+<h3 id="bug-fixes-5"><a class="heading-anchor" href="#bug-fixes-5"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>clay-css:</strong> Adds <code>!optional</code> flag to <code>[@extend](https://github.com/extend)</code> for components that are extending selectors/placeholders outside of their respective component file (<a href="https://github.com/liferay/clay/commit/403a0c2">403a0c2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2881">#2881</a></li>
+<li><strong>clay-css:</strong> Atlas Custom Control disabled label color should be the same as <code>$input-label-disabled-color</code> (<a href="https://github.com/liferay/clay/commit/a160132">a160132</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> Atlas Dropdown change <code>.dropdown-header</code> and <code>.dropdown-subheader</code> color to <a href="https://github.com/liferay/clay/commit/f901ce8">#272833</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2812">#2812</a></li>
+<li><strong>clay-css:</strong> Atlas Globals tweak <code>$success</code>, <code>$success-d1</code>, <code>$success-l1</code>, <code>$danger-d</code> hex values to match Lexicon exactly (<a href="https://github.com/liferay/clay/commit/5b50860">5b50860</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2820">#2820</a></li>
+<li><strong>clay-css:</strong> Custom Control add Sass maps <code>$custom-control-label</code>, <code>$custom-control-label-disabled</code>, <code>$custom-control-label-text</code> and map deprecated <code>$custom-control-description-*</code> to them so our namespace matches Bootstrap&#x2019;s. It was renamed toward end of Bootstrap beta in 6a54b4a (<a href="https://github.com/liferay/clay/commit/e41dcf5">e41dcf5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Deprecate <code>.sheet-lg</code> and <code>$sheet-lg-max-width</code> in favor of <code>.container .sheet</code> pattern (<a href="https://github.com/liferay/clay/commit/2e1e82c">2e1e82c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2655">#2655</a></li>
+<li><strong>clay-css:</strong> Dropdown Item <code>.disabled</code> should have <code>cursor: not-allowed</code> and move <code>pointer-events: none</code> to <code>.disabled:active</code> (<a href="https://github.com/liferay/clay/commit/28cb857">28cb857</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> List Group double borders in <code>list-group-item-flex</code> caused by Bootstrap 4.4.1 22f6b37 (<a href="https://github.com/liferay/clay/commit/1221279">1221279</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2785">#2785</a></li>
+<li><strong>clay-css:</strong> Modal Footer use <code>justify-content: flex-start</code> instead of Bootstrap&#x2019;s <code>flex-end</code> to work around IE11 rendering issues with <code>modal-item</code>&#x2018;s (<a href="https://github.com/liferay/clay/commit/2be40c2">2be40c2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2873">#2873</a></li>
+<li><strong>css:</strong> allow newline characters to display properly for tooltips (<a href="https://github.com/liferay/clay/commit/2265d10">2265d10</a>)</li>
+</ul>
+<h3 id="features-5"><a class="heading-anchor" href="#features-5"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>clay-css:</strong> Alert adds <code>.alert-btn</code>, <code>.alert-autofit-row</code>, <code>.alert-footer</code>, and <code>.alert .btn-group-item</code> (<a href="https://github.com/liferay/clay/commit/5212f50">5212f50</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2765">#2765</a></li>
+<li><strong>clay-css:</strong> Atlas Form Validation add styles for readonly input success, error, and warning states (<a href="https://github.com/liferay/clay/commit/faf5748">faf5748</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2715">#2715</a></li>
+<li><strong>clay-css:</strong> Atlas Global Variables make <code>h1</code> - <code>h6</code> font sizes the same as 2.x (<a href="https://github.com/liferay/clay/commit/0e0f9a0">0e0f9a0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2864">#2864</a></li>
+<li><strong>clay-css:</strong> Atlas Globals adds <code>$enable-lexicon-flat-colors</code> to change base colors to match Lexicon Flat Color palette, set to <code>false</code> to revert back to old colors (<a href="https://github.com/liferay/clay/commit/69fcdb2">69fcdb2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/E83E8">#E83E8</a> <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2726">#2726</a></li>
+<li><strong>clay-css:</strong> Custom Control added <code>.custom-control-primary</code> to help increase visual hierarchy of a <code>custom-control</code> (<a href="https://github.com/liferay/clay/commit/cc0275d">cc0275d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Custom Control adds <code>$custom-control-description-font-weight</code> and sets font-weight to normal in Atlas (<a href="https://github.com/liferay/clay/commit/3d2af5c">3d2af5c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Dropdown Section add specific styles for nested <code>custom-control</code>s (<a href="https://github.com/liferay/clay/commit/573a860">573a860</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> Forms support <code>label</code> element without <code>for</code> attribute. <code>label</code> needs the class <code>.form-control-label</code> and text must be wrapped in an element with class <code>.form-control-label-text</code> (<a href="https://github.com/liferay/clay/commit/d0fff7f">d0fff7f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2242">#2242</a></li>
+<li><strong>clay-css:</strong> Menubar added <code>.menubar-vertical-expand-md.menubar-decorated</code> and <code>.menubar-vertical-expand-lg.menubar-decorated</code> (<a href="https://github.com/liferay/clay/commit/e46b52c">e46b52c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2822">#2822</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>clay-autofit-row</code> for custom <code>.autofit-row</code> and <code>.autofit-col</code> spacing (<a href="https://github.com/liferay/clay/commit/cf3bafa">cf3bafa</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2765">#2765</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>mixins/_globals.scss</code> file and mixin <code>clay-css</code> for outputting any css property (<a href="https://github.com/liferay/clay/commit/af0da9f">af0da9f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2822">#2822</a></li>
+<li><strong>clay-css:</strong> Mixins clay-container adds option to configure cursor (<a href="https://github.com/liferay/clay/commit/6f6fb78">6f6fb78</a>)</li>
+<li><strong>clay-css:</strong> SVG Icon added <code>device-check</code> (<a href="https://github.com/liferay/clay/commit/80396b4">80396b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2757">#2757</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>credit-card</code> and <code>catalog</code> (<a href="https://github.com/liferay/clay/commit/0d8e359">0d8e359</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2739">#2739</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>liferay-ac</code> (<a href="https://github.com/liferay/clay/commit/6c76834">6c76834</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2727">#2727</a></li>
+<li><strong>clay-css:</strong> SVG Icons added cloud (<a href="https://github.com/liferay/clay/commit/001e644">001e644</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2742">#2742</a></li>
+<li><strong>clay-css:</strong> SVG Icons adds <code>document-pending</code> (<a href="https://github.com/liferay/clay/commit/24067d8">24067d8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2724">#2724</a></li>
+<li><strong>clay-css:</strong> Update Bootstrap CSS to 4.4.1, Bootstrap JS 4.4.0, Popper.js 1.16.0 (<a href="https://github.com/liferay/clay/commit/491620d">491620d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2785">#2785</a></li>
+<li><strong>clay-css:</strong> Utilities add duplicate of Bootstrap&#x2019;s spacing utilities prefixed with <code>c-</code> and without the <code>!important</code> flag (<a href="https://github.com/liferay/clay/commit/e12e7b4">e12e7b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2725">#2725</a></li>
+</ul>
+<h1 id="3-4-0-2020-01-20-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.2.0...@clayui/css@3.4.0">3.4.0</a> (2020-01-20)</h1>
+<h3 id="bug-fixes-6"><a class="heading-anchor" href="#bug-fixes-6"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>clay-css:</strong> Atlas Custom Control disabled label color should be the same as <code>$input-label-disabled-color</code> (<a href="https://github.com/liferay/clay/commit/a160132">a160132</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> Atlas Dropdown change <code>.dropdown-header</code> and <code>.dropdown-subheader</code> color to <a href="https://github.com/liferay/clay/commit/f901ce8">#272833</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2812">#2812</a></li>
+<li><strong>clay-css:</strong> Atlas Globals tweak <code>$success</code>, <code>$success-d1</code>, <code>$success-l1</code>, <code>$danger-d</code> hex values to match Lexicon exactly (<a href="https://github.com/liferay/clay/commit/5b50860">5b50860</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2820">#2820</a></li>
+<li><strong>clay-css:</strong> Custom Control add Sass maps <code>$custom-control-label</code>, <code>$custom-control-label-disabled</code>, <code>$custom-control-label-text</code> and map deprecated <code>$custom-control-description-*</code> to them so our namespace matches Bootstrap&#x2019;s. It was renamed toward end of Bootstrap beta in 6a54b4a (<a href="https://github.com/liferay/clay/commit/e41dcf5">e41dcf5</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Deprecate <code>.sheet-lg</code> and <code>$sheet-lg-max-width</code> in favor of <code>.container .sheet</code> pattern (<a href="https://github.com/liferay/clay/commit/2e1e82c">2e1e82c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2655">#2655</a></li>
+<li><strong>clay-css:</strong> Dropdown Item <code>.disabled</code> should have <code>cursor: not-allowed</code> and move <code>pointer-events: none</code> to <code>.disabled:active</code> (<a href="https://github.com/liferay/clay/commit/28cb857">28cb857</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> List Group double borders in <code>list-group-item-flex</code> caused by Bootstrap 4.4.1 22f6b37 (<a href="https://github.com/liferay/clay/commit/1221279">1221279</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2785">#2785</a></li>
+<li><strong>css:</strong> allow newline characters to display properly for tooltips (<a href="https://github.com/liferay/clay/commit/2265d10">2265d10</a>)</li>
+</ul>
+<h3 id="features-6"><a class="heading-anchor" href="#features-6"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>clay-css:</strong> Alert adds <code>.alert-btn</code>, <code>.alert-autofit-row</code>, <code>.alert-footer</code>, and <code>.alert .btn-group-item</code> (<a href="https://github.com/liferay/clay/commit/5212f50">5212f50</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2765">#2765</a></li>
+<li><strong>clay-css:</strong> Atlas Form Validation add styles for readonly input success, error, and warning states (<a href="https://github.com/liferay/clay/commit/faf5748">faf5748</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2715">#2715</a></li>
+<li><strong>clay-css:</strong> Atlas Global Variables make <code>h1</code> - <code>h6</code> font sizes the same as 2.x (<a href="https://github.com/liferay/clay/commit/0e0f9a0">0e0f9a0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2864">#2864</a></li>
+<li><strong>clay-css:</strong> Atlas Globals adds <code>$enable-lexicon-flat-colors</code> to change base colors to match Lexicon Flat Color palette, set to <code>false</code> to revert back to old colors (<a href="https://github.com/liferay/clay/commit/69fcdb2">69fcdb2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/E83E8">#E83E8</a> <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2726">#2726</a></li>
+<li><strong>clay-css:</strong> Custom Control added <code>.custom-control-primary</code> to help increase visual hierarchy of a <code>custom-control</code> (<a href="https://github.com/liferay/clay/commit/cc0275d">cc0275d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Custom Control adds <code>$custom-control-description-font-weight</code> and sets font-weight to normal in Atlas (<a href="https://github.com/liferay/clay/commit/3d2af5c">3d2af5c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2813">#2813</a></li>
+<li><strong>clay-css:</strong> Dropdown Section add specific styles for nested <code>custom-control</code>s (<a href="https://github.com/liferay/clay/commit/573a860">573a860</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2811">#2811</a></li>
+<li><strong>clay-css:</strong> Forms support <code>label</code> element without <code>for</code> attribute. <code>label</code> needs the class <code>.form-control-label</code> and text must be wrapped in an element with class <code>.form-control-label-text</code> (<a href="https://github.com/liferay/clay/commit/d0fff7f">d0fff7f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2242">#2242</a></li>
+<li><strong>clay-css:</strong> Menubar added <code>.menubar-vertical-expand-md.menubar-decorated</code> and <code>.menubar-vertical-expand-lg.menubar-decorated</code> (<a href="https://github.com/liferay/clay/commit/e46b52c">e46b52c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2822">#2822</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>clay-autofit-row</code> for custom <code>.autofit-row</code> and <code>.autofit-col</code> spacing (<a href="https://github.com/liferay/clay/commit/cf3bafa">cf3bafa</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2765">#2765</a></li>
+<li><strong>clay-css:</strong> Mixins added <code>mixins/_globals.scss</code> file and mixin <code>clay-css</code> for outputting any css property (<a href="https://github.com/liferay/clay/commit/af0da9f">af0da9f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2822">#2822</a></li>
+<li><strong>clay-css:</strong> Mixins clay-container adds option to configure cursor (<a href="https://github.com/liferay/clay/commit/6f6fb78">6f6fb78</a>)</li>
+<li><strong>clay-css:</strong> SVG Icon added <code>device-check</code> (<a href="https://github.com/liferay/clay/commit/80396b4">80396b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2757">#2757</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>credit-card</code> and <code>catalog</code> (<a href="https://github.com/liferay/clay/commit/0d8e359">0d8e359</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2739">#2739</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>liferay-ac</code> (<a href="https://github.com/liferay/clay/commit/6c76834">6c76834</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2727">#2727</a></li>
+<li><strong>clay-css:</strong> SVG Icons added cloud (<a href="https://github.com/liferay/clay/commit/001e644">001e644</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2742">#2742</a></li>
+<li><strong>clay-css:</strong> SVG Icons adds <code>document-pending</code> (<a href="https://github.com/liferay/clay/commit/24067d8">24067d8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2724">#2724</a></li>
+<li><strong>clay-css:</strong> Update Bootstrap CSS to 4.4.1, Bootstrap JS 4.4.0, Popper.js 1.16.0 (<a href="https://github.com/liferay/clay/commit/491620d">491620d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2785">#2785</a></li>
+<li><strong>clay-css:</strong> Utilities add duplicate of Bootstrap&#x2019;s spacing utilities prefixed with <code>c-</code> and without the <code>!important</code> flag (<a href="https://github.com/liferay/clay/commit/e12e7b4">e12e7b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2725">#2725</a></li>
+</ul>
+<h1 id="3-3-0-2019-12-05-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.2.0...@clayui/css@3.3.0">3.3.0</a> (2019-12-05)</h1>
+<h3 id="bug-fixes-7"><a class="heading-anchor" href="#bug-fixes-7"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li><strong>clay-css:</strong> Deprecate <code>.sheet-lg</code> and <code>$sheet-lg-max-width</code> in favor of <code>.container .sheet</code> pattern (<a href="https://github.com/liferay/clay/commit/2e1e82c">2e1e82c</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2655">#2655</a></li>
+</ul>
+<h3 id="features-7"><a class="heading-anchor" href="#features-7"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>clay-css:</strong> Atlas Form Validation add styles for readonly input success, error, and warning states (<a href="https://github.com/liferay/clay/commit/faf5748">faf5748</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2715">#2715</a></li>
+<li><strong>clay-css:</strong> Atlas Globals adds <code>$enable-lexicon-flat-colors</code> to change base colors to match Lexicon Flat Color palette, set to <code>false</code> to revert back to old colors (<a href="https://github.com/liferay/clay/commit/69fcdb2">69fcdb2</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/E83E8">#E83E8</a> <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2726">#2726</a></li>
+<li><strong>clay-css:</strong> SVG Icon added <code>device-check</code> (<a href="https://github.com/liferay/clay/commit/80396b4">80396b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2757">#2757</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>credit-card</code> and <code>catalog</code> (<a href="https://github.com/liferay/clay/commit/0d8e359">0d8e359</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2739">#2739</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>liferay-ac</code> (<a href="https://github.com/liferay/clay/commit/6c76834">6c76834</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2727">#2727</a></li>
+<li><strong>clay-css:</strong> SVG Icons added cloud (<a href="https://github.com/liferay/clay/commit/001e644">001e644</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2742">#2742</a></li>
+<li><strong>clay-css:</strong> SVG Icons adds <code>document-pending</code> (<a href="https://github.com/liferay/clay/commit/24067d8">24067d8</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2724">#2724</a></li>
+<li><strong>clay-css:</strong> Utilities add duplicate of Bootstrap&#x2019;s spacing utilities prefixed with <code>c-</code> and without the <code>!important</code> flag (<a href="https://github.com/liferay/clay/commit/e12e7b4">e12e7b4</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2725">#2725</a></li>
+</ul>
+<h1 id="3-2-0-2019-11-07-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.1.0...@clayui/css@3.2.0">3.2.0</a> (2019-11-07)</h1>
+<h3 id="features-8"><a class="heading-anchor" href="#features-8"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>clay-css:</strong> SVG Icons add <code>social-instagram</code> and <code>social-vimeo</code> (<a href="https://github.com/liferay/clay/commit/a879b3d">a879b3d</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2695">#2695</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>heart-full</code> (<a href="https://github.com/liferay/clay/commit/38edecf">38edecf</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2690">#2690</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>import</code> and <code>import-list</code> (<a href="https://github.com/liferay/clay/commit/4cf09f1">4cf09f1</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2683">#2683</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>order-arrow-left</code> and <code>order-arrow-right</code> (<a href="https://github.com/liferay/clay/commit/4a86eac">4a86eac</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2688">#2688</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>times-circle-full</code> and <code>times-small</code> (<a href="https://github.com/liferay/clay/commit/9be9456">9be9456</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2691">#2691</a></li>
+<li><strong>clay-css:</strong> SVG Icons added <code>truck</code> (<a href="https://github.com/liferay/clay/commit/76b19e0">76b19e0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2689">#2689</a></li>
+<li><strong>clay-css:</strong> SVG Icons deprecate <code>twitter</code> and add <code>social-twitter</code> (<a href="https://github.com/liferay/clay/commit/eb5e2c0">eb5e2c0</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2697">#2697</a></li>
+<li><strong>clay-css:</strong> SVG Icons update <code>times</code> to be thicker (<a href="https://github.com/liferay/clay/commit/4632b83">4632b83</a>)</li>
+</ul>
+<h1 id="3-1-0-2019-10-28-"><a href="https://github.com/liferay/clay/tree/master/packages/clay-css/compare/@clayui/css@3.0.1...@clayui/css@3.1.0">3.1.0</a> (2019-10-28)</h1>
+<h3 id="bug-fixes-8"><a class="heading-anchor" href="#bug-fixes-8"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Bug Fixes</h3>
+<ul>
+<li>broken markdown lists (<a href="https://github.com/liferay/clay/commit/d1adc7e">d1adc7e</a>)</li>
+</ul>
+<h3 id="features-9"><a class="heading-anchor" href="#features-9"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>Features</h3>
+<ul>
+<li><strong>clay-css:</strong> SVG Icons add briefcase (<a href="https://github.com/liferay/clay/commit/0216f1c">0216f1c</a>)</li>
+<li><strong>clay-css:</strong> SVG Icons add hdd.svg (<a href="https://github.com/liferay/clay/commit/5052c5f">5052c5f</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2582">#2582</a></li>
+<li><strong>clay-css:</strong> SVG Icons add sign-in (<a href="https://github.com/liferay/clay/commit/1c31dbb">1c31dbb</a>), closes <a href="https://github.com/liferay/clay/tree/master/packages/clay-css/issues/2580">#2580</a></li>
+</ul>
+<h3 id="v3-0-0-alpha-1"><a class="heading-anchor" href="#v3-0-0-alpha-1"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../images/icons/icons.svg#link"></svg></a>v3.0.0-alpha.1</h3>
+</div>
+	</div>
+
+		</section>
+	</div>
+
+	<script src="../js/site/toggle_css.js"></script>
+	<script src="../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		(function () {
+			if (!localStorage.getItem('nate.lexiconHref')) {
+				var version = window.location.href.match(/\/v(.*)\/c/)[1];
+
+				localStorage.setItem('nate.lexiconHref', window.location.origin + '/clay3-test-site/v' + version + '/css/site/site-atlas-font-awesome.css');
+			}
+		})();
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('#claySiteMobileNavigationToggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+	</script>
+	</body>
+</html>

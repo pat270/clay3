@@ -1,0 +1,725 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - Menubar (Vertical)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../css/site/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../css/site/site-main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../js/popper.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../js/collapsible-search.js"></script>
+	<script src="../../js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="row" id="headerTopBar">
+			<div class="container-fluid">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
+					<span class="docs-icon-bar docs-icon-bar-1"></span>
+					<span class="docs-icon-bar docs-icon-bar-2"></span>
+					<span class="docs-icon-bar docs-icon-bar-3"></span>
+				</button>
+
+				<h4 class="title"><a href="../../..">Clay CSS</a> <span class="label label-primary lexicon-version">v3.8.0</span></h4>
+
+				<button class="btn btn-primary btn-sm d-sm-none d-md-block" data-nav-hidden="false" id="siteNavToggle" type="button">Hide Nav</button>
+
+<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+			<use xlink:href="../../images/icons/icons.svg#cog"></use>
+		</svg>
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">Site Settings</div>
+		<form>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleAtlas" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Atlas</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Site CSS</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="dropdown-section">
+				<button class="btn btn-secondary btn-block" id="resetSiteConfig">Reset Settings</button>
+			</div>
+		</form>
+	</div>
+</div>
+			</div>
+		</header>
+
+		<section class="container-fluid main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">API</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/api-mixins">Clay CSS Mixins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Colors</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/colors">Colors</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/button-group">Button Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/card-interactive">Card Interactive</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-autocomplete">Dropdowns (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-drill-down">Dropdowns (Drill Down)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/empty-state">Empty State</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-autocomplete">Form Elements (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-clay-reorder">Form Elements (Clay Reorder)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-time">Form Elements (Clay Time)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-color-picker">Form Elements (Color Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-custom">Form Elements (Custom)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-date-picker">Form Elements (Date Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-dual-listbox">Form Elements (Dual Listbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-multiselect">Form Elements (Multi Select)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-range">Form Elements (Range)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-group">Form Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/grid">Grid</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-aspect-ratio">Images (Aspect Ratios)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images and Thumbnails</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/links">Links</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/loaders">Loading Indicators</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical-decorated">Menubar (Vertical Navigation with Decorator)</a>
+</li>
+<li class="active"><a class="nav-title" href="../../content/menu-bar-vertical">Menubar (Vertical)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/multi-step-nav">Multi Step Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-pills">Nav Pills</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-underline">Nav Underline</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/application-bar">Navbar (Application Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Navbar (Management Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navigation-bar">Navbar (Navigation Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sheet">Sheet</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/slideout">Slideout</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar">Tbar (Toolbar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar-stacked">Tbar Stacked (Vertical Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggle-switch">Toggle Switch</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities">Utilities</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-focus-inset">Utilities (C Focus Inset)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-inner">Utilities (C Inner)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/typography-kbd">Typography (Kbd)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Visual Tests</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/test-card-custom-fields-view">Card Custom Fields View</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-type-template">Card Type Template Use Case</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template">Card View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template-info-panel">Card View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-upload-documents">Documents Upload</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-group-sm">Form Group Sm</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-hierarchy">Form Hierarchy</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-labels">Labels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template">List View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template-info-panel">List View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-localizable-input-field">Localizable Input Field</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-subnav-tbar">Subnav Tbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-custom-field-list">Table Custom Field List</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-valign">Table Valign</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template">Table View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template-info-panel">Table View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-toggle-switch-old">Toggle Switch (Old)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations">Users and Organizations</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-user-card">Users and Organizations (User Card)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-form-vertical-navigation">Users and Organizations Form Vertical Navigation</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+<li class="nav-static-link"><a class="nav-title" href="https://github.com/liferay/lexicon">GitHub</a>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title mt-5" id="beginContent" tabindex="-1">
+			Menubar (Vertical)
+
+			
+		</h1>
+
+		
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="menubar-vertical-expand-md"><a class="heading-anchor" href="#menubar-vertical-expand-md"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Menubar Vertical Expand Md</h3>
+
+		<blockquote class="blockquote">
+			A pattern for collapsing vertical navigations, collapses at 767px. For vertical navigations that don&apos;t collapse use <a href="../nav/#nav-stacked">Nav Stacked</a> or <a href="../nav/#nav-nested">Nav Nested</a>.
+		</blockquote>
+	</div>
+
+	<div class="col-md-6">
+		<nav class="menubar menubar-transparent menubar-vertical-expand-md">
+			<a aria-controls="menubarVerticalMdCollapse01" aria-expanded="false" class="menubar-toggler" data-toggle="collapse" href="#menubarVerticalMdCollapse01" role="button">
+				Details
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</a>
+			<div class="collapse menubar-collapse" id="menubarVerticalMdCollapse01">
+				<ul class="nav nav-nested">
+					<li class="nav-item">
+						<a aria-controls="menubarVerticalMdNestedCollapse01" aria-expanded="true" class="collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalMdNestedCollapse01" role="button">
+							Basic Information
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</a>
+						<div class="collapse show" id="menubarVerticalMdNestedCollapse01">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+								<li class="nav-item">
+									<a aria-controls="menubarVerticalMdNestedCollapse02" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalMdNestedCollapse02" role="button">
+										Documents and Media
+										<span class="collapse-icon-closed">
+											<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#caret-right">
+											</svg>
+										</span>
+										<span class="collapse-icon-open">
+											<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+											</svg>
+										</span>
+									</a>
+									<div class="collapse" id="menubarVerticalMdNestedCollapse02">
+										<ul class="nav nav-stacked">
+											<li class="nav-item"><a class="nav-link" href="#1">Details</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Documents and Media</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a aria-controls="menubarVerticalMdNestedCollapse03" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalMdNestedCollapse03" role="button">
+							SEO
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</a>
+						<div class="collapse" id="menubarVerticalMdNestedCollapse03">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="nav-link" href="#1">Sitemap</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Robots</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a aria-controls="menubarVerticalMdNestedCollapse04" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalMdNestedCollapse04" role="button">
+							Advanced
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</a>
+						<div class="collapse" id="menubarVerticalMdNestedCollapse04">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="nav-link" href="#1">Default User Associations</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Staging</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Analytics</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Maps</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="menubar-vertical-expand-md-with-buttons"><a class="heading-anchor" href="#menubar-vertical-expand-md-with-buttons"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Menubar Vertical Expand Md with Buttons</h3>
+	</div>
+
+	<div class="col-md-6">
+		<nav class="menubar menubar-transparent menubar-vertical-expand-md">
+			<button aria-controls="menubarVerticalMdCollapseButton01" aria-expanded="false" class="menubar-toggler" data-toggle="collapse" data-target="#menubarVerticalMdCollapseButton01" role="button">
+				Details
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</button>
+			<div class="collapse menubar-collapse" id="menubarVerticalMdCollapseButton01">
+				<ul class="nav nav-nested">
+					<li class="nav-item">
+						<button aria-controls="menubarVerticalMdNestedCollapseButton01" aria-expanded="true" class="btn btn-unstyled collapse-icon nav-link" data-toggle="collapse" data-target="#menubarVerticalMdNestedCollapseButton01" type="button">
+							Basic Information
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</button>
+						<div class="collapse show" id="menubarVerticalMdNestedCollapseButton01">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+								<li class="nav-item">
+									<button aria-controls="menubarVerticalMdNestedCollapseButton02" aria-expanded="false" class="btn btn-unstyled collapsed collapse-icon nav-link" data-toggle="collapse" data-target="#menubarVerticalMdNestedCollapseButton02" type="button">
+										Documents and Media
+										<span class="collapse-icon-closed">
+											<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#caret-right">
+											</svg>
+										</span>
+										<span class="collapse-icon-open">
+											<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+											</svg>
+										</span>
+									</button>
+									<div class="collapse" id="menubarVerticalMdNestedCollapseButton02">
+										<ul class="nav nav-stacked">
+											<li class="nav-item"><a class="nav-link" href="#1">Details</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Documents and Media</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<button aria-controls="menubarVerticalMdNestedCollapseButton03" aria-expanded="false" class="btn btn-unstyled collapsed collapse-icon nav-link" data-toggle="collapse" data-target="#menubarVerticalMdNestedCollapseButton03" type="button">
+							SEO
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</button>
+						<div class="collapse" id="menubarVerticalMdNestedCollapseButton03">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="nav-link" href="#1">Sitemap</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Robots</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<button aria-controls="menubarVerticalMdNestedCollapseButton04" aria-expanded="false" class="btn btn-unstyled collapsed collapse-icon nav-link" data-toggle="collapse" data-target="#menubarVerticalMdNestedCollapseButton04" type="button">
+							Advanced
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</button>
+						<div class="collapse" id="menubarVerticalMdNestedCollapseButton04">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="nav-link" href="#1">Default User Associations</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Staging</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Analytics</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Maps</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="menubar-vertical-expand-lg"><a class="heading-anchor" href="#menubar-vertical-expand-lg"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Menubar Vertical Expand Lg</h3>
+
+		<blockquote class="blockquote">
+			Collapses at 991px
+		</blockquote>
+	</div>
+
+	<div class="col-lg-6">
+		<nav class="menubar menubar-transparent menubar-vertical-expand-lg">
+			<a aria-controls="menubarVerticalLgCollapse01" aria-expanded="false" class="menubar-toggler" data-toggle="collapse" href="#menubarVerticalLgCollapse01" role="button">
+				Details
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</a>
+			<div class="collapse menubar-collapse" id="menubarVerticalLgCollapse01">
+				<ul class="nav nav-nested">
+					<li class="nav-item">
+						<a aria-controls="menubarVerticalLgNestedCollapse01" aria-expanded="true" class="collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalLgNestedCollapse01" role="button">
+							Basic Information
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</a>
+						<div class="collapse show" id="menubarVerticalLgNestedCollapse01">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+								<li class="nav-item">
+									<a aria-controls="menubarVerticalLgNestedCollapse02" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalLgNestedCollapse02" role="button">
+										Documents and Media
+										<span class="collapse-icon-closed">
+											<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#caret-right">
+											</svg>
+										</span>
+										<span class="collapse-icon-open">
+											<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+											</svg>
+										</span>
+									</a>
+									<div class="collapse" id="menubarVerticalLgNestedCollapse02">
+										<ul class="nav nav-stacked">
+											<li class="nav-item"><a class="nav-link" href="#1">Details</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Documents and Media</a></li>
+											<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a aria-controls="menubarVerticalLgNestedCollapse03" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalLgNestedCollapse03" role="button">
+							SEO
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</a>
+						<div class="collapse" id="menubarVerticalLgNestedCollapse03">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="nav-link" href="#1">Sitemap</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Robots</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a aria-controls="menubarVerticalLgNestedCollapse04" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#menubarVerticalLgNestedCollapse04" role="button">
+							Advanced
+							<span class="collapse-icon-closed">
+								<svg class="lexicon-icon lexicon-icon-caret-right" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-right">
+								</svg>
+							</span>
+							<span class="collapse-icon-open">
+								<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+								</svg>
+							</span>
+						</a>
+						<div class="collapse" id="menubarVerticalLgNestedCollapse04">
+							<ul class="nav nav-stacked">
+								<li class="nav-item"><a class="nav-link" href="#1">Default User Associations</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Staging</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Analytics</a></li>
+								<li class="nav-item"><a class="nav-link" href="#1">Maps</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</div>
+	</div>
+
+		</section>
+	</div>
+
+	<script src="../../js/site/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('#claySiteMobileNavigationToggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+	</script>
+	</body>
+</html>

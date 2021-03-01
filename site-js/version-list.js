@@ -13,11 +13,20 @@ function localStorageAvailable() {
 var clayVersions = [
 	'Select Version',
 	'clay-table-dd',
+	'3.25.0',
+	'3.18.1',
+	'3.16.0',
+	'3.13.0',
+	'3.10.0',
 	'3.8.0',
 	'3.4.0',
 ];
 
 var portalClayVersions = {
+	'3.18.1': '(7.3.6 GA6)',
+	'3.16.0': '(7.3.4 GA5)',
+	'3.13.0': '(7.3.3 GA4)',
+	'3.10.0': '(7.3.2 GA3)',
 	'3.8.0': '(7.3.1 GA2)',
 	'3.4.0': '(7.3.0 GA1)',
 };

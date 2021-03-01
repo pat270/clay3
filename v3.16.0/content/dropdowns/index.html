@@ -1,0 +1,2033 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - Dropdowns</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../content/site-scss/site-atlas-font-awesome.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../js/popper.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../content/site-js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="headerTopBar">
+			<div class="container-fluid">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
+					<span class="docs-icon-bar docs-icon-bar-1"></span>
+					<span class="docs-icon-bar docs-icon-bar-2"></span>
+					<span class="docs-icon-bar docs-icon-bar-3"></span>
+				</button>
+
+				<h4 class="title"><a href="../../..">Clay CSS</a> <span class="label label-primary lexicon-version">v3.16.0</span></h4>
+
+				<button class="btn btn-primary btn-sm d-sm-none d-md-block" data-nav-hidden="false" id="siteNavToggle" type="button">Hide Nav</button>
+
+<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+			<use xlink:href="../../images/icons/icons.svg#cog"></use>
+		</svg>
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">Site Settings</div>
+		<form>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleAtlas" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Atlas</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Site CSS</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="dropdown-section">
+				<button class="btn btn-secondary btn-block" id="resetSiteConfig">Reset Settings</button>
+			</div>
+		</form>
+	</div>
+</div>
+			</div>
+		</header>
+
+		<section class="container-fluid main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">API</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/api-mixins">Clay CSS Mixins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Colors</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/colors">Colors</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/button-group">Button Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/card-interactive">Card Interactive</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class="active"><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-autocomplete">Dropdowns (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-drill-down">Dropdowns (Drill Down)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/empty-state">Empty State</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-autocomplete">Form Elements (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-clay-reorder">Form Elements (Clay Reorder)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-time">Form Elements (Clay Time)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-color-picker">Form Elements (Color Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-custom">Form Elements (Custom)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-date-picker">Form Elements (Date Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-dual-listbox">Form Elements (Dual Listbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-multiselect">Form Elements (Multi Select)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-range">Form Elements (Range)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-group">Form Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/grid">Grid</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-aspect-ratio">Images (Aspect Ratios)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images and Thumbnails</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/links">Links</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/loaders">Loading Indicators</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical-decorated">Menubar (Vertical Navigation with Decorator)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical">Menubar (Vertical)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/multi-step-nav">Multi Step Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-pills">Nav Pills</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-underline">Nav Underline</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/application-bar">Navbar (Application Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Navbar (Management Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navigation-bar">Navbar (Navigation Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sheet">Sheet</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/slideout">Slideout</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables-drag">Tables (Drag and Drop)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar">Tbar (Toolbar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar-stacked">Tbar Stacked (Vertical Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggle-switch">Toggle Switch</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities">Utilities</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-focus-inset">Utilities (C Focus Inset)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-inner">Utilities (C Inner)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/typography-kbd">Typography (Kbd)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Visual Tests</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/test-reboot">1) Reboot</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-custom-fields-view">Card Custom Fields View</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-type-template">Card Type Template Use Case</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template">Card View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template-info-panel">Card View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-upload-documents">Documents Upload</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-group-sm">Form Group Sm</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-hierarchy">Form Hierarchy</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-labels">Labels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template">List View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template-info-panel">List View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-localizable-input-field">Localizable Input Field</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-subnav-tbar">Subnav Tbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-custom-field-list">Table Custom Field List</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-valign">Table Valign</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template">Table View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template-info-panel">Table View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-toggle-switch-old">Toggle Switch (Old)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations">Users and Organizations</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-user-card">Users and Organizations (User Card)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-form-vertical-navigation">Users and Organizations Form Vertical Navigation</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+<li class="nav-static-link"><a class="nav-title" href="https://github.com/liferay/lexicon">GitHub</a>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title mt-5" id="beginContent" tabindex="-1">
+			Dropdowns
+
+			
+		</h1>
+
+		
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+
+<h3 id="dropdown-in-lexicon-sites-with-button"><a class="heading-anchor" href="#dropdown-in-lexicon-sites-with-button"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown in Lexicon Sites with Button</h3>
+
+<blockquote class="blockquote">
+	<p><code>.link-outline-*</code> can be used on <code>.dropdown-toggle</code> with an <code>a</code> or <code>button</code> tag. Use an <code>a</code> with <code>href</code> if you want no focus outline on click and the browser default focus outline on tab. A <code>button</code> will have a custom focus outline on click and tab.</p>
+
+	<p>Using Bootstrap 4&apos;s <code>.btn</code> classes will always have a custom focus outline on click and tab.</p>
+</blockquote>
+
+<div class="card">
+	<div class="card-body">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-primary dropdown-toggle" data-toggle="dropdown" id="dropdownSites1" type="button">
+						Dropdown
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownSites1" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-borderless link-outline-primary dropdown-toggle" data-toggle="dropdown" id="dropdownSites2" type="button">
+						Dropdown
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownSites2" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownSites3" type="button">
+						Order by: newest
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownSites3" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-borderless link-outline-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownSites4" type="button">
+						Order by: newest
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownSites4" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown dropdown-action">
+					<button aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-borderless link-outline-primary dropdown-toggle" data-toggle="dropdown" id="dropdownSites5" type="button">
+						<svg class="lexicon-icon lexicon-icon-ellipsis-v" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#ellipsis-v">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownSites5" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" id="dropdownBtnSites1" type="button">
+						Dropdown
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownBtnSites1" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="btn btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" id="dropdownBtnSites2" type="button">
+						Dropdown
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownBtnSites2" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="btn btn-outline-borderless btn-outline-primary btn-sm dropdown-toggle" data-toggle="dropdown" id="dropdownBtnSites3" type="button">
+						Dropdown
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownBtnSites3" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" id="dropdownBtnSites4" type="button">
+						Order by: newest
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownBtnSites4" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown">
+					<button aria-expanded="false" aria-haspopup="true" class="btn btn-outline-borderless btn-outline-secondary btn-sm dropdown-toggle" data-toggle="dropdown" id="dropdownBtnSites6" type="button">
+						Order by: newest
+						<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownBtnSites6" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown dropdown-action">
+					<button aria-expanded="false" aria-haspopup="true" class="btn btn-outline-borderless btn-outline-primary dropdown-toggle" data-toggle="dropdown" id="dropdownBtnSites7" type="button">
+						<svg class="lexicon-icon lexicon-icon-ellipsis-v" focusable="false" role="presentation">
+							<use xlink:href="../../images/icons/icons.svg#ellipsis-v">
+						</svg>
+					</button>
+					<ul aria-labelledby="dropdownBtnSites7" class="dropdown-menu">
+						<li><a class="dropdown-item" href="#1">Download</a></li>
+						<li><a class="dropdown-item" href="#1">Edit</a></li>
+						<li><a class="dropdown-item" href="#1">Move</a></li>
+						<li><a class="dropdown-item" href="#1">Checkout</a></li>
+						<li><a class="dropdown-item" href="#1">Permissions</a></li>
+						<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3 id="dropdown-in-lexicon-sites-with-anchor"><a class="heading-anchor" href="#dropdown-in-lexicon-sites-with-anchor"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown in Lexicon Sites with Anchor</h3>
+
+<div class="card">
+	<div class="card-body">
+		<div class="dropdown">
+			<a aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-primary dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownSitesAnchor1" role="button">
+				Dropdown
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</a>
+			<ul aria-labelledby="dropdownSitesAnchor1" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown">
+			<a aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-borderless link-outline-primary dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownSitesAnchor2" role="button">
+				Dropdown
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</a>
+			<ul aria-labelledby="dropdownSitesAnchor2" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown">
+			<a aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-secondary dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownSitesAnchor4" role="button">
+				Order by: newest
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</a>
+			<ul aria-labelledby="dropdownSitesAnchor4" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown">
+			<a aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-borderless link-outline-secondary dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownSitesAnchor4" role="button">
+				Order by: newest
+				<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+				</svg>
+			</a>
+			<ul aria-labelledby="dropdownSitesAnchor4" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown dropdown-action">
+			<a aria-expanded="false" aria-haspopup="true" class="link-outline link-outline-primary link-outline-borderless dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownSitesAnchor5" role="button">
+				<svg class="lexicon-icon lexicon-icon-ellipsis-v" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#ellipsis-v">
+				</svg>
+			</a>
+			<ul aria-labelledby="dropdownSitesAnchor5" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+			<h3 id="dropdown-action"><a class="heading-anchor" href="#dropdown-action"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Action</h3>
+
+			<blockquote class="blockquote">
+				<p>A monospaced <code>dropdown-toggle</code> for a dropdown containing several actions, add <code>dropdown-action</code> to <code>dropdown</code>.</p>
+			</blockquote>
+
+<h3 id="dropdown-action-component-action-with-anchor"><a class="heading-anchor" href="#dropdown-action-component-action-with-anchor"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Action Component Action with Anchor</h3>
+
+<div class="card">
+	<div class="card-body">
+		<div class="dropdown dropdown-action">
+			<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+				<svg class="lexicon-icon lexicon-icon-ellipsis-v" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#ellipsis-v">
+				</svg>
+			</a>
+			<ul aria-labelledby="dropdownAction1" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<h3 id="dropdown-action-component-action-with-button"><a class="heading-anchor" href="#dropdown-action-component-action-with-button"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Action Component Action with Button</h3>
+
+<div class="card">
+	<div class="card-body">
+		<div class="dropdown dropdown-action">
+			<button aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" id="dropdownBtnAction1" type="button">
+				<svg class="lexicon-icon lexicon-icon-ellipsis-v" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#ellipsis-v">
+				</svg>
+			</button>
+			<ul aria-labelledby="dropdownBtnAction1" class="dropdown-menu">
+				<li><a class="dropdown-item" href="#1">Download</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">Move</a></li>
+				<li><a class="dropdown-item" href="#1">Checkout</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row clay-site-dropdown-display">
+	<div class="col-md-12">
+		<h3 id="dropdown-menu"><a class="heading-anchor" href="#dropdown-menu"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Menu</h3>
+
+		<div class="alert alert-warning">
+			Disabled <code>a.dropdown-item</code> should have <code>tabindex=&quot;-1&quot;</code> and <code>event.preventDefault();</code> on click or use <code>&lt;span class=&quot;dropdown-item&quot;&gt;Disabled&lt;/span&gt;</code> for disabled dropdown-item.
+		</div>
+
+<div class="clay-site-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-subheader">Order by</li>
+		<li><a class="active dropdown-item" href="#1">Author</a></li>
+		<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Title Entry</a></li>
+		<li class="dropdown-divider"></li>
+		<li><a class="dropdown-item" href="#1">Date</a></li>
+		<li><a class="dropdown-item" href="#1">Description</a></li>
+		<li><a class="dropdown-item" href="#1">Status</a></li>
+	</ul>
+</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row clay-site-dropdown-display">
+	<div class="col-md-12">
+		<h3 id="dropdown-menu-with-form-elements"><a class="heading-anchor" href="#dropdown-menu-with-form-elements"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Menu with Form Elements</h3>
+
+<div class="clay-site-dropdown-menu-container">
+	<form>
+		<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+			<li class="dropdown-section">
+				<div class="input-group input-group-sm">
+					<div class="input-group-item">
+						<input class="form-control input-group-inset input-group-inset-after" placeholder="Search for..." type="text">
+						<span class="input-group-inset-item input-group-inset-item-after">
+							<button class="btn btn-unstyled" type="button">
+								<svg class="lexicon-icon lexicon-icon-search" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#search">
+								</svg>
+							</button>
+						</span>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown-subheader">Filter by</li>
+			<li>
+				<div class="dropdown-section">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label"></span>
+						</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="active dropdown-section">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input checked class="custom-control-input" type="checkbox">
+							<span class="custom-control-label">
+								<span class="custom-control-label-text">Selected Option</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown-section">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label">
+								<span class="custom-control-label-text">Normal Option</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="disabled dropdown-section">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input disabled class="custom-control-input" type="checkbox">
+							<span class="custom-control-label">
+								<span class="custom-control-label-text">Disabled Option</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</form>
+</div>
+
+<div class="clay-site-dropdown-menu-container">
+	<form>
+		<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+			<li class="dropdown-subheader">Order by</li>
+			<li>
+				<div class="active dropdown-section">
+					<div class="custom-control custom-radio">
+						<label>
+							<input checked class="custom-control-input" id="dropdownRadio1" name="dropdownRadio" type="radio">
+							<span class="custom-control-label">
+								<span class="custom-control-label-text">Selected Option</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown-section">
+					<div class="custom-control custom-radio">
+						<label>
+							<input class="custom-control-input" id="dropdownRadio2" name="dropdownRadio" type="radio">
+							<span class="custom-control-label">
+								<span class="custom-control-label-text">Normal Option</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="disabled dropdown-section">
+					<div class="custom-control custom-radio">
+						<label>
+							<input disabled class="custom-control-input" id="dropdownRadio3" name="dropdownRadio" type="radio">
+							<span class="custom-control-label">
+								<span class="custom-control-label-text">Disabled Option</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown-section">
+				<button class="btn btn-block btn-primary" type="submit">Done</button>
+			</li>
+		</ul>
+	</form>
+</div>
+
+<div class="clay-site-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-section form-group">
+			<label for="basicInputTypeText1">
+				Text 1
+			</label>
+			<input class="form-control form-control-sm" id="basicInputTypeText1" placeholder="Placeholder" type="text">
+		</li>
+		<li class="dropdown-subheader">Form Section</li>
+		<li class="dropdown-section">
+			<div class="form-group">
+				<label for="basicInputTypeText2">
+					Text 2
+				</label>
+				<input class="form-control form-control-sm" id="basicInputTypeText2" placeholder="Placeholder" type="text">
+			</div>
+		</li>
+		<li class="dropdown-section">
+			<div class="form-group">
+				<label for="basicInputTypeText3">
+					Text 3
+				</label>
+				<input class="form-control form-control-sm" id="basicInputTypeText3" placeholder="Placeholder" type="text">
+			</div>
+			<div class="form-group">
+				<label for="basicInputTypeTextarea">Textarea</label>
+				<textarea class="form-control form-control-sm" id="basicInputTypeTextarea" placeholder="Placeholder"></textarea>
+			</div>
+		</li>
+		<li class="dropdown-subheader">Order by</li>
+		<li><a class="active dropdown-item" href="#1">Author</a></li>
+		<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Title Entry</a></li>
+	</ul>
+</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row clay-site-dropdown-display">
+	<div class="col-md-12">
+		<h3 id="dropdown-menu-with-indicators"><a class="heading-anchor" href="#dropdown-menu-with-indicators"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Menu with Indicators</h3>
+	</div>
+
+	<div class="col-md-6">
+		<h6>dropdown-menu-indicator-start</h6>
+
+<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu dropdown-menu-indicator-start">
+	<li class="dropdown-header">Dropdown Header</li>
+	<li class="dropdown-divider"></li>
+	<li class="dropdown-subheader">Dropdown Sub Header</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			<span class="dropdown-item-indicator-start">
+				<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#check">
+				</svg>
+			</span>
+			Ticket Buyer Information
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			<span class="dropdown-item-indicator-start">
+				<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#check">
+				</svg>
+			</span>
+			Attendee Information
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			<span class="dropdown-item-indicator-start">
+				<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#check">
+				</svg>
+			</span>
+			Seat Assignment
+		</a>
+	</li>
+	<li><a class="active dropdown-item" href="#1">Dinner Preference</a></li>
+	<li><a class="dropdown-item" href="#1">Submit Payment</a></li>
+	<li class="dropdown-caption">Dropdown Caption</li>
+</ul>
+
+	</div>
+
+	<div class="col-md-6">
+		<h6>dropdown-menu-indicator-end</h6>
+
+<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu dropdown-menu-indicator-end">
+	<li class="dropdown-header">Folder</li>
+	<li class="dropdown-divider"></li>
+	<li class="dropdown-subheader">Order By</li>
+	<li>
+		<a class="active dropdown-item" href="#1">
+			Step 01
+			<span class="dropdown-item-indicator-end">
+				<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#check">
+				</svg>
+			</span>
+		</a>
+	</li>
+	<li>
+		<a class="disabled dropdown-item" href="#1" tabindex="-1">
+			Step 02
+			<span class="dropdown-item-indicator-end">
+				<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#check">
+				</svg>
+			</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			Step 03
+			<span class="dropdown-item-indicator-end">
+				<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#times">
+				</svg>
+			</span>
+		</a>
+	</li>
+	<li><a class="dropdown-item" href="#1">Step 04</a></li>
+	<li><a class="dropdown-item" href="#1">Step 05</a></li>
+	<li class="dropdown-caption">Showing 190,722 of 192,842 Things</li>
+</ul>
+
+	</div>
+
+	<div class="col-md-6">
+		<h6>dropdown-menu-indicator-start</h6>
+		<h6>dropdown-menu-indicator-end</h6>
+
+<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu dropdown-menu-indicator-end dropdown-menu-indicator-start">
+	<li class="dropdown-header">Dropdown Header</li>
+	<li class="dropdown-divider"></li>
+	<li class="dropdown-subheader">Dropdown Sub Header</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			<span class="dropdown-item-indicator-start">
+				<svg class="lexicon-icon lexicon-icon-pencil" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#pencil">
+				</svg>
+			</span>
+			ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual
+			<span class="dropdown-item-indicator-end">
+				<svg class="lexicon-icon lexicon-icon-angle-right" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#angle-right">
+				</svg>
+			</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			<span class="dropdown-item-indicator-start">
+				<svg class="lexicon-icon lexicon-icon-view" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#view">
+				</svg>
+			</span>
+			Attendee Information
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="#1">
+			<span class="dropdown-item-indicator">
+				<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#check">
+				</svg>
+			</span>
+			Seat Assignment
+		</a>
+	</li>
+	<li><a class="active dropdown-item" href="#1">Dinner Preference</a></li>
+	<li><a class="dropdown-item" href="#1">Submit Payment</a></li>
+	<li class="dropdown-caption">Dropdown Caption</li>
+</ul>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row clay-site-dropdown-display">
+	<div class="col-md-12">
+		<h3 id="dropdown-menu-with-autofit-row"><a class="heading-anchor" href="#dropdown-menu-with-autofit-row"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Menu with Autofit Row</h3>
+
+	<div class="clay-site-dropdown-menu-container">
+		<h6>Anchor Tags</h6>
+		<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+			<li>
+				<a class="active autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						First Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;</kbd>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a class="autofit-row disabled dropdown-item" href="#1" tabindex="-1">
+					<span class="autofit-col autofit-col-expand">
+						Second Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;K</kbd>
+					</span>
+				</a>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						Third Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;+Shift+Y</kbd>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						Fourth Option
+					</span>
+				</a>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						Fifth Option
+					</span>
+				</a>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						Sixth Option
+					</span>
+				</a>
+			</li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						Seventh Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;P</kbd>
+					</span>
+				</a>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						Eighth Option
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="clay-site-dropdown-menu-container">
+		<h6>Buttons</h6>
+		<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+			<li>
+				<button class="active autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						First Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;</kbd>
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="autofit-row dropdown-item" disabled type="button">
+					<span class="autofit-col autofit-col-expand">
+						Second Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;K</kbd>
+					</span>
+				</button>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						Third Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;+Shift+Y</kbd>
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						Fourth Option
+					</span>
+				</button>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						Fifth Option
+					</span>
+				</button>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						Sixth Option
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						Seventh Option
+					</span>
+					<span class="autofit-col">
+						<kbd class="c-kbd c-kbd-inline">&#x2318;P</kbd>
+					</span>
+				</button>
+			</li>
+			<li class="dropdown-divider"></li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						Eighth Option
+					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="clay-site-dropdown-menu-container">
+		<h6>Anchor Tags</h6>
+		<ul aria-labelled-by="theDropdownToggleId" class="dropdown-menu">
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-en-us" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#en-us">
+								</svg>
+							</span>
+							en-US
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-info">
+							<span class="label-item label-item-expand">Default</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a class="autofit-row disabled dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-en-gb" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#en-gb">
+								</svg>
+							</span>
+							en-GB
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-success">
+							<span class="label-item label-item-expand">Translated</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a class="active autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-es-es" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#es-es">
+								</svg>
+							</span>
+							es-ES
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-success">
+							<span class="label-item label-item-expand">Translated</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a class="autofit-row dropdown-item" href="#1">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-fr-fr" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#fr-fr">
+								</svg>
+							</span>
+							fr-FR
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-warning">
+							<span class="label-item label-item-expand">Not Translated</span>
+						</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="clay-site-dropdown-menu-container">
+		<h6>Buttons</h6>
+		<ul aria-labelled-by="theDropdownToggleId" class="dropdown-menu">
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-en-us" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#en-us">
+								</svg>
+							</span>
+							en-US
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-info">
+							<span class="label-item label-item-expand">Default</span>
+						</span>
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="autofit-row dropdown-item" disabled type="button">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-en-gb" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#en-gb">
+								</svg>
+							</span>
+							en-GB
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-success">
+							<span class="label-item label-item-expand">Translated</span>
+						</span>
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="active autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-es-es" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#es-es">
+								</svg>
+							</span>
+							es-ES
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-success">
+							<span class="label-item label-item-expand">Translated</span>
+						</span>
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="autofit-row dropdown-item" type="button">
+					<span class="autofit-col autofit-col-expand">
+						<span class="autofit-section">
+							<span class="inline-item inline-item-before">
+								<svg class="lexicon-icon lexicon-icon-fr-fr" focusable="false" role="presentation">
+									<use xlink:href="../../images/icons/icons.svg#fr-fr">
+								</svg>
+							</span>
+							fr-FR
+						</span>
+					</span>
+					<span class="autofit-col">
+						<span class="label label-warning">
+							<span class="label-item label-item-expand">Not Translated</span>
+						</span>
+					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row clay-site-dropdown-display">
+	<div class="col-md-12">
+		<h3 id="scrolling-content"><a class="heading-anchor" href="#scrolling-content"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Scrolling Content</h3>
+
+		<blockquote class="blockquote">
+			<p>Nest <code>&lt;div class=&quot;inline-scroller&quot;&gt;&lt;/div&gt;</code> inside a <code>.dropdown-menu</code> list item to create a scrollable dropdown. The maximum height is 200px on screen sizes 768px and above, on screen sizes 767px and below the overflow is handled by <code>.dropdown-menu</code>.</p>
+		</blockquote>
+	</div>
+
+	<div class="col-md-6">
+
+<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+	<li class="dropdown-header">Dropdown Header</li>
+	<li>
+		<ul class="inline-scroller">
+			<li><a class="dropdown-item" href="#1">Actions</a></li>
+			<li><a class="dropdown-item" href="#1">Edit</a></li>
+			<li><a class="dropdown-item" href="#1">View</a></li>
+			<li><a class="dropdown-item" href="#1">Permissions</a></li>
+			<li><a class="dropdown-item" href="#1">Actions</a></li>
+			<li><a class="dropdown-item" href="#1">Edit</a></li>
+			<li><a class="dropdown-item" href="#1">View</a></li>
+			<li><a class="dropdown-item" href="#1">Permissions</a></li>
+			<li><a class="dropdown-item" href="#1">Actions</a></li>
+			<li><a class="dropdown-item" href="#1">Edit</a></li>
+			<li><a class="dropdown-item" href="#1">View</a></li>
+			<li><a class="dropdown-item" href="#1">Permissions</a></li>
+			<li><a class="dropdown-item" href="#1">Actions</a></li>
+			<li><a class="dropdown-item" href="#1">Edit</a></li>
+			<li><a class="dropdown-item" href="#1">View</a></li>
+			<li><a class="dropdown-item" href="#1">Permissions</a></li>
+		</ul>
+	</li>
+	<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+	<li class="dropdown-divider"></li>
+	<li><a class="dropdown-item" href="#1">Scope</a></li>
+</ul>
+
+	</div>
+
+	<div class="col-md-6">
+
+<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+	<li class="alert alert-fluid alert-info" role="alert">
+		You can customize this menu or see all you have by pressing &quot;more&quot;.
+	</li>
+	<li class="dropdown-header">Folder</li>
+	<li class="dropdown-divider"></li>
+	<li class="dropdown-subheader">Favorites</li>
+	<li>
+		<ul class="inline-scroller">
+			<li><a class="dropdown-item" href="#1">D Structure</a></li>
+			<li><a class="dropdown-item" href="#1">F Structure</a></li>
+			<li><a class="disabled dropdown-item" href="#1" tabindex="-1">H Structure</a></li>
+			<li><a class="dropdown-item" href="#1">J Structure</a></li>
+			<li><a class="dropdown-item" href="#1">L Structure</a></li>
+			<li><a class="dropdown-item" href="#1">M Structure</a></li>
+			<li><a class="dropdown-item" href="#1">P Structure</a></li>
+			<li><a class="dropdown-item" href="#1">Q Structure</a></li>
+			<li><a class="dropdown-item" href="#1">R Structure</a></li>
+			<li><a class="dropdown-item" href="#1">S Structure</a></li>
+			<li><a class="dropdown-item" href="#1">T Structure</a></li>
+			<li><a class="dropdown-item" href="#1">U Structure</a></li>
+		</ul>
+	</li>
+	<li class="dropdown-caption">Showing 7 of 203 Structures</li>
+	<li class="dropdown-section">
+		<button class="btn btn-block btn-secondary">More</button>
+	</li>
+</ul>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row clay-site-dropdown-display">
+	<div class="col-md-12">
+		<h3 id="dropdown-wide--full"><a class="heading-anchor" href="#dropdown-wide--full"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown wide / full</h3>
+
+		<blockquote class="blockquote">
+			<p>Use <code>.dropdown-wide</code> with <code>.dropdown</code> to make the dropdown menu big. The default width is 500px. Use <code class="code">.dropdown-full</code> to create a dropdown menu as wide as its relative parent. See dropdown examples.</p>
+		</blockquote>
+
+		<div aria-labelledby="" class="dropdown-wide dropdown-wide-container">
+			<div class="dropdown-menu">
+				<div class="row">
+					<div class="col-sm-4">
+						<ul class="list-unstyled">
+							<li class="dropdown-subheader">By Resource</li>
+							<li><a class="dropdown-item" href="#1">Support Home</a></li>
+							<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled Link</a></li>
+							<li><a class="dropdown-item" href="#1">Chat or Call</a></li>
+						</ul>
+						<ul class="list-unstyled">
+							<li class="dropdown-subheader">By Product</li>
+							<li><a class="active dropdown-item" href="#1">Developing for the Platform</a></li>
+							<li><a class="dropdown-item" href="#1">Mastering Fundamentals</a></li>
+							<li><a class="dropdown-item" href="#1">Styling with Themes</a></li>
+							<li><a class="dropdown-item" href="#1">Managing Content</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul class="list-unstyled">
+							<li class="dropdown-subheader">Popular Picks</li>
+							<li><a class="dropdown-item" href="#1">Error Messages</a></li>
+							<li><a class="dropdown-item" href="#1">Updates: Service Packs &amp; Fixes</a></li>
+							<li><a class="dropdown-item" href="#1">Install, Upgrade, &amp; Activate</a></li>
+							<li><a class="dropdown-item" href="#1">Regular Drivers</a></li>
+							<li><a class="dropdown-item" href="#1">Hardware Drivers</a></li>
+						</ul>
+						<ul class="list-unstyled">
+							<li class="dropdown-subheader">Security</li>
+							<li><a class="dropdown-item" href="#1">Security Home</a></li>
+							<li><a class="dropdown-item" href="#1">Security Essentials</a></li>
+							<li><a class="dropdown-item" href="#1">Protecting Your Data</a></li>
+							<li><a class="dropdown-item" href="#1">Securing Your Browser</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul class="list-unstyled">
+							<li class="dropdown-subheader">By Audience</li>
+							<li><a class="dropdown-item" href="#1">For Home Users</a></li>
+							<li><a class="dropdown-item" href="#1">For Small Business</a></li>
+							<li><a class="dropdown-item" href="#1">For IT Professionals</a></li>
+							<li><a class="dropdown-item" href="#1">For Developers</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="dropdown-alignment"><a class="heading-anchor" href="#dropdown-alignment"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Alignment</h3>
+
+		<blockquote class="blockquote">
+			<p>Align a dropdown menu on the top or bottom side with classes <code class="code">dropdown-menu</code>, <code class="code">dropdown-menu-right</code>, <code class="code">dropdown-menu-top</code>, or <code class="code">dropdown-menu-top-right</code></p>
+		</blockquote>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment1" type="button">
+				Default
+				<span aria-hidden="true" class="icon-caret-down"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment1" class="dropdown-menu">
+				<li class="dropdown-header">Dropdown Header</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment2" type="button">
+				Right
+				<span aria-hidden="true" class="icon-caret-down"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment2" class="dropdown-menu dropdown-menu-right">
+				<li class="dropdown-header">Dropdown Header</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment3" type="button">
+				Top
+				<span aria-hidden="true" class="icon-caret-up"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment3" class="dropdown-menu dropdown-menu-top">
+				<li class="dropdown-header">Dropdown Header</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment4" type="button">
+				Top Right
+				<span aria-hidden="true" class="icon-caret-up"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment4" class="dropdown-menu dropdown-menu-top-right">
+				<li class="dropdown-header">Dropdown Header</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<blockquote class="blockquote">
+			<p>Align a dropdown menu on the left or right side with classes <code class="code">dropdown-menu-right-side</code>, <code class="code">dropdown-menu-left-side</code>, <code class="code">dropdown-menu-right-side-bottom</code>, or <code class="code">dropdown-menu-left-side-bottom</code>.</p>
+		</blockquote>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment5" type="button">
+				Right Side
+				<span class="icon-caret-right"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment5" class="dropdown-menu dropdown-menu-right-side">
+				<li class="dropdown-header">Dropdown Header</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment6" type="button">
+				<span class="icon-caret-left"></span>
+				Left Side
+			</button>
+			<ul aria-labelledby="dropdownAlignment6" class="dropdown-menu dropdown-menu-left-side">
+				<li class="dropdown-header">Dropdown Header</li>
+				<ul class="inline-scroller">
+					<li><a class="dropdown-item" href="#1">Action</a></li>
+					<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+					<li class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+				</ul>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment7" type="button">
+				Right Side Bottom
+				<span class="icon-caret-right"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment7" class="dropdown-menu dropdown-menu-right-side-bottom">
+				<li>
+					<ul class="inline-scroller">
+						<li class="dropdown-header">Dropdown Header</li>
+						<li><a class="dropdown-item" href="#1">Action</a></li>
+						<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+						<li class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment8" type="button">
+				<span class="icon-caret-left"></span>
+				Left Side Bottom
+			</button>
+			<ul aria-labelledby="dropdownAlignment8" class="dropdown-menu dropdown-menu-left-side-bottom">
+				<li>
+					<ul class="inline-scroller">
+						<li class="dropdown-header">Dropdown Header</li>
+						<li><a class="dropdown-item" href="#1">Action</a></li>
+						<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+						<li class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+						<li><a class="dropdown-item" href="#1">Scope</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<blockquote class="blockquote">
+			<p>We&apos;ve also added the option to center the dropdown to its trigger in the 4 different dropdown-menu positions with classes <code class="code">dropdown-menu-center</code>, <code class="code">dropdown-menu-top-center</code>, <code class="code">dropdown-menu-left-side-middle</code>, or <code class="code">dropdown-menu-right-side-middle</code>.</p>
+
+			<p>You can center the dropdown menu in browsers that don&apos;t support css transforms by setting a negative <code class="code">margin-left</code> equal to the width of the dropdown-menu divided by 2. For left-side and right-side dropdown-menus vertically align them by setting a negative <code class="code">margin-top</code> equal to the height of the dropdown-menu divided by 2.</p>
+		</blockquote>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment9" type="button">
+				Center
+				<span class="icon-caret-down"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment9" class="dropdown-menu dropdown-menu-center">
+				<li class="dropdown-header">dropdown-menu-center</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment10" type="button">
+				Top Center
+				<span class="icon-caret-up"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment10" class="dropdown-menu dropdown-menu-top-center">
+				<li class="dropdown-header">dropdown-menu-top-center</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment11" type="button">
+				<span class="icon-caret-left"></span>
+				Left Side Middle
+			</button>
+			<ul aria-labelledby="dropdownAlignment11" class="dropdown-menu dropdown-menu-left-side-middle">
+				<li class="dropdown-header">Dropdown Header</li>
+				<ul class="inline-scroller">
+					<li><a class="dropdown-item" href="#1">Action</a></li>
+					<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+					<li class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+					<li><a class="dropdown-item" href="#1">Scope</a></li>
+				</ul>
+			</ul>
+		</div>
+
+		<div class="dropdown" style="display: inline-block;">
+			<button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownAlignment12" type="button">
+				Right Side Middle
+				<span class="icon-caret-right"></span>
+			</button>
+			<ul aria-labelledby="dropdownAlignment12" class="dropdown-menu dropdown-menu-right-side-middle">
+				<li class="dropdown-header">Dropdown Header</li>
+				<li><a class="dropdown-item" href="#1">Action</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+				<li class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#1">Scope</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<h3 id="dropdown-examples"><a class="heading-anchor" href="#dropdown-examples"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dropdown Examples</h3>
+
+		<nav class="bg-secondary navbar navbar-expand navbar-dark" style="margin-bottom:566px;">
+			<div class="container-fluid container-fluid-max-xl">
+				<ul class="navbar-nav">
+					<li class="dropdown nav-item">
+						<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#1" id="navbarDropdownMenuLink1" role="button">
+							Dropdown
+							<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+								<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+							</svg>
+						</a>
+						<form>
+							<ul aria-labelledby="navbarDropdownMenuLink1" class="dropdown-menu">
+								<li class="dropdown-section">
+									<select class="form-control form-control-sm">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</li>
+								<li class="dropdown-section">
+									<label for="exampleInputEmail3">Email address</label>
+									<input type="email" class="form-control form-control-sm" id="exampleInputEmail3" placeholder="Email">
+								</li>
+								<li>
+									<div class="dropdown-section">
+										<div class="custom-control custom-checkbox">
+											<label>
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-label">
+													<span class="custom-control-label-text">Approved</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown-section">
+										<div class="custom-control custom-checkbox">
+											<label>
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-label">
+													<span class="custom-control-label-text">Draft</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown-section">
+										<div class="custom-control custom-checkbox">
+											<label>
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-label">
+													<span class="custom-control-label-text">Pending</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown-section">
+										<div class="custom-control custom-checkbox">
+											<label>
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-label">
+													<span class="custom-control-label-text">Expired</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown-section">
+										<div class="custom-control custom-checkbox">
+											<label>
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-label">
+													<span class="custom-control-label-text">Scheduled</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown-section">
+										<div class="custom-control custom-checkbox">
+											<label>
+												<input class="custom-control-input" type="checkbox">
+												<span class="custom-control-label">
+													<span class="custom-control-label-text">Rejected</span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</form>
+					</li>
+					<li class="dropdown dropdown-wide nav-item">
+						<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#1" id="navbarDropdownMenuLink2" role="button">
+							Dropdown Wide
+							<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+								<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+							</svg>
+						</a>
+						<div aria-labelledby="navbarDropdownMenuLink2" class="dropdown-menu">
+							<div class="row">
+								<div class="col-sm-6">
+									<ul class="list-unstyled">
+										<li class="dropdown-header">By Resource</li>
+										<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Support Home</a></li>
+										<li><a class="dropdown-item" href="#1">Ask the Experts</a></li>
+										<li><a class="dropdown-item" href="#1">Chat or Call</a></li>
+									</ul>
+									<ul class="list-unstyled">
+										<li class="dropdown-header">By Product</li>
+										<li><a class="active dropdown-item" href="#1">Developing for the Platform</a></li>
+										<li><a class="dropdown-item" href="#1">Mastering Fundamentals</a></li>
+										<li><a class="dropdown-item" href="#1">Styling with Themes</a></li>
+										<li><a class="dropdown-item" href="#1">Managing Content</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-6">
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Popular Picks</li>
+										<li><a class="dropdown-item" href="#1">Error Messages</a></li>
+										<li><a class="dropdown-item" href="#1">Updates: Service Packs &amp; Fixes</a></li>
+										<li><a class="dropdown-item" href="#1">Install, Upgrade, &amp; Activate</a></li>
+										<li><a class="dropdown-item" href="#1">Regular Drivers</a></li>
+										<li><a class="dropdown-item" href="#1">Hardware Drivers</a></li>
+									</ul>
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Security</li>
+										<li><a class="dropdown-item" href="#1">Security Home</a></li>
+										<li><a class="dropdown-item" href="#1">Security Essentials</a></li>
+										<li><a class="dropdown-item" href="#1">Protecting Your Data</a></li>
+										<li><a class="dropdown-item" href="#1">Securing Your Browser</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown dropdown-full nav-item">
+						<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#1" id="navbarDropdownMenuLink3" role="button">
+							Dropdown Full
+							<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+								<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+							</svg>
+						</a>
+						<ul aria-labelledby="navbarDropdownMenuLink3" class="dropdown-menu">
+							<div class="row">
+								<div class="col-sm-4">
+									<ul class="list-unstyled">
+										<li class="dropdown-header">By Resource</li>
+										<li><a class="dropdown-item" href="#1">Support Home</a></li>
+										<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled Link</a></li>
+										<li><a class="dropdown-item" href="#1">Chat or Call</a></li>
+									</ul>
+									<ul class="list-unstyled">
+										<li class="dropdown-header">By Product</li>
+										<li><a class="dropdown-item" href="#1">Developing for the Platform</a></li>
+										<li><a class="dropdown-item" href="#1">Mastering Fundamentals</a></li>
+										<li><a class="dropdown-item" href="#1">Styling with Themes</a></li>
+										<li><a class="dropdown-item" href="#1">Managing Content</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Popular Picks</li>
+										<li><a class="dropdown-item" href="#1">Error Messages</a></li>
+										<li><a class="dropdown-item" href="#1">Updates: Service Packs &amp; Fixes</a></li>
+										<li><a class="dropdown-item" href="#1">Install, Upgrade, &amp; Activate</a></li>
+										<li><a class="dropdown-item" href="#1">Regular Drivers</a></li>
+										<li><a class="dropdown-item" href="#1">Hardware Drivers</a></li>
+									</ul>
+									<ul class="list-unstyled">
+										<li class="dropdown-header">Security</li>
+										<li><a class="dropdown-item" href="#1">Security Home</a></li>
+										<li><a class="dropdown-item" href="#1">Security Essentials</a></li>
+										<li><a class="dropdown-item" href="#1">Protecting Your Data</a></li>
+										<li><a class="dropdown-item" href="#1">Securing Your Browser</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<ul class="list-unstyled">
+										<li class="dropdown-header">By Audience</li>
+										<li><a class="active dropdown-item" href="#1">For Home Users</a></li>
+										<li><a class="dropdown-item" href="#1">For Small Business</a></li>
+										<li><a class="dropdown-item" href="#1">For IT Professionals</a></li>
+										<li><a class="dropdown-item" href="#1">For Developers</a></li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</li>
+				</ul>
+				<div class="navbar-form navbar-form-autofit">
+					<form>
+						<input class="form-control" type="text">
+						<button class="btn btn-secondary" type="submit">Submit</button>
+					</form>
+				</div>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#1">Link</a></li>
+					<li class="dropdown nav-item">
+						<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#1" id="navbarDropdownMenuLink4" role="button">
+							Dropdown
+							<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+								<use xlink:href="../../images/icons/icons.svg#caret-bottom">
+							</svg>
+						</a>
+						<ul aria-labelledby="navbarDropdownMenuLink4" class="dropdown-menu dropdown-menu-right">
+							<li class="dropdown-header" role="presentation">Dropdown Header</li>
+							<ul class="inline-scroller">
+								<li><a class="dropdown-item" href="#1">Actions</a></li>
+								<li><a class="dropdown-item" href="#1">Edit</a></li>
+								<li><a class="dropdown-item" href="#1">View</a></li>
+								<li><a class="dropdown-item" href="#1">Permissions</a></li>
+								<li><a class="dropdown-item" href="#1">Actions</a></li>
+								<li><a class="dropdown-item" href="#1">Edit</a></li>
+								<li><a class="dropdown-item" href="#1">View</a></li>
+								<li><a class="dropdown-item" href="#1">Permissions</a></li>
+								<li><a class="dropdown-item" href="#1">Actions</a></li>
+								<li><a class="dropdown-item" href="#1">Edit</a></li>
+								<li><a class="dropdown-item" href="#1">View</a></li>
+								<li><a class="dropdown-item" href="#1">Permissions</a></li>
+								<li><a class="dropdown-item" href="#1">Actions</a></li>
+								<li><a class="dropdown-item" href="#1">Edit</a></li>
+								<li><a class="dropdown-item" href="#1">View</a></li>
+								<li><a class="dropdown-item" href="#1">Permissions</a></li>
+							</ul>
+							<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+							<li class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#1">Scope</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+
+<script>
+	$('input[type="checkbox"]').change(
+		function(event) {
+			$(this).closest('.dropdown-item').toggleClass('active', this.checked);
+			$(this).closest('.dropdown-section').toggleClass('active', this.checked);
+		}
+	);
+
+	$('input[type="radio"]').change(function(event) {
+		$(this).closest('.dropdown-menu').find('.dropdown-item').removeClass('active');
+		$(this).closest('.dropdown-item').toggleClass('active', this.checked);
+		$(this).closest('.dropdown-menu').find('.dropdown-section').removeClass('active');
+		$(this).closest('.dropdown-section').toggleClass('active', this.checked);
+	});
+
+	$('.input-group-inset').on('focusin', function(event) {
+		$(this).closest('.input-group-item').addClass('focus');
+	});
+
+	$('.input-group-inset').on('focusout', function(event) {
+		$(this).closest('.input-group-item').removeClass('focus');
+	});
+</script>
+	</div>
+
+		</section>
+	</div>
+
+	<script src="../../content/site-js/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		(function () {
+			if (!localStorage.getItem('nate.lexiconHref')) {
+				if (window.location.href.match(/\/v(.*)\/c/)) {
+					var version = window.location.href.match(/\/v(.*)\/c/)[1];
+
+					localStorage.setItem('nate.lexiconHref', window.location.origin + '/clay3-test-site/v' + version + '/css/site/site-atlas-font-awesome.css');
+				}
+			}
+		})();
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('#claySiteMobileNavigationToggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+	</script>
+	</body>
+</html>

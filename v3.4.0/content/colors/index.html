@@ -1,0 +1,813 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - Colors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../css/site/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../css/site/site-main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../js/popper.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../js/collapsible-search.js"></script>
+	<script src="../../js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="row" id="headerTopBar">
+			<div class="container-fluid">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
+					<span class="docs-icon-bar docs-icon-bar-1"></span>
+					<span class="docs-icon-bar docs-icon-bar-2"></span>
+					<span class="docs-icon-bar docs-icon-bar-3"></span>
+				</button>
+
+				<h4 class="title"><a href="../../..">Clay CSS</a> <span class="label label-primary lexicon-version">v3.4.0</span></h4>
+
+				<button class="btn btn-primary btn-sm d-sm-none d-md-block" data-nav-hidden="false" id="siteNavToggle" type="button">Hide Nav</button>
+
+<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+			<use xlink:href="../../images/icons/icons.svg#cog"></use>
+		</svg>
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">Site Settings</div>
+		<form>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleAtlas" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Atlas</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Site CSS</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="dropdown-section">
+				<button class="btn btn-secondary btn-block" id="resetSiteConfig">Reset Settings</button>
+			</div>
+		</form>
+	</div>
+</div>
+			</div>
+		</header>
+
+		<section class="container-fluid main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">API</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/api-mixins">Clay CSS Mixins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Colors</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class="active"><a class="nav-title" href="../../content/colors">Colors</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/button-group">Button Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/card-interactive">Card Interactive</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-autocomplete">Dropdowns (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-drill-down">Dropdowns (Drill Down)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-autocomplete">Form Elements (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-time">Form Elements (Clay Time)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-color-picker">Form Elements (Color Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-custom">Form Elements (Custom)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-date-picker">Form Elements (Date Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-multiselect">Form Elements (Multi Select)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-range">Form Elements (Range)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-group">Form Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/grid">Grid</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-aspect-ratio">Images (Aspect Ratios)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images and Thumbnails</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/links">Links</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/loaders">Loading Indicators</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical-decorated">Menubar (Vertical Navigation with Decorator)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical">Menubar (Vertical)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/multi-step-nav">Multi Step Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-pills">Nav Pills</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-underline">Nav Underline</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/application-bar">Navbar (Application Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Navbar (Management Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navigation-bar">Navbar (Navigation Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sheet">Sheet</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar">Tbar (Toolbar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggle-switch">Toggle Switch</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities">Utilities</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Visual Tests</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/test-card-custom-fields-view">Card Custom Fields View</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-type-template">Card Type Template Use Case</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template">Card View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template-info-panel">Card View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-upload-documents">Documents Upload</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-group-sm">Form Group Sm</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-hierarchy">Form Hierarchy</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-labels">Labels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template">List View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template-info-panel">List View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-localizable-input-field">Localizable Input Field</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-subnav-tbar">Subnav Tbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-custom-field-list">Table Custom Field List</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-valign">Table Valign</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template">Table View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template-info-panel">Table View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-toggle-switch-old">Toggle Switch (Old)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations">Users and Organizations</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-user-card">Users and Organizations (User Card)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-form-vertical-navigation">Users and Organizations Form Vertical Navigation</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+<li class="nav-static-link"><a class="nav-title" href="https://github.com/liferay/lexicon">GitHub</a>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title mt-5" id="beginContent" tabindex="-1">
+			Colors
+
+			
+		</h1>
+
+		
+<div class="alert alert-warning">
+	These are the color variables available in Clay CSS. The variables are used inconsistently throughout the project (especially in the Base Theme) and will require you to verify the colors have applied to each component to your liking. 
+</div>
+
+<div class="alert alert-info">
+	Only use this color system if it fits your application otherwise, we recommend using your own color system and applying it to each component.
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="grays"><a class="heading-anchor" href="#grays"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Grays</h3>
+
+		<blockquote class="blockquote">
+			<p>This color palette is generally used for setting colors on base components like <code>background-color</code>, <code>border-color</code>, and <code>color</code> in Cards.</p>
+		</blockquote>
+
+		<div class="clay-site-swatch clay-site-swatch-white">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-100">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-200">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-300">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-400">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-500">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-600">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-700">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-800">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-gray-900">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-black">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="colors"><a class="heading-anchor" href="#colors"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Colors</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-blue">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-indigo">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-purple">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-pink">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-red">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-orange">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-yellow">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-green">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-teal">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-cyan">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="theme-colors"><a class="heading-anchor" href="#theme-colors"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Theme Colors</h3>
+
+		<blockquote class="blockquote">
+			<p>These color palettes are used to globally set the colors for component variants such as, <code>buttons</code>, <code>labels</code>, and <code>stickers</code>.</p>
+		</blockquote>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="primary"><a class="heading-anchor" href="#primary"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Primary</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-primary-l3">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-primary-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-primary-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-primary">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-primary-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-primary-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="secondary"><a class="heading-anchor" href="#secondary"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Secondary</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-secondary-l3">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-secondary-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-secondary-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-secondary">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-secondary-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+		<div class="clay-site-swatch clay-site-swatch-secondary-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="info"><a class="heading-anchor" href="#info"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Info</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-info-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-info-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-info">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-info-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-info-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="success"><a class="heading-anchor" href="#success"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Success</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-success-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-success-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-success">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-success-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-success-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="warning"><a class="heading-anchor" href="#warning"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Warning</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-warning-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-warning-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-warning">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-warning-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-warning-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="danger"><a class="heading-anchor" href="#danger"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Danger</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-danger-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-danger-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-danger">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-danger-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-danger-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="light"><a class="heading-anchor" href="#light"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Light</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-light-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-light-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-light">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-light-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-light-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="dark"><a class="heading-anchor" href="#dark"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Dark</h3>
+
+		<div class="clay-site-swatch clay-site-swatch-dark-l2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-dark-l1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-dark">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-dark-d1">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+
+		<div class="clay-site-swatch clay-site-swatch-dark-d2">
+			<span class="clay-site-var clay-site-swatch-text"></span>:
+			<span class="clay-site-hex clay-site-swatch-text"></span>
+			<span class="clay-site-rgb clay-site-swatch-text"></span>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).on('claySiteToggleTheme', function(event) {
+	$('.clay-site-swatch').each(function() {
+		var hex = $(this).css('content').replace(/"/g, "");
+		var rgb = $(this).css('background-color');
+		var clayVar = $(this).find('.clay-site-var').css('content').replace(/"/g, "");
+
+		$(this).find('.clay-site-hex').text(hex);
+		$(this).find('.clay-site-rgb').text(rgb);
+		$(this).find('.clay-site-var').text(clayVar);
+	});
+});
+</script>
+	</div>
+
+		</section>
+	</div>
+
+	<script src="../../js/site/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('#claySiteMobileNavigationToggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+	</script>
+	</body>
+</html>

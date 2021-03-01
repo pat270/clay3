@@ -1,0 +1,1054 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - Form Elements (Multi Select)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../css/site/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../css/site/site-main.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../js/popper.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../js/collapsible-search.js"></script>
+	<script src="../../js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header class="row" id="headerTopBar">
+			<div class="container-fluid">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
+					<span class="docs-icon-bar docs-icon-bar-1"></span>
+					<span class="docs-icon-bar docs-icon-bar-2"></span>
+					<span class="docs-icon-bar docs-icon-bar-3"></span>
+				</button>
+
+				<h4 class="title"><a href="../../..">Clay CSS</a> <span class="label label-primary lexicon-version">v3.8.0</span></h4>
+
+				<button class="btn btn-primary btn-sm d-sm-none d-md-block" data-nav-hidden="false" id="siteNavToggle" type="button">Hide Nav</button>
+
+<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+			<use xlink:href="../../images/icons/icons.svg#cog"></use>
+		</svg>
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">Site Settings</div>
+		<form>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleAtlas" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Atlas</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Site CSS</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="dropdown-section">
+				<button class="btn btn-secondary btn-block" id="resetSiteConfig">Reset Settings</button>
+			</div>
+		</form>
+	</div>
+</div>
+			</div>
+		</header>
+
+		<section class="container-fluid main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">API</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/api-mixins">Clay CSS Mixins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Colors</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/colors">Colors</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/button-group">Button Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/card-interactive">Card Interactive</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-autocomplete">Dropdowns (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-drill-down">Dropdowns (Drill Down)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/empty-state">Empty State</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-autocomplete">Form Elements (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-clay-reorder">Form Elements (Clay Reorder)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-time">Form Elements (Clay Time)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-color-picker">Form Elements (Color Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-custom">Form Elements (Custom)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-date-picker">Form Elements (Date Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-dual-listbox">Form Elements (Dual Listbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class="active"><a class="nav-title" href="../../content/form-elements-multiselect">Form Elements (Multi Select)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-range">Form Elements (Range)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-group">Form Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/grid">Grid</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-aspect-ratio">Images (Aspect Ratios)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images and Thumbnails</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/links">Links</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/loaders">Loading Indicators</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical-decorated">Menubar (Vertical Navigation with Decorator)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical">Menubar (Vertical)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/multi-step-nav">Multi Step Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-pills">Nav Pills</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-underline">Nav Underline</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/application-bar">Navbar (Application Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Navbar (Management Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navigation-bar">Navbar (Navigation Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sheet">Sheet</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/slideout">Slideout</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar">Tbar (Toolbar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar-stacked">Tbar Stacked (Vertical Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggle-switch">Toggle Switch</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities">Utilities</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-focus-inset">Utilities (C Focus Inset)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-inner">Utilities (C Inner)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/typography-kbd">Typography (Kbd)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Visual Tests</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/test-card-custom-fields-view">Card Custom Fields View</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-type-template">Card Type Template Use Case</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template">Card View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template-info-panel">Card View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-upload-documents">Documents Upload</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-group-sm">Form Group Sm</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-hierarchy">Form Hierarchy</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-labels">Labels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template">List View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template-info-panel">List View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-localizable-input-field">Localizable Input Field</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-subnav-tbar">Subnav Tbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-custom-field-list">Table Custom Field List</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-valign">Table Valign</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template">Table View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template-info-panel">Table View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-toggle-switch-old">Toggle Switch (Old)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations">Users and Organizations</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-user-card">Users and Organizations (User Card)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-form-vertical-navigation">Users and Organizations Form Vertical Navigation</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+<li class="nav-static-link"><a class="nav-title" href="https://github.com/liferay/lexicon">GitHub</a>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title mt-5" id="beginContent" tabindex="-1">
+			Form Elements (Multi Select)
+
+			
+		</h1>
+
+		
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="clay-multiselect"><a class="heading-anchor" href="#clay-multiselect"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Clay Multiselect</h3>
+
+		<div class="alert alert-warning">This requires external javascript to populate, add labels, and show / hide the <code>dropdown-menu</code>.</div>
+
+		<div class="sheet">
+			<div class="form-group">
+				<div class="clay-multiselect">
+					<label for="tagsField1">Tags</label>
+					<div class="input-group input-group-stacked-sm-down">
+						<div class="input-group-item">
+							<div class="dropdown">
+								<div class="form-control form-control-tag-group input-group">
+									<span class="input-group-item">
+										<input class="form-control-inset" id="tagsField1" type="text" value="some value">
+									</span>
+								</div>
+								<ul class="autocomplete-dropdown-menu dropdown-menu">
+									<li><a class="dropdown-item" href="#1"><strong>some value</strong></a></li>
+									<li><a class="dropdown-item" href="#1"><strong>some value</strong> meal</a></li>
+								</ul>
+							</div>
+							<div class="form-feedback-group">
+								<div class="form-text">You can use a comma to enter tags.</div>
+							</div>
+						</div>
+						<div class="input-group-item input-group-item-shrink">
+							<button class="btn btn-secondary" type="button">Select</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="clay-multiselect-with-labels"><a class="heading-anchor" href="#clay-multiselect-with-labels"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Clay Multiselect with Labels</h3>
+
+		<div class="sheet">
+			<div class="form-group">
+				<div class="clay-multiselect">
+					<label for="tagsField2">Tags</label>
+					<div class="input-group input-group-stacked-sm-down">
+						<div class="input-group-item">
+							<div class="dropdown">
+								<div class="form-control form-control-tag-group input-group">
+									<div class="input-group-item">
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wall</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wallpaper</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wonderwall</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-expand">winterfell</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-expand">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAre</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<input class="form-control-inset" id="tagsField2" type="text" value="some value">
+									</div>
+								</div>
+								<ul class="autocomplete-dropdown-menu dropdown-menu">
+									<li><a class="dropdown-item" href="#1"><strong>some value</strong></a></li>
+									<li><a class="dropdown-item" href="#1"><strong>some value</strong> meal</a></li>
+								</ul>
+							</div>
+							<div class="form-feedback-group">
+								<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+							</div>
+						</div>
+						<div class="input-group-item input-group-item-shrink">
+							<button class="btn btn-secondary" type="button">Select</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="clay-multiselect-with-loading"><a class="heading-anchor" href="#clay-multiselect-with-loading"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Clay Multiselect with Loading</h3>
+
+		<div class="sheet">
+			<div class="form-group">
+				<div class="clay-multiselect">
+					<label for="tagsField2">Tags</label>
+					<div class="input-group input-group-stacked-sm-down">
+						<div class="input-group-item">
+							<div class="dropdown">
+								<div class="form-control form-control-tag-group input-group">
+									<div class="input-group-item">
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wall</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wallpaper</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wonderwall</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-expand">winterfell</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-expand">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAre</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<input class="form-control-inset" id="tagsField2" type="text" value="some value">
+									</div>
+									<div class="input-group-item input-group-item-shrink">
+										<span class="inline-item">
+											<span class="loading-animation" role="presentation"></span>
+										</span>
+									</div>
+									<div class="input-group-item input-group-item-shrink">
+										<a class="component-action" href="#1" role="button">
+											<svg class="lexicon-icon lexicon-icon-times-circle" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#times-circle">
+											</svg>
+										</a>
+									</div>
+								</div>
+								<ul class="autocomplete-dropdown-menu dropdown-menu show">
+									<li><span class="disabled dropdown-item">Loading...</span></li>
+								</ul>
+							</div>
+
+							<div class="form-feedback-group">
+								<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+							</div>
+						</div>
+						<div class="input-group-item input-group-item-shrink">
+							<button class="btn btn-secondary" type="button">Select All the Things</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="clay-multiselect-with-other-things"><a class="heading-anchor" href="#clay-multiselect-with-other-things"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Clay Multiselect with Other Things</h3>
+
+		<div class="sheet">
+			<div class="form-group">
+				<div class="clay-multiselect">
+					<label for="tagsField3">Tags</label>
+					<div class="input-group input-group-stacked-sm-down">
+						<div class="input-group-item">
+							<div class="dropdown">
+								<div class="form-control form-control-tag-group input-group">
+									<div class="input-group-item input-group-item-shrink">
+										<button class="btn btn-warning" type="button">Warning</button>
+									</div>
+									<div class="input-group-item">
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wall</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wallpaper</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">wonderwall</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+										<span class="label label-dismissible label-secondary" tabindex="0">
+											<span class="label-item label-item-before">
+												<span class="sticker">
+													<span class="sticker-overlay">
+														<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+													</span>
+												</span>
+											</span>
+											<span class="label-item label-item-expand">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAre</span>
+											<span class="label-item label-item-after">
+												<button aria-label="Close" class="close" tabindex="-1" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+
+										<span class="autofit-row">
+											<span class="autofit-col">
+												<button class="btn btn-primary" type="button">Button</button>
+											</span>
+											<span class="autofit-col autofit-col-expand">
+												<input class="form-control-inset" id="tagsField3" type="text" value="some value">
+											</span>
+											<span class="autofit-col">
+												<span class="inline-item">
+													<a href="#1">link</a>
+												</span>
+											</span>
+											<span class="autofit-col">
+												<button class="btn btn-monospaced btn-secondary" type="button">
+													<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+														<use xlink:href="../../images/icons/icons.svg#times">
+													</svg>
+												</button>
+											</span>
+										</span>
+									</div>
+									<div class="input-group-item input-group-item-shrink">
+										<span class="inline-item">
+											<span class="loading-animation" role="presentation"></span>
+										</span>
+									</div>
+									<div class="input-group-item input-group-item-shrink">
+										<a class="component-action" href="#1" role="button">
+											<svg class="lexicon-icon lexicon-icon-times-circle" focusable="false" role="presentation">
+												<use xlink:href="../../images/icons/icons.svg#times-circle">
+											</svg>
+										</a>
+									</div>
+								</div>
+								<ul class="autocomplete-dropdown-menu dropdown-menu">
+									<li><span class="disabled dropdown-item">Loading...</span></li>
+								</ul>
+							</div>
+
+							<div class="form-feedback-group">
+								<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+							</div>
+						</div>
+						<div class="input-group-item input-group-item-shrink">
+							<button class="btn btn-secondary" type="button">Select All the Things</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="clay-multiselect-with-contenteditable-elements"><a class="heading-anchor" href="#clay-multiselect-with-contenteditable-elements"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Clay Multiselect with Contenteditable Elements</h3>
+
+		<div class="sheet">
+			<div class="form-group">
+				<label for="formControlContentEditable1">Label (Content Editable)</label>
+
+				<div class="input-group input-group-stacked-sm-down">
+					<div class="input-group-item">
+						<div class="dropdown">
+							<div class="form-control form-control-tag-group input-group">
+								<div class="input-group-item">
+									<textarea aria-hidden="true" class="form-control-hidden" id="formControlContentEditable1" tabindex="-1"></textarea>
+									<div class="form-control-inset" contenteditable="true"></div>
+								</div>
+							</div>
+							<ul class="autocomplete-dropdown-menu dropdown-menu">
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong></a></li>
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong> meal</a></li>
+							</ul>
+						</div>
+						<div class="form-feedback-group">
+							<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+						</div>
+					</div>
+
+					<div class="input-group-item input-group-item-shrink">
+						<button class="btn btn-secondary" type="submit">Select</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="tagsContentEditableField2">Tags (Content Editable)</label>
+
+				<div class="input-group input-group-stacked-sm-down">
+					<div class="input-group-item">
+						<div class="dropdown">
+							<div class="form-control form-control-tag-group input-group">
+								<div class="input-group-item">
+									<span class="label label-dismissible label-secondary" tabindex="0">
+										<span class="label-item label-item-before">
+											<span class="sticker">
+												<span class="sticker-overlay">
+													<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+												</span>
+											</span>
+										</span>
+										<span class="label-item label-item-expand">wall</span>
+										<span class="label-item label-item-after">
+											<button aria-label="Close" class="close" tabindex="-1" type="button">
+												<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+													<use xlink:href="../../images/icons/icons.svg#times">
+												</svg>
+											</button>
+										</span>
+									</span>
+									<span class="label label-dismissible label-secondary" tabindex="0">
+										<span class="label-item label-item-before">
+											<span class="sticker">
+												<span class="sticker-overlay">
+													<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+												</span>
+											</span>
+										</span>
+										<span class="label-item label-item-expand">wallpaper</span>
+										<span class="label-item label-item-after">
+											<button aria-label="Close" class="close" tabindex="-1" type="button">
+												<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+													<use xlink:href="../../images/icons/icons.svg#times">
+												</svg>
+											</button>
+										</span>
+									</span>
+									<input aria-hidden="true" class="form-control-hidden" id="tagsContentEditableField2" tabindex="-1" type="text">
+									<span class="form-control-inset" contenteditable="">some value</span>
+								</div>
+							</div>
+							<ul class="autocomplete-dropdown-menu dropdown-menu">
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong></a></li>
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong> meal</a></li>
+							</ul>
+						</div>
+						<div class="form-feedback-group">
+							<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+						</div>
+					</div>
+
+					<div class="input-group-item input-group-item-shrink">
+						<button class="btn btn-secondary" type="submit">Select</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="formControlContentEditableLoading1">Label (Content Editable)</label>
+
+				<div class="input-group input-group-stacked-sm-down">
+					<div class="input-group-item">
+						<div class="dropdown">
+							<div class="form-control form-control-tag-group input-group">
+								<div class="input-group-item">
+									<input aria-hidden="true" class="form-control-hidden" id="formControlContentEditableLoading1" tabindex="-1" type="text">
+									<div class="form-control-inset" contenteditable="true"></div>
+								</div>
+								<div class="input-group-item input-group-item-shrink">
+									<span class="inline-item">
+										<span class="loading-animation" role="presentation"></span>
+									</span>
+								</div>
+							</div>
+							<ul class="autocomplete-dropdown-menu dropdown-menu">
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong></a></li>
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong> meal</a></li>
+							</ul>
+						</div>
+						<div class="form-feedback-group">
+							<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+						</div>
+					</div>
+
+					<div class="input-group-item input-group-item-shrink">
+						<button class="btn btn-secondary" type="submit">Select</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="tagsContentEditableLoading2">Tags (Content Editable)</label>
+
+				<div class="input-group input-group-stacked-sm-down">
+					<div class="input-group-item">
+						<div class="dropdown">
+							<div class="form-control form-control-tag-group input-group">
+								<div class="input-group-item">
+									<span class="label label-dismissible label-secondary" tabindex="0">
+										<span class="label-item label-item-before">
+											<span class="sticker">
+												<span class="sticker-overlay">
+													<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+												</span>
+											</span>
+										</span>
+										<span class="label-item label-item-expand">wall</span>
+										<span class="label-item label-item-after">
+											<button aria-label="Close" class="close" tabindex="-1" type="button">
+												<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+													<use xlink:href="../../images/icons/icons.svg#times">
+												</svg>
+											</button>
+										</span>
+									</span>
+									<span class="label label-dismissible label-secondary" tabindex="0">
+										<span class="label-item label-item-before">
+											<span class="sticker">
+												<span class="sticker-overlay">
+													<img alt="thumbnail" class="sticker-img" src="../../content/site-images/thumbnail_dock.jpg">
+												</span>
+											</span>
+										</span>
+										<span class="label-item label-item-expand">wallpaper</span>
+										<span class="label-item label-item-after">
+											<button aria-label="Close" class="close" tabindex="-1" type="button">
+												<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation">
+													<use xlink:href="../../images/icons/icons.svg#times">
+												</svg>
+											</button>
+										</span>
+									</span>
+
+									<input aria-hidden="true" class="form-control-hidden" id="tagsContentEditableLoading2" tabindex="-1" type="text">
+									<span class="form-control-inset" contenteditable="">some value</span>
+								</div>
+								<div class="input-group-item input-group-item-shrink">
+									<span class="inline-item">
+										<span class="loading-animation" role="presentation"></span>
+									</span>
+								</div>
+							</div>
+							<ul class="autocomplete-dropdown-menu dropdown-menu">
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong></a></li>
+								<li><a class="dropdown-item" href="#1"><strong>some value</strong> meal</a></li>
+							</ul>
+						</div>
+						<div class="form-feedback-group">
+							<div class="form-text">You can use a comma to enter tags. ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</div>
+						</div>
+					</div>
+
+					<div class="input-group-item input-group-item-shrink">
+						<button class="btn btn-secondary" type="submit">Select</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<script>
+	$('.input-group-inset').on('focusin', function(event) {
+		$(this).closest('.input-group-item').addClass('focus');
+	});
+
+	$('.input-group-inset').on('focusout', function(event) {
+		$(this).closest('.input-group-item').removeClass('focus');
+	});
+
+	$('.form-control-tag-group').on('click', function(event) {
+		$(this).find('.form-control-inset').focus();
+	});
+
+	$('.form-control-tag-group .label').on('click', function(event) {
+		event.stopPropagation();
+	});
+
+	$('.form-control-tag-group .label').on('keydown', function(event) {
+		var $this = $(this);
+
+		event.stopPropagation();
+
+		if (event.keyCode === 13) {
+			setTimeout(function() {
+				$this.find('.close').focus();
+			}, 0);
+		}
+	});
+
+	$('.form-control-tag-group .label-dismissible .close').on('click', function(event) {
+		event.stopPropagation();
+
+		if ($(this).closest('.label-dismissible').find('+ .label-dismissible').length === 0) {
+			$(this).closest('.form-control-tag-group').find('.form-control-inset').focus();
+		}
+		else {
+			$(this).closest('.label-dismissible').find('+ .label-dismissible').focus();
+		}
+		$(this).closest('.label-dismissible').remove();
+	});
+
+	$('.form-control-tag-group .btn').on('click', function(event) {
+		event.stopPropagation();
+	});
+
+	$('.form-control-tag-group a').on('click', function(event) {
+		event.stopPropagation();
+	});
+
+	$('.form-control-inset').on('focusin', function(event) {
+		$(this).closest('.form-control-tag-group').addClass('focus');
+	});
+
+	$('.form-control-inset').on('focusout', function(event) {
+		$(this).closest('.form-control-tag-group').removeClass('focus');
+	});
+
+	$('.form-control-hidden').on('focus', function(event) {
+		$(this).closest('.form-control-tag-group').find('form-control-inset').focus();
+	});
+
+	$('.form-control-hidden').on('focus', function(event) {
+		$(this).parent().find('.form-control').focus();
+	});
+</script>
+	</div>
+
+		</section>
+	</div>
+
+	<script src="../../js/site/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('#claySiteMobileNavigationToggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+	</script>
+	</body>
+</html>
