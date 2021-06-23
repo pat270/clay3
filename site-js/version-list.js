@@ -52,10 +52,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	}
 
 	clayVersionList.addEventListener('change', function(event) {
+		var CSSFile = '/content/site-scss/site-atlas-font-awesome.css';
 		var version = this.options[this.options.selectedIndex].getAttribute('data-version');
 
+		if (version === '3.4.0' || version === '3.8.0' || version === '3.10.0' || version === 'clay-table-dd') {
+			CSSFile = '/css/site/site-atlas-font-awesome.css';
+		}
+
 		if (localStorageAvailable()) {
-			localStorage.setItem('nate.lexiconHref', window.location.origin + '/clay3-test-site/v' + version + '/css/site/site-atlas-font-awesome.css');
+			localStorage.setItem('nate.lexiconHref', window.location.origin + '/clay3-test-site/v' + version + CSSFile);
 		}
 
 		window.location.href = './v' + version;
