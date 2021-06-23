@@ -12,6 +12,7 @@ function localStorageAvailable() {
 
 var clayVersions = [
 	'Select Version',
+	'clay-treeview',
 	'clay-table-dd',
 	'3.25.0',
 	'3.18.1',
