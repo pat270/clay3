@@ -1,0 +1,1818 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay - Typography (Kbd)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../content/site-scss/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../css/cadmin.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../js/popper.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+	<script src="../../content/site-js/side-navigation.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="headerTopBar">
+			<div class="container-fluid">
+				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+
+				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
+					<span class="docs-icon-bar docs-icon-bar-1"></span>
+					<span class="docs-icon-bar docs-icon-bar-2"></span>
+					<span class="docs-icon-bar docs-icon-bar-3"></span>
+				</button>
+
+				<h4 class="title"><a href="../../..">Clay CSS</a> <span class="label label-primary lexicon-version">v3.37.0</span></h4>
+
+				<button class="btn btn-primary btn-sm d-sm-none d-md-block" data-nav-hidden="false" id="siteNavToggle" type="button">Hide Nav</button>
+
+<div class="dropdown" id="siteConfig">
+	<button class="btn btn-primary btn-sm" data-toggle="dropdown">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+			<use xlink:href="../../images/icons/icons.svg#cog"></use>
+		</svg>
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">Site Settings</div>
+		<form>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleAtlas" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Atlas</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Show Site CSS</span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="dropdown-section">
+				<button class="btn btn-secondary btn-block" id="resetSiteConfig">Reset Settings</button>
+			</div>
+		</form>
+	</div>
+</div>
+			</div>
+		</header>
+
+		<section class="container-fluid main-nav-container">
+			<nav class="" id="mainNav">
+	<div class="main-nav-inner">
+			
+
+		<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../">Home</a>
+</li>
+<li class=""><span class="nav-title">API</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/api-mixins">Clay CSS Mixins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Clay Admin (Cadmin)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/cadmin-treeview">Treeview</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Colors</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/colors">Colors</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/alerts">Alerts</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/badges-and-labels">Badges, Labels and Stickers</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/breadcrumbs">Breadcrumbs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/button-group">Button Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/buttons">Buttons</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/card-interactive">Card Interactive</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/cards">Cards</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns">Dropdowns</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-autocomplete">Dropdowns (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/dropdowns-drill-down">Dropdowns (Drill Down)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/empty-state">Empty State</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements">Form Elements</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-autocomplete">Form Elements (Autocomplete)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-clay-reorder">Form Elements (Clay Reorder)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-time">Form Elements (Clay Time)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-color-picker">Form Elements (Color Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-custom">Form Elements (Custom)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-date-picker">Form Elements (Date Picker)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-dual-listbox">Form Elements (Dual Listbox)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-input-groups">Form Elements (Input Groups)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-multiselect">Form Elements (Multi Select)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-elements-range">Form Elements (Range)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-validation">Form Elements (Validation)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/form-group">Form Group</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/grid">Grid</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/icons-lexicon">Icons (Lexicon)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-aspect-ratio">Images (Aspect Ratios)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/images-and-thumbnails">Images and Thumbnails</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/links">Links</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/list-groups">List Groups</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/loaders">Loading Indicators</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical-decorated">Menubar (Vertical Navigation with Decorator)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/menu-bar-vertical">Menubar (Vertical)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/modals">Modals</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/multi-step-nav">Multi Step Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav">Nav</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-pills">Nav Pills</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-tabs">Nav Tabs</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/nav-underline">Nav Underline</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navbar">Navbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/application-bar">Navbar (Application Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/management-bar">Navbar (Management Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/navigation-bar">Navbar (Navigation Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/paginations">Pagination</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/panels">Panels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/popovers">Popovers and Tooltips</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/progress-bars">Progress Bars</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sheet">Sheet</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidebar">Sidebar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/slideout">Slideout</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tables">Tables</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar">Tbar (Toolbar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/tbar-stacked">Tbar Stacked (Vertical Bar)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/timelines">Timelines</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/toggle-switch">Toggle Switch</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities">Utilities</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-focus-inset">Utilities (C Focus Inset)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/utilities-c-inner">Utilities (C Inner)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Components (JS)</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/collapsible-search">Collapsible Search</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/sidenav">Sidenav</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Elements</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/typography">Typography</a>
+</li>
+<li class="active"><a class="nav-title" href="../../content/typography-kbd">Typography (Kbd)</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Extending Components</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/extending-toggles">Extending Toggles</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><span class="nav-title">Visual Tests</span>
+<div class="">
+<ul class="nav flex-column main-nav-section">
+<li class=""><a class="nav-title" href="../../content/test-reboot">1) Reboot</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-custom-fields-view">Card Custom Fields View</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-type-template">Card Type Template Use Case</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template">Card View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-card-view-template-info-panel">Card View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-upload-documents">Documents Upload</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-group-sm">Form Group Sm</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-form-hierarchy">Form Hierarchy</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-labels">Labels</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template">List View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-list-view-template-info-panel">List View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-localizable-input-field">Localizable Input Field</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-sheet-commerce">Sheet (Commerce)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-sheet-dataset">Sheet (Dataset Content)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-subnav-tbar">Subnav Tbar</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-custom-field-list">Table Custom Field List</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-valign">Table Valign</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template">Table View Template</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-table-view-template-info-panel">Table View Template (Info Panel)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-toggle-switch-old">Toggle Switch (Old)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations">Users and Organizations</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-user-card">Users and Organizations (User Card)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/test-users-and-organizations-form-vertical-navigation">Users and Organizations Form Vertical Navigation</a>
+</li>
+</ul>
+</div>
+</li>
+<li class=""><a class="nav-title" href="../../CHANGELOG">CHANGELOG</a>
+</li>
+<li class="nav-static-link"><a class="nav-title" href="https://github.com/liferay/lexicon">GitHub</a>
+</ul>
+	</div>
+</nav>
+
+	<div class="" id="mainContent">
+		<h1 class="page-title mt-5" id="beginContent" tabindex="-1">
+			Typography (Kbd)
+
+			
+		</h1>
+
+		
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd"><a class="heading-anchor" href="#c-kbd"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd</h3>
+
+		<blockquote class="blockquote">
+			<p>1.5rem (24px) minimum width and 1.5rem (24px) tall <code>kbd</code> element with <code>padding-left</code>, <code>padding-right</code>, and <code>border-width: 1px</code>.</p>
+		</blockquote>
+
+		<kbd class="c-kbd">Esc</kbd>
+		<kbd class="c-kbd">Ctrl</kbd>
+		<kbd class="c-kbd">Shift</kbd>
+		<kbd class="c-kbd">Alt</kbd>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="nested-c-kbd"><a class="heading-anchor" href="#nested-c-kbd"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Nested C Kbd</h3>
+
+		<blockquote class="blockquote">
+			<p>Nest multiple <code>c-kbd</code> elements inside a single <code>c-kbd</code> element to describe a keyboard command comprising of multiple keys.</p>
+		</blockquote>
+
+		<kbd class="c-kbd">
+			<kbd class="c-kbd">&#x2318;</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Shift</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Y</kbd>
+		</kbd>
+		<kbd class="c-kbd">
+			<kbd class="c-kbd">&#x2318;</kbd><kbd class="c-kbd">P</kbd>
+		</kbd>
+		<br>
+
+		<kbd class="c-kbd c-kbd-inline">
+			<kbd class="c-kbd">&#x2318;</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Shift</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Y</kbd>
+		</kbd>
+		<kbd class="c-kbd c-kbd-inline">
+			<kbd class="c-kbd">&#x2318;</kbd><kbd class="c-kbd">P</kbd>
+		</kbd>
+		<br>
+
+		<kbd class="c-kbd">
+			<kbd class="c-kbd c-kbd-light">&#x2318;</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd c-kbd-light">Shift</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd c-kbd-light">Y</kbd>
+		</kbd>
+		<kbd class="c-kbd c-kbd-light">
+			<kbd class="c-kbd">&#x2318;</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd">Shift</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd">Y</kbd>
+		</kbd>
+		<kbd class="c-kbd c-kbd-dark">
+			<kbd class="c-kbd">&#x2318;</kbd><kbd class="c-kbd">P</kbd>
+		</kbd>
+		<br>
+
+		<kbd class="c-kbd c-kbd-dark c-kbd-sm">
+			<kbd class="c-kbd">&#x2318;</kbd><kbd class="c-kbd">P</kbd>
+		</kbd>
+		<br>
+
+		<kbd class="c-kbd c-kbd-light c-kbd-lg">
+			<kbd class="c-kbd">&#x2318;</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Shift</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Y</kbd>
+		</kbd>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-monospaced"><a class="heading-anchor" href="#c-kbd-monospaced"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Monospaced</h3>
+
+		<blockquote class="blockquote">
+			<p>1.5rem (24px) minimum width and 1.5rem (24px) tall <code>kbd</code> element with no <code>padding</code> and <code>border-width: 1px</code>. This is generally used to display single characters.</p>
+		</blockquote>
+
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8984;">&#x2318;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8592;">&#x2190;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8593;">&#x2191;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8594;">&#x2192;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8595;">&#x2193;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8679;">&#x21E7;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#8997;">&#x2325;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced" data-entity="&amp;#11152;">&#x2B90;</kbd>
+		<kbd class="c-kbd c-kbd-monospaced">N</kbd>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-inline"><a class="heading-anchor" href="#c-kbd-inline"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Inline</h3>
+
+		<blockquote class="blockquote">
+			<p>No minimum width or height <code>kbd</code> element with <code>padding: 0</code> and <code>border-width: 0</code>. This is generally used to display keyboard shortcuts in small spaces such as <code>dropdown-item</code>.</p>
+			<p>The most robust markup to use is nested kbd elements (e.g., <code>&lt;kbd class=&quot;c-kbd c-kbd-inline&quot;&gt;&lt;kbd class=&quot;c-kbd&quot;&gt;key&lt;/kbd&gt;&lt;/kbd&gt;</code>), but the markup <code>&lt;kbd class=&quot;c-kbd c-kbd-inline&quot;&gt;key1&lt;/kbd&gt;</code> works as well.</p>
+		</blockquote>
+
+		<kbd class="c-kbd c-kbd-inline">Esc</kbd>
+		<kbd class="c-kbd c-kbd-inline">Ctrl</kbd>
+		<kbd class="c-kbd c-kbd-inline">Shift</kbd>
+		<kbd class="c-kbd c-kbd-inline">
+			<kbd class="c-kbd">Alt</kbd>
+		</kbd>
+		<kbd class="c-kbd c-kbd-inline">
+			<kbd class="c-kbd">&#x2318;</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Shift</kbd><span class="c-kbd-separator">+</span><kbd class="c-kbd">Y</kbd>
+		</kbd>
+		<kbd class="c-kbd c-kbd-inline">
+			<kbd class="c-kbd">&#x2318;</kbd><kbd class="c-kbd">P</kbd>
+		</kbd>
+		<kbd class="c-kbd c-kbd-inline">&#x2318;</kbd><kbd class="c-kbd c-kbd-inline">O</kbd>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-group"><a class="heading-anchor" href="#c-kbd-group"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Group</h3>
+
+		<blockquote class="blockquote">
+			<p>A container element for grouping text with several <code>kbd</code> elements together. This is also useful inside <code>autofit-col</code> if you don&apos;t want several <code>kbd</code> elements to break to a new line.</p>
+		</blockquote>
+
+		<span class="c-kbd-group">
+			Press
+			<kbd class="c-kbd">Esc</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd c-kbd-monospaced">N</kbd>
+			to see an amazing effect.
+		</span>
+		<br>
+		<span class="c-kbd-group">
+			Press
+			<kbd class="c-kbd c-kbd-light">
+				<kbd class="c-kbd">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd">N</kbd>
+			</kbd>
+			to see an amazing effect.
+		</span>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-light"><a class="heading-anchor" href="#c-kbd-light"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Light</h3>
+
+		<kbd class="c-kbd c-kbd-light">Esc</kbd>
+		<span class="c-kbd-separator">+</span>
+		<kbd class="c-kbd c-kbd-monospaced c-kbd-light">N</kbd>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-dark"><a class="heading-anchor" href="#c-kbd-dark"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Dark</h3>
+
+		<kbd class="c-kbd c-kbd-dark">Esc</kbd>
+		<span class="c-kbd-separator">+</span>
+		<kbd class="c-kbd c-kbd-monospaced c-kbd-dark">N</kbd>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-group-light-with-c-kbd-light--dark"><a class="heading-anchor" href="#c-kbd-group-light-with-c-kbd-light--dark"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Group Light with C Kbd Light / Dark</h3>
+
+		<blockquote class="blockquote">
+			<p><code>c-kbd-group-light</code> changes the text color lighter and nested <code>c-kbd-light</code> and <code>c-kbd-dark</code> elements can be used interchangebly.</p>
+		</blockquote>
+
+		<div class="c-mb-2">
+			<span class="c-kbd-group c-kbd-group-light">
+				Press
+				<kbd class="c-kbd c-kbd-light">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd c-kbd-monospaced c-kbd-light">N</kbd>
+				to see an amazing effect.
+			</span>
+		</div>
+		<div>
+			<span class="c-kbd-group c-kbd-group-light">
+				Press
+				<kbd class="c-kbd c-kbd-dark">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd c-kbd-monospaced c-kbd-dark">N</kbd>
+				to see an amazing effect.
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-group-dark-with-c-kbd-light--dark"><a class="heading-anchor" href="#c-kbd-group-dark-with-c-kbd-light--dark"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Group Dark with C Kbd Light / Dark</h3>
+
+		<blockquote class="blockquote">
+			<p><code>c-kbd-group-dark</code> changes the text color darker and nested <code>c-kbd-light</code> and <code>c-kbd-dark</code> elements can be used interchangebly.</p>
+		</blockquote>
+
+		<div class="c-mb-2" style="background-color:#1C1C24;padding: 10px;">
+			<span class="c-kbd-group c-kbd-group-dark">
+				Press
+				<kbd class="c-kbd c-kbd-light">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd c-kbd-monospaced c-kbd-light">N</kbd>
+				to see an amazing effect.
+			</span>
+		</div>
+		<div style="background-color:#1C1C24;padding: 10px;">
+			<span class="c-kbd-group c-kbd-group-dark">
+				Press
+				<kbd class="c-kbd c-kbd-dark">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd c-kbd-monospaced c-kbd-dark">N</kbd>
+				to see an amazing effect.
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-sm"><a class="heading-anchor" href="#c-kbd-sm"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Sm</h3>
+
+		<div class="c-mb-2">
+			<kbd class="c-kbd c-kbd-sm c-kbd-light">Esc</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd c-kbd-sm c-kbd-monospaced c-kbd-light">N</kbd>
+		</div>
+		<div>
+			<span class="c-kbd-group c-kbd-group-sm c-kbd-group-light">
+				Press
+				<kbd class="c-kbd c-kbd-light">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd c-kbd-monospaced c-kbd-light">N</kbd>
+				to see an amazing effect.
+			</span>
+		</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="c-kbd-lg"><a class="heading-anchor" href="#c-kbd-lg"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>C Kbd Lg</h3>
+
+		<div class="c-mb-2">
+			<kbd class="c-kbd c-kbd-lg c-kbd-light">Esc</kbd>
+			<span class="c-kbd-separator">+</span>
+			<kbd class="c-kbd c-kbd-lg c-kbd-monospaced c-kbd-light">N</kbd>
+		</div>
+		<div>
+			<span class="c-kbd-group c-kbd-group-lg c-kbd-group-light">
+				Press
+				<kbd class="c-kbd c-kbd-light">Esc</kbd>
+				<span class="c-kbd-separator">+</span>
+				<kbd class="c-kbd c-kbd-monospaced c-kbd-light">N</kbd>
+				to see an amazing effect.
+			</span>
+		</div>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="standard-0-255-utf-8-character-set"><a class="heading-anchor" href="#standard-0-255-utf-8-character-set"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Standard 0-255 (UTF-8) Character Set</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0033;">!</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0034;">&quot;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0035;">#</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0036;">$</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0037;">%</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0038;">&amp;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0039;">&apos;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0040;">(</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0041;">)</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0042;">*</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0043;">+</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0044;">,</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0045;">-</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0046;">.</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0047;">/</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0048;">0</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0049;">1</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0050;">2</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0051;">3</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0052;">4</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0053;">5</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0054;">6</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0055;">7</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0056;">8</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0057;">9</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0058;">:</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0059;">;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0060;">&lt;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0061;">=</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0062;">&gt;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0063;">?</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0064;">@</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0065;">A</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0066;">B</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0067;">C</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0068;">D</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0069;">E</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0070;">F</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0071;">G</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0072;">H</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0073;">I</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0074;">J</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0075;">K</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0076;">L</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0077;">M</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0078;">N</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0079;">O</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0080;">P</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0081;">Q</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0082;">R</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0083;">S</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0084;">T</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0085;">U</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0086;">V</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0087;">W</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0088;">X</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0089;">Y</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0090;">Z</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0091;">[</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0092;">\</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0093;">]</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0094;">^</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0095;">_</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0096;">`</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0097;">a</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0098;">b</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0099;">c</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0100;">d</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0101;">e</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0102;">f</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0103;">g</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0104;">h</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0105;">i</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0106;">j</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0107;">k</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0108;">l</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0109;">m</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0110;">n</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0111;">o</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0112;">p</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0113;">q</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0114;">r</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0115;">s</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0116;">t</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0117;">u</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0118;">v</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0119;">w</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0120;">x</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0121;">y</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0122;">z</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0123;">{</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0124;">|</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0125;">}</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0126;">~</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0128;">&#x20AC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0130;">&#x201A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0131;">&#x192;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0132;">&#x201E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0133;">&#x2026;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0134;">&#x2020;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0135;">&#x2021;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0136;">&#x2C6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0137;">&#x2030;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0138;">&#x160;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0139;">&#x2039;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0140;">&#x152;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0142;">&#x17D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0145;">&#x2018;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0146;">&#x2019;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0147;">&#x201C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0148;">&#x201D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0149;">&#x2022;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0150;">&#x2013;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0151;">&#x2014;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0152;">&#x2DC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0153;">&#x2122;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0154;">&#x161;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0155;">&#x203A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0156;">&#x153;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0158;">&#x17E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0159;">&#x178;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0161;">&#xA1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0162;">&#xA2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0163;">&#xA3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0164;">&#xA4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0165;">&#xA5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0166;">&#xA6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0167;">&#xA7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0168;">&#xA8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0169;">&#xA9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0170;">&#xAA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0171;">&#xAB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0172;">&#xAC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0174;">&#xAE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0175;">&#xAF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0176;">&#xB0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0177;">&#xB1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0178;">&#xB2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0179;">&#xB3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0180;">&#xB4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0181;">&#xB5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0182;">&#xB6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0183;">&#xB7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0184;">&#xB8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0185;">&#xB9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0186;">&#xBA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0187;">&#xBB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0188;">&#xBC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0189;">&#xBD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0190;">&#xBE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0191;">&#xBF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0192;">&#xC0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0193;">&#xC1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0194;">&#xC2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0195;">&#xC3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0196;">&#xC4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0197;">&#xC5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0198;">&#xC6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0199;">&#xC7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0200;">&#xC8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0201;">&#xC9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0202;">&#xCA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0203;">&#xCB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0204;">&#xCC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0205;">&#xCD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0206;">&#xCE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0207;">&#xCF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0208;">&#xD0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0209;">&#xD1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0210;">&#xD2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0211;">&#xD3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0212;">&#xD4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0213;">&#xD5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0214;">&#xD6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0215;">&#xD7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0216;">&#xD8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0217;">&#xD9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0218;">&#xDA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0219;">&#xDB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0220;">&#xDC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0221;">&#xDD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0222;">&#xDE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0223;">&#xDF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0224;">&#xE0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0225;">&#xE1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0226;">&#xE2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0227;">&#xE3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0228;">&#xE4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0229;">&#xE5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0230;">&#xE6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0231;">&#xE7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0232;">&#xE8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0233;">&#xE9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0234;">&#xEA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0235;">&#xEB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0236;">&#xEC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0237;">&#xED;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0238;">&#xEE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0239;">&#xEF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0240;">&#xF0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0241;">&#xF1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0242;">&#xF2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0243;">&#xF3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0244;">&#xF4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0245;">&#xF5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0246;">&#xF6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0247;">&#xF7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0248;">&#xF8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0249;">&#xF9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0250;">&#xFA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0251;">&#xFB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0252;">&#xFC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0253;">&#xFD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0254;">&#xFE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#0255;">&#xFF;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="general-punctuation-u2000-to-u206f"><a class="heading-anchor" href="#general-punctuation-u2000-to-u206f"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>General Punctuation (U+2000 to U+206F)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8208;">&#x2010;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8209;">&#x2011;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8210;">&#x2012;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8211;">&#x2013;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8212;">&#x2014;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8213;">&#x2015;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8214;">&#x2016;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8215;">&#x2017;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8216;">&#x2018;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8217;">&#x2019;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8218;">&#x201A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8219;">&#x201B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8220;">&#x201C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8221;">&#x201D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8222;">&#x201E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8223;">&#x201F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8224;">&#x2020;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8225;">&#x2021;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8226;">&#x2022;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8227;">&#x2023;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8228;">&#x2024;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8229;">&#x2025;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8230;">&#x2026;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8231;">&#x2027;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8240;">&#x2030;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8241;">&#x2031;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8242;">&#x2032;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8243;">&#x2033;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8244;">&#x2034;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8245;">&#x2035;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8246;">&#x2036;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8247;">&#x2037;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8248;">&#x2038;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8249;">&#x2039;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8250;">&#x203A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8251;">&#x203B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8252;">&#x203C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8253;">&#x203D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8254;">&#x203E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8255;">&#x203F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8256;">&#x2040;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8257;">&#x2041;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8258;">&#x2042;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8259;">&#x2043;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8260;">&#x2044;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8261;">&#x2045;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8262;">&#x2046;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8263;">&#x2047;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8264;">&#x2048;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8265;">&#x2049;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8266;">&#x204A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8267;">&#x204B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8268;">&#x204C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8269;">&#x204D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8270;">&#x204E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8271;">&#x204F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8272;">&#x2050;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8273;">&#x2051;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8274;">&#x2052;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8275;">&#x2053;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8276;">&#x2054;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8277;">&#x2055;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8278;">&#x2056;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8279;">&#x2057;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8280;">&#x2058;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8281;">&#x2059;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8282;">&#x205A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8283;">&#x205B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8284;">&#x205C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8285;">&#x205D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8286;">&#x205E;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="superscripts-and-subscripts-u2070-to-u209f"><a class="heading-anchor" href="#superscripts-and-subscripts-u2070-to-u209f"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Superscripts and Subscripts (U+2070 to U+209F)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8304;">&#x2070;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8305;">&#x2071;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8308;">&#x2074;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8309;">&#x2075;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8310;">&#x2076;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8311;">&#x2077;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8312;">&#x2078;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8313;">&#x2079;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8314;">&#x207A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8315;">&#x207B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8316;">&#x207C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8317;">&#x207D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8318;">&#x207E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8319;">&#x207F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8320;">&#x2080;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8321;">&#x2081;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8322;">&#x2082;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8323;">&#x2083;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8324;">&#x2084;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8325;">&#x2085;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8326;">&#x2086;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8327;">&#x2087;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8328;">&#x2088;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8329;">&#x2089;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8330;">&#x208A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8331;">&#x208B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8332;">&#x208C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8333;">&#x208D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8334;">&#x208E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8336;">&#x2090;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8337;">&#x2091;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8338;">&#x2092;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8339;">&#x2093;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8340;">&#x2094;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="currency-symbols-u20a0-to-u20cf"><a class="heading-anchor" href="#currency-symbols-u20a0-to-u20cf"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Currency Symbols (U+20A0 to U+20CF)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8352;">&#x20A0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8353;">&#x20A1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8354;">&#x20A2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8355;">&#x20A3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8356;">&#x20A4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8357;">&#x20A5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8358;">&#x20A6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8359;">&#x20A7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8360;">&#x20A8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8361;">&#x20A9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8362;">&#x20AA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8363;">&#x20AB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8364;">&#x20AC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8365;">&#x20AD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8366;">&#x20AE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8367;">&#x20AF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8368;">&#x20B0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8369;">&#x20B1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8370;">&#x20B2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8371;">&#x20B3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8372;">&#x20B4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8373;">&#x20B5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8374;">&#x20B6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8375;">&#x20B7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8376;">&#x20B8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8377;">&#x20B9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8378;">&#x20BA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8379;">&#x20BB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8380;">&#x20BC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8381;">&#x20BD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8382;">&#x20BE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8383;">&#x20BF;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="letterlike-symbols-u2100-to-u214f"><a class="heading-anchor" href="#letterlike-symbols-u2100-to-u214f"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Letterlike Symbols (U+2100 to U+214F)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8448;">&#x2100;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8449;">&#x2101;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8450;">&#x2102;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8451;">&#x2103;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8452;">&#x2104;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8453;">&#x2105;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8454;">&#x2106;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8455;">&#x2107;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8456;">&#x2108;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8457;">&#x2109;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8458;">&#x210A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8459;">&#x210B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8460;">&#x210C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8461;">&#x210D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8462;">&#x210E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8463;">&#x210F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8464;">&#x2110;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8465;">&#x2111;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8466;">&#x2112;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8467;">&#x2113;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8468;">&#x2114;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8469;">&#x2115;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8470;">&#x2116;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8471;">&#x2117;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8472;">&#x2118;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8473;">&#x2119;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8474;">&#x211A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8475;">&#x211B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8476;">&#x211C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8477;">&#x211D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8478;">&#x211E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8479;">&#x211F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8480;">&#x2120;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8481;">&#x2121;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8482;">&#x2122;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8483;">&#x2123;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8484;">&#x2124;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8485;">&#x2125;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8486;">&#x2126;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8487;">&#x2127;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8488;">&#x2128;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8489;">&#x2129;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8490;">&#x212A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8491;">&#x212B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8492;">&#x212C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8493;">&#x212D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8494;">&#x212E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8495;">&#x212F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8496;">&#x2130;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8497;">&#x2131;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8498;">&#x2132;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8499;">&#x2133;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8500;">&#x2134;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8501;">&#x2135;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8502;">&#x2136;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8503;">&#x2137;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8504;">&#x2138;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8505;">&#x2139;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8506;">&#x213A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8507;">&#x213B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8508;">&#x213C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8509;">&#x213D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8510;">&#x213E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8511;">&#x213F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8512;">&#x2140;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8513;">&#x2141;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8514;">&#x2142;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8515;">&#x2143;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8516;">&#x2144;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8517;">&#x2145;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8518;">&#x2146;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8519;">&#x2147;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8520;">&#x2148;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8521;">&#x2149;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8522;">&#x214A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8523;">&#x214B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8524;">&#x214C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8525;">&#x214D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8526;">&#x214E;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="greek-characters-u0391-to-u03c9"><a class="heading-anchor" href="#greek-characters-u0391-to-u03c9"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Greek Characters (U+0391 to U+03C9)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#913;">&#x391;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#914;">&#x392;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#915;">&#x393;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#916;">&#x394;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#917;">&#x395;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#918;">&#x396;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#919;">&#x397;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#920;">&#x398;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#921;">&#x399;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#922;">&#x39A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#923;">&#x39B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#924;">&#x39C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#925;">&#x39D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#926;">&#x39E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#927;">&#x39F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#928;">&#x3A0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#929;">&#x3A1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#930;">&#x3A2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#931;">&#x3A3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#932;">&#x3A4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#933;">&#x3A5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#934;">&#x3A6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#935;">&#x3A7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#936;">&#x3A8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#937;">&#x3A9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#938;">&#x3AA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#939;">&#x3AB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#940;">&#x3AC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#941;">&#x3AD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#942;">&#x3AE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#943;">&#x3AF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#944;">&#x3B0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#945;">&#x3B1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#946;">&#x3B2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#947;">&#x3B3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#948;">&#x3B4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#949;">&#x3B5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#950;">&#x3B6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#951;">&#x3B7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#952;">&#x3B8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#953;">&#x3B9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#954;">&#x3BA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#955;">&#x3BB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#956;">&#x3BC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#957;">&#x3BD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#958;">&#x3BE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#959;">&#x3BF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#960;">&#x3C0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#961;">&#x3C1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#962;">&#x3C2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#963;">&#x3C3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#964;">&#x3C4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#965;">&#x3C5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#966;">&#x3C6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#967;">&#x3C7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#968;">&#x3C8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#969;">&#x3C9;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="number-forms-u2150-to-u218f"><a class="heading-anchor" href="#number-forms-u2150-to-u218f"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Number Forms (U+2150 to U+218F)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8528;">&#x2150;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8529;">&#x2151;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8530;">&#x2152;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8531;">&#x2153;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8532;">&#x2154;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8533;">&#x2155;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8534;">&#x2156;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8535;">&#x2157;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8536;">&#x2158;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8537;">&#x2159;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8538;">&#x215A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8539;">&#x215B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8540;">&#x215C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8541;">&#x215D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8542;">&#x215E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8543;">&#x215F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8544;">&#x2160;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8545;">&#x2161;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8546;">&#x2162;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8547;">&#x2163;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8548;">&#x2164;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8549;">&#x2165;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8550;">&#x2166;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8551;">&#x2167;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8552;">&#x2168;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8553;">&#x2169;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8554;">&#x216A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8555;">&#x216B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8556;">&#x216C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8557;">&#x216D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8558;">&#x216E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8559;">&#x216F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8560;">&#x2170;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8561;">&#x2171;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8562;">&#x2172;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8563;">&#x2173;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8564;">&#x2174;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8565;">&#x2175;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8566;">&#x2176;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8567;">&#x2177;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8568;">&#x2178;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8569;">&#x2179;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8570;">&#x217A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8571;">&#x217B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8572;">&#x217C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8573;">&#x217D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8574;">&#x217E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8575;">&#x217F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8576;">&#x2180;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8577;">&#x2181;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8578;">&#x2182;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8579;">&#x2183;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8580;">&#x2184;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8581;">&#x2185;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8582;">&#x2186;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="arrows-u2190-to-u21ff"><a class="heading-anchor" href="#arrows-u2190-to-u21ff"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Arrows (U+2190 to U+21FF)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8592;">&#x2190;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8593;">&#x2191;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8594;">&#x2192;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8595;">&#x2193;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8596;">&#x2194;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8597;">&#x2195;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8598;">&#x2196;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8599;">&#x2197;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8600;">&#x2198;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8601;">&#x2199;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8602;">&#x219A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8603;">&#x219B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8604;">&#x219C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8605;">&#x219D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8606;">&#x219E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8607;">&#x219F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8608;">&#x21A0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8609;">&#x21A1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8610;">&#x21A2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8611;">&#x21A3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8612;">&#x21A4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8613;">&#x21A5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8614;">&#x21A6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8615;">&#x21A7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8616;">&#x21A8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8617;">&#x21A9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8618;">&#x21AA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8619;">&#x21AB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8620;">&#x21AC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8621;">&#x21AD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8622;">&#x21AE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8623;">&#x21AF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8624;">&#x21B0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8625;">&#x21B1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8626;">&#x21B2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8627;">&#x21B3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8628;">&#x21B4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8629;">&#x21B5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8630;">&#x21B6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8631;">&#x21B7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8632;">&#x21B8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8633;">&#x21B9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8634;">&#x21BA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8635;">&#x21BB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8636;">&#x21BC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8637;">&#x21BD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8638;">&#x21BE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8639;">&#x21BF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8640;">&#x21C0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8641;">&#x21C1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8642;">&#x21C2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8643;">&#x21C3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8644;">&#x21C4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8645;">&#x21C5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8646;">&#x21C6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8647;">&#x21C7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8648;">&#x21C8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8649;">&#x21C9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8650;">&#x21CA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8651;">&#x21CB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8652;">&#x21CC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8653;">&#x21CD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8654;">&#x21CE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8655;">&#x21CF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8656;">&#x21D0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8657;">&#x21D1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8658;">&#x21D2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8659;">&#x21D3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8660;">&#x21D4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8661;">&#x21D5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8662;">&#x21D6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8663;">&#x21D7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8664;">&#x21D8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8665;">&#x21D9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8666;">&#x21DA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8667;">&#x21DB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8668;">&#x21DC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8669;">&#x21DD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8670;">&#x21DE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8671;">&#x21DF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8672;">&#x21E0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8673;">&#x21E1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8674;">&#x21E2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8675;">&#x21E3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8676;">&#x21E4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8677;">&#x21E5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8678;">&#x21E6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8679;">&#x21E7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8680;">&#x21E8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8681;">&#x21E9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8682;">&#x21EA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8683;">&#x21EB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8684;">&#x21EC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8685;">&#x21ED;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8686;">&#x21EE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8687;">&#x21EF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8688;">&#x21F0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8689;">&#x21F1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8690;">&#x21F2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8691;">&#x21F3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8692;">&#x21F4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8693;">&#x21F5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8694;">&#x21F6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8695;">&#x21F7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8696;">&#x21F8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8697;">&#x21F9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8698;">&#x21FA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8699;">&#x21FB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8700;">&#x21FC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8701;">&#x21FD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8702;">&#x21FE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8703;">&#x21FF;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="supplemental-arrows---a-u27f0-to-u27ff"><a class="heading-anchor" href="#supplemental-arrows---a-u27f0-to-u27ff"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Supplemental Arrows - A (U+27F0 to U+27FF)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10224;">&#x27F0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10225;">&#x27F1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10226;">&#x27F2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10227;">&#x27F3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10228;">&#x27F4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10229;">&#x27F5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10230;">&#x27F6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10231;">&#x27F7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10232;">&#x27F8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10233;">&#x27F9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10234;">&#x27FA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10235;">&#x27FB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10236;">&#x27FC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10237;">&#x27FD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10238;">&#x27FE;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="supplemental-arrows---b-u2900-to-u297f"><a class="heading-anchor" href="#supplemental-arrows---b-u2900-to-u297f"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Supplemental Arrows - B (U+2900 to U+297F)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10496;">&#x2900;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10497;">&#x2901;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10498;">&#x2902;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10499;">&#x2903;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10500;">&#x2904;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10501;">&#x2905;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10502;">&#x2906;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10503;">&#x2907;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10504;">&#x2908;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10505;">&#x2909;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10506;">&#x290A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10507;">&#x290B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10508;">&#x290C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10509;">&#x290D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10510;">&#x290E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10511;">&#x290F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10512;">&#x2910;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10513;">&#x2911;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10514;">&#x2912;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10515;">&#x2913;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10516;">&#x2914;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10517;">&#x2915;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10518;">&#x2916;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10519;">&#x2917;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10520;">&#x2918;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10521;">&#x2919;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10522;">&#x291A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10523;">&#x291B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10524;">&#x291C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10525;">&#x291D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10526;">&#x291E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10527;">&#x291F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10528;">&#x2920;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10529;">&#x2921;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10530;">&#x2922;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10531;">&#x2923;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10532;">&#x2924;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10533;">&#x2925;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10534;">&#x2926;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10535;">&#x2927;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10536;">&#x2928;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10537;">&#x2929;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10538;">&#x292A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10539;">&#x292B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10540;">&#x292C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10541;">&#x292D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10542;">&#x292E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10543;">&#x292F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10544;">&#x2930;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10545;">&#x2931;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10546;">&#x2932;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10547;">&#x2933;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10548;">&#x2934;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10549;">&#x2935;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10550;">&#x2936;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10551;">&#x2937;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10552;">&#x2938;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10553;">&#x2939;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10554;">&#x293A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10555;">&#x293B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10556;">&#x293C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10557;">&#x293D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10558;">&#x293E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10559;">&#x293F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10560;">&#x2940;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10561;">&#x2941;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10562;">&#x2942;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10563;">&#x2943;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10564;">&#x2944;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10565;">&#x2945;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10566;">&#x2946;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10567;">&#x2947;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10568;">&#x2948;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10569;">&#x2949;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10570;">&#x294A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10571;">&#x294B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10572;">&#x294C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10573;">&#x294D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10574;">&#x294E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10575;">&#x294F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10576;">&#x2950;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10577;">&#x2951;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10578;">&#x2952;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10579;">&#x2953;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10580;">&#x2954;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10581;">&#x2955;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10582;">&#x2956;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10583;">&#x2957;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10584;">&#x2958;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10585;">&#x2959;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10586;">&#x295A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10587;">&#x295B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10588;">&#x295C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10589;">&#x295D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10590;">&#x295E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10591;">&#x295F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10592;">&#x2960;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10593;">&#x2961;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10594;">&#x2962;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10595;">&#x2963;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10596;">&#x2964;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10597;">&#x2965;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10598;">&#x2966;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10599;">&#x2967;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10600;">&#x2968;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10601;">&#x2969;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10602;">&#x296A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10603;">&#x296B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10604;">&#x296C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10605;">&#x296D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10606;">&#x296E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10607;">&#x296F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10608;">&#x2970;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10609;">&#x2971;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10610;">&#x2972;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10611;">&#x2973;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10612;">&#x2974;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10613;">&#x2975;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10614;">&#x2976;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10615;">&#x2977;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10616;">&#x2978;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10617;">&#x2979;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10618;">&#x297A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10619;">&#x297B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10620;">&#x297C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10621;">&#x297D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10622;">&#x297E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10623;">&#x297F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10624;">&#x2980;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10625;">&#x2981;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10626;">&#x2982;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#10627;">&#x2983;</kbd>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="mathematical-operators-u2200-to-u22ff"><a class="heading-anchor" href="#mathematical-operators-u2200-to-u22ff"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Mathematical Operators (U+2200 to U+22FF)</h3>
+
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8704;">&#x2200;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8705;">&#x2201;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8706;">&#x2202;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8707;">&#x2203;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8708;">&#x2204;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8709;">&#x2205;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8710;">&#x2206;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8711;">&#x2207;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8712;">&#x2208;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8713;">&#x2209;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8714;">&#x220A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8715;">&#x220B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8716;">&#x220C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8717;">&#x220D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8718;">&#x220E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8719;">&#x220F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8720;">&#x2210;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8721;">&#x2211;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8722;">&#x2212;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8723;">&#x2213;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8724;">&#x2214;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8725;">&#x2215;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8726;">&#x2216;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8727;">&#x2217;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8728;">&#x2218;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8729;">&#x2219;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8730;">&#x221A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8731;">&#x221B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8732;">&#x221C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8733;">&#x221D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8734;">&#x221E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8735;">&#x221F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8736;">&#x2220;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8737;">&#x2221;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8738;">&#x2222;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8739;">&#x2223;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8740;">&#x2224;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8741;">&#x2225;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8742;">&#x2226;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8743;">&#x2227;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8744;">&#x2228;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8745;">&#x2229;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8746;">&#x222A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8747;">&#x222B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8748;">&#x222C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8749;">&#x222D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8750;">&#x222E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8751;">&#x222F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8752;">&#x2230;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8753;">&#x2231;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8754;">&#x2232;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8755;">&#x2233;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8756;">&#x2234;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8757;">&#x2235;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8758;">&#x2236;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8759;">&#x2237;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8760;">&#x2238;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8761;">&#x2239;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8762;">&#x223A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8763;">&#x223B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8764;">&#x223C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8765;">&#x223D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8766;">&#x223E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8767;">&#x223F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8768;">&#x2240;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8769;">&#x2241;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8770;">&#x2242;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8771;">&#x2243;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8772;">&#x2244;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8773;">&#x2245;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8774;">&#x2246;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8775;">&#x2247;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8776;">&#x2248;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8777;">&#x2249;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8778;">&#x224A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8779;">&#x224B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8780;">&#x224C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8781;">&#x224D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8782;">&#x224E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8783;">&#x224F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8784;">&#x2250;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8785;">&#x2251;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8786;">&#x2252;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8787;">&#x2253;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8788;">&#x2254;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8789;">&#x2255;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8790;">&#x2256;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8791;">&#x2257;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8792;">&#x2258;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8793;">&#x2259;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8794;">&#x225A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8795;">&#x225B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8796;">&#x225C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8797;">&#x225D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8798;">&#x225E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8799;">&#x225F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8800;">&#x2260;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8801;">&#x2261;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8802;">&#x2262;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8803;">&#x2263;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8804;">&#x2264;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8805;">&#x2265;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8806;">&#x2266;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8807;">&#x2267;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8808;">&#x2268;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8809;">&#x2269;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8810;">&#x226A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8811;">&#x226B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8812;">&#x226C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8813;">&#x226D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8814;">&#x226E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8815;">&#x226F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8816;">&#x2270;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8817;">&#x2271;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8818;">&#x2272;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8819;">&#x2273;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8820;">&#x2274;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8821;">&#x2275;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8822;">&#x2276;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8823;">&#x2277;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8824;">&#x2278;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8825;">&#x2279;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8826;">&#x227A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8827;">&#x227B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8828;">&#x227C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8829;">&#x227D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8830;">&#x227E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8831;">&#x227F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8832;">&#x2280;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8833;">&#x2281;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8834;">&#x2282;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8835;">&#x2283;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8836;">&#x2284;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8837;">&#x2285;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8838;">&#x2286;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8839;">&#x2287;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8840;">&#x2288;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8841;">&#x2289;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8842;">&#x228A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8843;">&#x228B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8844;">&#x228C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8845;">&#x228D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8846;">&#x228E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8847;">&#x228F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8848;">&#x2290;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8849;">&#x2291;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8850;">&#x2292;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8851;">&#x2293;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8852;">&#x2294;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8853;">&#x2295;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8854;">&#x2296;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8855;">&#x2297;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8856;">&#x2298;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8857;">&#x2299;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8858;">&#x229A;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8859;">&#x229B;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8860;">&#x229C;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8861;">&#x229D;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8862;">&#x229E;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8863;">&#x229F;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8864;">&#x22A0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8865;">&#x22A1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8866;">&#x22A2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8867;">&#x22A3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8868;">&#x22A4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8869;">&#x22A5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8870;">&#x22A6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8871;">&#x22A7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8872;">&#x22A8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8873;">&#x22A9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8874;">&#x22AA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8875;">&#x22AB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8876;">&#x22AC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8877;">&#x22AD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8878;">&#x22AE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8879;">&#x22AF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8880;">&#x22B0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8881;">&#x22B1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8882;">&#x22B2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8883;">&#x22B3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8884;">&#x22B4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8885;">&#x22B5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8886;">&#x22B6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8887;">&#x22B7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8888;">&#x22B8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8889;">&#x22B9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8890;">&#x22BA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8891;">&#x22BB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8892;">&#x22BC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8893;">&#x22BD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8894;">&#x22BE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8895;">&#x22BF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8896;">&#x22C0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8897;">&#x22C1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8898;">&#x22C2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8899;">&#x22C3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8900;">&#x22C4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8901;">&#x22C5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8902;">&#x22C6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8903;">&#x22C7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8904;">&#x22C8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8905;">&#x22C9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8906;">&#x22CA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8907;">&#x22CB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8908;">&#x22CC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8909;">&#x22CD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8910;">&#x22CE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8911;">&#x22CF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8912;">&#x22D0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8913;">&#x22D1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8914;">&#x22D2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8915;">&#x22D3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8916;">&#x22D4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8917;">&#x22D5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8918;">&#x22D6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8919;">&#x22D7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8920;">&#x22D8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8921;">&#x22D9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8922;">&#x22DA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8923;">&#x22DB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8924;">&#x22DC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8925;">&#x22DD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8926;">&#x22DE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8927;">&#x22DF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8928;">&#x22E0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8929;">&#x22E1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8930;">&#x22E2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8931;">&#x22E3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8932;">&#x22E4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8933;">&#x22E5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8934;">&#x22E6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8935;">&#x22E7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8936;">&#x22E8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8937;">&#x22E9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8938;">&#x22EA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8939;">&#x22EB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8940;">&#x22EC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8941;">&#x22ED;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8942;">&#x22EE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8943;">&#x22EF;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8944;">&#x22F0;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8945;">&#x22F1;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8946;">&#x22F2;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8947;">&#x22F3;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8948;">&#x22F4;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8949;">&#x22F5;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8950;">&#x22F6;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8951;">&#x22F7;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8952;">&#x22F8;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8953;">&#x22F9;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8954;">&#x22FA;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8955;">&#x22FB;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8956;">&#x22FC;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8957;">&#x22FD;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8958;">&#x22FE;</kbd>
+<kbd class="c-kbd c-kbd-monospaced c-kbd-light" data-entity="&amp;#8959;">&#x22FF;</kbd>
+
+	</div>
+</div>
+
+	</div>
+
+		</section>
+	</div>
+
+	<script src="../../content/site-js/toggle_css.js"></script>
+	<script src="../../js/svg4everybody.js" type="text/javascript"></script>
+
+	<script>
+		svg4everybody({
+			polyfill: true
+		});
+
+		(function () {
+			if (!localStorage.getItem('nate.lexiconHref')) {
+				if (window.location.href.match(/\/v(.*)\/c/)) {
+					var version = window.location.href.match(/\/v(.*)\/c/)[1];
+
+					localStorage.setItem('nate.lexiconHref', window.location.origin + '/clay3-test-site/v' + version + '/css/site/site-atlas-font-awesome.css');
+				}
+			}
+		})();
+
+		$(function() {
+			var body = $('body');
+			var headerTopBar = $('#headerTopBar');
+
+			headerTopBar.find('#claySiteMobileNavigationToggle').on(
+				'click',
+				function(event) {
+					var $this = $(this);
+
+					var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+
+					var mainNavContainer = $('.main-nav-container');
+					var wrapper = $this.closest('#wrapper');
+
+					var isNavOpen = (function() {
+						if (wrapper.hasClass('main-nav-open')) {
+							return true;
+						}
+
+						return false;
+					})();
+
+					var forceReflow = function(el) {
+						el.css({
+							display: 'table'
+						});
+
+						setTimeout(function() {
+							el.css({
+								display: ''
+							});
+						}, 0);
+					};
+
+					event.preventDefault();
+
+					mainNavContainer.on(
+						transitionEnd,
+						function(event) {
+							if ($(event.target).is('#mainNav')) {
+								mainNavContainer.removeClass('main-nav-transition');
+								forceReflow($('html'));
+
+								if (isNavOpen) {
+									body.removeClass('lexicon-site-body-fixed');
+								}
+
+								$(this).off(transitionEnd);
+							}
+						}
+					);
+
+					mainNavContainer.addClass('main-nav-transition');
+
+					if (isNavOpen) {
+						wrapper.removeClass('main-nav-open');
+					}
+					else {
+						body.addClass('lexicon-site-body-fixed');
+						wrapper.addClass('main-nav-open');
+					}
+				}
+			);
+		});
+	</script>
+	</body>
+</html>
