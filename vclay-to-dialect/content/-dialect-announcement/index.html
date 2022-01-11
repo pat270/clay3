@@ -5,6 +5,7 @@
 	<title>Clay - Announcement (Dialect)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../content/site-scss/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../content/site-scss/site-atlas.css" />
 	<link rel="stylesheet" href="../../css/cadmin.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +17,7 @@
 	<div id="wrapper">
 		<header id="headerTopBar">
 			<div class="container-fluid">
-				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+				<a class="btn btn-primary" href="#beginContent" id="skipTo" role="button">Skip to Content</a>
 
 				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
 					<span class="docs-icon-bar docs-icon-bar-1"></span>
@@ -50,9 +51,9 @@
 			<div class="dropdown-item">
 				<div class="custom-control custom-checkbox">
 					<label>
-						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<input class="custom-control-input" id="toggleCadmin" type="checkbox">
 						<span class="custom-control-label">
-							<span class="custom-control-label-text">Show Site CSS</span>
+							<span class="custom-control-label-text">Show Cadmin</span>
 						</span>
 					</label>
 				</div>
@@ -90,6 +91,8 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-badges">Badges (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-boolean-input">Boolean Input (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-breadcrumbs">Breadcrumbs (Dialect)</a>
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-buttons">Buttons (Dialect)</a>
@@ -100,9 +103,29 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-chips">Chips (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs">Forms (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs-condensed">Forms Condensed (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-hotkey">Hotkey (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-labels">Labels (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-link">Link (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-management-bar">Management Bar (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-nav">Nav (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-pagination">Pagination (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-popovers">Popovers (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-radio">Radio (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-tabs">Tabs (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-toggles">Toggles (Dialect)</a>
 </li>
 </ul>
 </div>
@@ -352,6 +375,8 @@
 	<div class="col-md-12">
 		<h3 id="announcement"><a class="heading-anchor" href="#announcement"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Announcement</h3>
 
+<div class="h6 my-2">text-sm-center</div>
+
 <div class="alert alert-fluid alert-dismissible alert-primary text-sm-center" role="alert">
 	<div class="container-fluid container-fluid-max-md">
 		<div class="autofit-row autofit-padded-no-gutters autofit-float">
@@ -371,24 +396,24 @@
 		</button>
 	</div>
 </div>
-<div class="mb-2"></div>
+
+<div class="h6 my-2">text-xl-center</div>
+
 <div class="alert alert-fluid alert-indicator-start alert-dismissible alert-primary text-xl-center" role="alert">
 	<div class="container-fluid container-fluid-max-md">
 		<div class="autofit-row autofit-padded-no-gutters autofit-float">
 			<div class="autofit-col autofit-col-expand">
 				<div class="autofit-section">
 					<span class="alert-indicator">
-						<svg class="lexicon-icon lexicon-icon-warning-full" focusable="false" role="presentation">
-							<use xlink:href="../../images/icons/icons.svg#warning-full">
-						</svg>
+						<svg class="lexicon-icon" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2749 15.087C15.5583 15.087 16.3583 13.6953 15.7166 12.587L9.4416 1.74531C8.79994 0.636979 7.19994 0.636979 6.55827 1.74531L0.283272 12.587C-0.358395 13.6953 0.441605 15.087 1.72494 15.087H14.2749ZM7.99994 9.25359C7.5416 9.25359 7.1666 8.87859 7.1666 8.42026V6.75359C7.1666 6.29526 7.5416 5.92026 7.99994 5.92026C8.45827 5.92026 8.83327 6.29526 8.83327 6.75359V8.42026C8.83327 8.87859 8.45827 9.25359 7.99994 9.25359ZM7.1666 10.9203V12.5869H8.83327V10.9203H7.1666Z" fill="currentColor"></svg>
 					</span>
 					<strong class="lead">COVID-19</strong>
 					<span class="mr-2">Important Updates for Your Area</span>
-						<button class="alert-link btn btn-unstyled" type="button">
+					<button class="alert-link btn btn-unstyled" type="button">
 						<span class="c-inner" tabindex="-2">
 							Action Required
 							<span class="inline-item inline-item-after">
-								<svg class="lexicon-icon lexicon-icon-order-arrow-right" focusable="false" role="presentation"><use xlink:href="../../images/icons/icons.svg#order-arrow-right"></svg>
+								<svg class="lexicon-icon" width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.604492 4.49937H6.18949L3.74949 6.93937C3.55449 7.13437 3.55449 7.45437 3.74949 7.64937C3.94449 7.84437 4.25949 7.84437 4.45449 7.64937L7.74949 4.35437C7.94449 4.15937 7.94449 3.84437 7.74949 3.64937L4.45949 0.349368C4.36608 0.255741 4.23925 0.203125 4.10699 0.203125C3.97473 0.203125 3.84791 0.255741 3.75449 0.349368C3.55949 0.544368 3.55949 0.859368 3.75449 1.05437L6.18949 3.49937H0.604492C0.329492 3.49937 0.104492 3.72437 0.104492 3.99937C0.104492 4.27437 0.329492 4.49937 0.604492 4.49937Z" fill="currentColor"></svg>
 							</span>
 						</span>
 					</button>
@@ -402,6 +427,42 @@
 				</svg>
 			</span>
 		</button>
+	</div>
+</div>
+
+<div class="h6 my-2">Expand to Fit</div>
+
+<div class="alert alert-fluid alert-indicator-start alert-primary" role="alert">
+	<div class="container-fluid container-fluid-max-md">
+		<div class="autofit-row autofit-padded-no-gutters autofit-float">
+			<div class="autofit-col autofit-col-expand">
+				<div class="autofit-section">
+					<span class="alert-indicator">
+						<svg class="lexicon-icon" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2749 15.087C15.5583 15.087 16.3583 13.6953 15.7166 12.587L9.4416 1.74531C8.79994 0.636979 7.19994 0.636979 6.55827 1.74531L0.283272 12.587C-0.358395 13.6953 0.441605 15.087 1.72494 15.087H14.2749ZM7.99994 9.25359C7.5416 9.25359 7.1666 8.87859 7.1666 8.42026V6.75359C7.1666 6.29526 7.5416 5.92026 7.99994 5.92026C8.45827 5.92026 8.83327 6.29526 8.83327 6.75359V8.42026C8.83327 8.87859 8.45827 9.25359 7.99994 9.25359ZM7.1666 10.9203V12.5869H8.83327V10.9203H7.1666Z" fill="currentColor"></svg>
+					</span>
+					<div class="autofit-row autofit-float">
+						<div class="autofit-col autofit-col-expand">
+							<div class="autofit-section">
+								<strong class="lead">COVID-19</strong>
+								<span>Important Updates for Your Area</span>
+							</div>
+						</div>
+						<div class="autofit-col">
+							<div class="autofit-section">
+								<button class="alert-link btn btn-unstyled" type="button">
+									<span class="c-inner" tabindex="-2">
+										Action Required
+										<span class="inline-item inline-item-after">
+											<svg class="lexicon-icon" width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.604492 4.49937H6.18949L3.74949 6.93937C3.55449 7.13437 3.55449 7.45437 3.74949 7.64937C3.94449 7.84437 4.25949 7.84437 4.45449 7.64937L7.74949 4.35437C7.94449 4.15937 7.94449 3.84437 7.74949 3.64937L4.45949 0.349368C4.36608 0.255741 4.23925 0.203125 4.10699 0.203125C3.97473 0.203125 3.84791 0.255741 3.75449 0.349368C3.55949 0.544368 3.55949 0.859368 3.75449 1.05437L6.18949 3.49937H0.604492C0.329492 3.49937 0.104492 3.72437 0.104492 3.99937C0.104492 4.27437 0.329492 4.49937 0.604492 4.49937Z" fill="currentColor"></svg>
+										</span>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 

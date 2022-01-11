@@ -5,6 +5,7 @@
 	<title>Clay - Chips (Dialect)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../content/site-scss/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../content/site-scss/site-atlas.css" />
 	<link rel="stylesheet" href="../../css/cadmin.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +17,7 @@
 	<div id="wrapper">
 		<header id="headerTopBar">
 			<div class="container-fluid">
-				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+				<a class="btn btn-primary" href="#beginContent" id="skipTo" role="button">Skip to Content</a>
 
 				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
 					<span class="docs-icon-bar docs-icon-bar-1"></span>
@@ -50,9 +51,9 @@
 			<div class="dropdown-item">
 				<div class="custom-control custom-checkbox">
 					<label>
-						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<input class="custom-control-input" id="toggleCadmin" type="checkbox">
 						<span class="custom-control-label">
-							<span class="custom-control-label-text">Show Site CSS</span>
+							<span class="custom-control-label-text">Show Cadmin</span>
 						</span>
 					</label>
 				</div>
@@ -90,6 +91,8 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-badges">Badges (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-boolean-input">Boolean Input (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-breadcrumbs">Breadcrumbs (Dialect)</a>
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-buttons">Buttons (Dialect)</a>
@@ -100,9 +103,29 @@
 </li>
 <li class="active"><a class="nav-title" href="../../content/-dialect-chips">Chips (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs">Forms (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs-condensed">Forms Condensed (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-hotkey">Hotkey (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-labels">Labels (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-link">Link (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-management-bar">Management Bar (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-nav">Nav (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-pagination">Pagination (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-popovers">Popovers (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-radio">Radio (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-tabs">Tabs (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-toggles">Toggles (Dialect)</a>
 </li>
 </ul>
 </div>
@@ -353,19 +376,19 @@
 		<h3 id="label-chip-sm"><a class="heading-anchor" href="#label-chip-sm"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Label Chip Sm</h3>
 
 <h6>Anchor</h6>
-<a href="#1" class="label label-inverse-primary label-chip-sm">
+<a href="#1" class="label label-outline-primary label-chip-sm">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary</span>
+		<span class="label-item label-item-expand">Outline Primary</span>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-primary label-chip-sm active">
+<a href="#1" class="label label-outline-primary label-chip-sm active">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Active</span>
+		<span class="label-item label-item-expand">Outline Primary Active</span>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-primary label-chip-sm disabled" tabindex="-1">
+<a href="#1" class="label label-outline-primary label-chip-sm disabled" tabindex="-1">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Disabled</span>
+		<span class="label-item label-item-expand">Outline Primary Disabled</span>
 	</span>
 </a>
 <br>
@@ -402,19 +425,19 @@
 </a>
 
 <h6 class="mt-2">Button</h6>
-<button class="label label-inverse-primary label-chip-sm" type="button">
+<button class="label label-outline-primary label-chip-sm" type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary</span>
+		<span class="label-item label-item-expand">Outline Primary</span>
 	</span>
 </button>
-<button class="label label-inverse-primary label-chip-sm active" type="button">
+<button class="label label-outline-primary label-chip-sm active" type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Active</span>
+		<span class="label-item label-item-expand">Outline Primary Active</span>
 	</span>
 </button>
-<button class="label label-inverse-primary label-chip-sm" disabled type="button">
+<button class="label label-outline-primary label-chip-sm" disabled type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Disabled</span>
+		<span class="label-item label-item-expand">Outline Primary Disabled</span>
 	</span>
 </button>
 <br>
@@ -451,7 +474,7 @@
 </button>
 
 <h6 class="mt-2">With Nested Actions</h6>
-<span class="label label-dismissible label-inverse-primary label-chip-sm" tabindex="0">
+<span class="label label-dismissible label-outline-primary label-chip-sm" tabindex="0">
 	<span class="c-inner" tabindex="-2">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
@@ -459,7 +482,7 @@
 			</svg>
 		</span>
 		<span class="label-item label-item-expand">
-			Inverse Primary
+			Outline Primary
 		</span>
 		<span class="label-item label-item-after">
 			<button aria-label="Close" class="close" type="button">
@@ -472,7 +495,7 @@
 		</span>
 	</span>
 </span>
-<span class="label label-dismissible label-inverse-primary label-chip-sm disabled" tabindex="-1">
+<span class="label label-dismissible label-outline-primary label-chip-sm disabled" tabindex="-1">
 	<span class="c-inner" tabindex="-2">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
@@ -480,7 +503,7 @@
 			</svg>
 		</span>
 		<span class="label-item label-item-expand">
-			Inverse Primary Disabled
+			Outline Primary Disabled
 		</span>
 		<span class="label-item label-item-after">
 			<button aria-label="Close" class="close" disabled type="button">
@@ -588,19 +611,19 @@
 		<h3 id="label-chip"><a class="heading-anchor" href="#label-chip"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Label Chip</h3>
 
 <h6>Anchor</h6>
-<a href="#1" class="label label-inverse-primary label-chip">
+<a href="#1" class="label label-outline-primary label-chip">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary</span>
+		<span class="label-item label-item-expand">Outline Primary</span>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-primary label-chip active">
+<a href="#1" class="label label-outline-primary label-chip active">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Active</span>
+		<span class="label-item label-item-expand">Outline Primary Active</span>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-primary label-chip disabled" tabindex="-1">
+<a href="#1" class="label label-outline-primary label-chip disabled" tabindex="-1">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Disabled</span>
+		<span class="label-item label-item-expand">Outline Primary Disabled</span>
 	</span>
 </a>
 <br>
@@ -637,19 +660,19 @@
 </a>
 
 <h6 class="mt-2">Button</h6>
-<button class="label label-inverse-primary label-chip" type="button">
+<button class="label label-outline-primary label-chip" type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary</span>
+		<span class="label-item label-item-expand">Outline Primary</span>
 	</span>
 </button>
-<button class="label label-inverse-primary label-chip active" type="button">
+<button class="label label-outline-primary label-chip active" type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Active</span>
+		<span class="label-item label-item-expand">Outline Primary Active</span>
 	</span>
 </button>
-<button class="label label-inverse-primary label-chip" disabled type="button">
+<button class="label label-outline-primary label-chip" disabled type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Disabled</span>
+		<span class="label-item label-item-expand">Outline Primary Disabled</span>
 	</span>
 </button>
 <br>
@@ -686,7 +709,7 @@
 </button>
 
 <h6 class="mt-2">With Nested Actions</h6>
-<span class="label label-dismissible label-inverse-primary label-chip" tabindex="0">
+<span class="label label-dismissible label-outline-primary label-chip" tabindex="0">
 	<span class="c-inner" tabindex="-2">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
@@ -694,7 +717,7 @@
 			</svg>
 		</span>
 		<span class="label-item label-item-expand">
-			Inverse Primary
+			Outline Primary
 		</span>
 		<span class="label-item label-item-after">
 			<button aria-label="Close" class="close" type="button">
@@ -707,7 +730,7 @@
 		</span>
 	</span>
 </span>
-<span class="label label-dismissible label-inverse-primary label-chip disabled" tabindex="-1">
+<span class="label label-dismissible label-outline-primary label-chip disabled" tabindex="-1">
 	<span class="c-inner" tabindex="-2">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
@@ -715,7 +738,7 @@
 			</svg>
 		</span>
 		<span class="label-item label-item-expand">
-			Inverse Primary Disabled
+			Outline Primary Disabled
 		</span>
 		<span class="label-item label-item-after">
 			<button aria-label="Close" class="close" disabled type="button">
@@ -823,19 +846,19 @@
 		<h3 id="label-chip-lg"><a class="heading-anchor" href="#label-chip-lg"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Label Chip Lg</h3>
 
 <h6>Anchor</h6>
-<a href="#1" class="label label-inverse-primary label-chip-lg">
+<a href="#1" class="label label-outline-primary label-chip-lg">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary</span>
+		<span class="label-item label-item-expand">Outline Primary</span>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-primary label-chip-lg active">
+<a href="#1" class="label label-outline-primary label-chip-lg active">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Active</span>
+		<span class="label-item label-item-expand">Outline Primary Active</span>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-primary label-chip-lg disabled" tabindex="-1">
+<a href="#1" class="label label-outline-primary label-chip-lg disabled" tabindex="-1">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Disabled</span>
+		<span class="label-item label-item-expand">Outline Primary Disabled</span>
 	</span>
 </a>
 <br>
@@ -872,19 +895,19 @@
 </a>
 
 <h6 class="mt-2">Button</h6>
-<button class="label label-inverse-primary label-chip-lg" type="button">
+<button class="label label-outline-primary label-chip-lg" type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary</span>
+		<span class="label-item label-item-expand">Outline Primary</span>
 	</span>
 </button>
-<button class="label label-inverse-primary label-chip-lg active" type="button">
+<button class="label label-outline-primary label-chip-lg active" type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Active</span>
+		<span class="label-item label-item-expand">Outline Primary Active</span>
 	</span>
 </button>
-<button class="label label-inverse-primary label-chip-lg" disabled type="button">
+<button class="label label-outline-primary label-chip-lg" disabled type="button">
 	<span class="c-inner" tabindex="-2">
-		<span class="label-item label-item-expand">Inverse Primary Disabled</span>
+		<span class="label-item label-item-expand">Outline Primary Disabled</span>
 	</span>
 </button>
 <br>
@@ -921,7 +944,7 @@
 </button>
 
 <h6 class="mt-2">With Nested Actions</h6>
-<span class="label label-dismissible label-inverse-primary label-chip-lg" tabindex="0">
+<span class="label label-dismissible label-outline-primary label-chip-lg" tabindex="0">
 	<span class="c-inner" tabindex="-2">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
@@ -929,7 +952,7 @@
 			</svg>
 		</span>
 		<span class="label-item label-item-expand">
-			Inverse Primary
+			Outline Primary
 		</span>
 		<span class="label-item label-item-after">
 			<button aria-label="Close" class="close" type="button">
@@ -942,7 +965,7 @@
 		</span>
 	</span>
 </span>
-<span class="label label-dismissible label-inverse-primary label-chip-lg disabled" tabindex="-1">
+<span class="label label-dismissible label-outline-primary label-chip-lg disabled" tabindex="-1">
 	<span class="c-inner" tabindex="-2">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-check" focusable="false" role="presentation">
@@ -950,7 +973,7 @@
 			</svg>
 		</span>
 		<span class="label-item label-item-expand">
-			Inverse Primary Disabled
+			Outline Primary Disabled
 		</span>
 		<span class="label-item label-item-after">
 			<button aria-label="Close" class="close" disabled type="button">

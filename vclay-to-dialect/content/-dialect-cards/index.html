@@ -5,6 +5,7 @@
 	<title>Clay - Cards (Dialect)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../content/site-scss/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../content/site-scss/site-atlas.css" />
 	<link rel="stylesheet" href="../../css/cadmin.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +17,7 @@
 	<div id="wrapper">
 		<header id="headerTopBar">
 			<div class="container-fluid">
-				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+				<a class="btn btn-primary" href="#beginContent" id="skipTo" role="button">Skip to Content</a>
 
 				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
 					<span class="docs-icon-bar docs-icon-bar-1"></span>
@@ -50,9 +51,9 @@
 			<div class="dropdown-item">
 				<div class="custom-control custom-checkbox">
 					<label>
-						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<input class="custom-control-input" id="toggleCadmin" type="checkbox">
 						<span class="custom-control-label">
-							<span class="custom-control-label-text">Show Site CSS</span>
+							<span class="custom-control-label-text">Show Cadmin</span>
 						</span>
 					</label>
 				</div>
@@ -90,6 +91,8 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-badges">Badges (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-boolean-input">Boolean Input (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-breadcrumbs">Breadcrumbs (Dialect)</a>
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-buttons">Buttons (Dialect)</a>
@@ -100,9 +103,29 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-chips">Chips (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs">Forms (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs-condensed">Forms Condensed (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-hotkey">Hotkey (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-labels">Labels (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-link">Link (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-management-bar">Management Bar (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-nav">Nav (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-pagination">Pagination (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-popovers">Popovers (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-radio">Radio (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-tabs">Tabs (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-toggles">Toggles (Dialect)</a>
 </li>
 </ul>
 </div>
@@ -361,7 +384,7 @@
 								<input class="custom-control-input" type="checkbox">
 								<span class="custom-control-label"></span>
 								<span class="aspect-ratio-item-top-left">
-									<span class="label label-inverse-info">Info</span>
+									<span class="label label-info">Info</span>
 								</span>
 								<span class="aspect-ratio-item aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
 									<svg class="lexicon-icon lexicon-icon-picture" focusable="false" role="presentation">
@@ -402,10 +425,10 @@
 						<div class="card-row mb-4">
 							<div class="autofit-col autofit-col-expand">
 								<div class="autofit-section">
-									<span class="label label-inverse-info-2">Info</span>
-									<span class="label label-inverse-info-2">Info</span>
-									<span class="label label-inverse-info-2">Info</span>
-									<span class="label label-inverse-info-2">Info</span>
+									<span class="label label-inverse-info">Info</span>
+									<span class="label label-inverse-info">Info</span>
+									<span class="label label-inverse-info">Info</span>
+									<span class="label label-inverse-info">Info</span>
 								</div>
 							</div>
 							<div class="autofit-col">
@@ -435,10 +458,10 @@
 						<div class="card-row mb-4">
 							<div class="autofit-col autofit-col-expand">
 								<div class="autofit-section">
-									<span class="label label-inverse-info-2">Info</span>
-									<span class="label label-inverse-info-2">Info</span>
-									<span class="label label-inverse-info-2">Info</span>
-									<span class="label label-inverse-info-2">Info</span>
+									<span class="label label-inverse-info">Info</span>
+									<span class="label label-inverse-info">Info</span>
+									<span class="label label-inverse-info">Info</span>
+									<span class="label label-inverse-info">Info</span>
 								</div>
 							</div>
 						</div>
@@ -491,7 +514,7 @@
 					<div class="card">
 						<div class="aspect-ratio card-item-first">
 							<span class="aspect-ratio-item-top-left">
-								<span class="label label-inverse-success">New</span>
+								<span class="label label-success">New</span>
 							</span>
 							<span class="aspect-ratio-item aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
 								<svg class="lexicon-icon lexicon-icon-picture" focusable="false" role="presentation">
@@ -504,8 +527,8 @@
 							<div class="card-title mb-2">A social network at the service of employees</div>
 							<div class="card-text mb-2">A social network at the service of employees.</div>
 							<div>
-								<a class="link-primary" href="#1">
-									<span>Read More</span><span class="inline-item inline-item-after"><svg class="lexicon-icon lexicon-icon-order-arrow-right" focusable="false" role="presentation"><use xlink:href="../../images/icons/icons.svg#order-arrow-right"></svg></span>
+								<a class="link-primary single-link" href="#1">
+									<span class="c-inner" tabindex="-2">Read Now<span class="inline-item inline-item-after"><svg class="dialect-icon" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_7608_77511" style="mask-type:alpha" maskunits="userSpaceOnUse" x="3" y="3" width="12" height="12"><path d="M3.90649 9.95315H12.284L8.62399 13.6132C8.33149 13.9057 8.33149 14.3857 8.62399 14.6782C8.91649 14.9707 9.38899 14.9707 9.68149 14.6782L14.624 9.73565C14.9165 9.44315 14.9165 8.97065 14.624 8.67815L9.68899 3.72815C9.54887 3.58771 9.35863 3.50879 9.16024 3.50879C8.96186 3.50879 8.77162 3.58771 8.63149 3.72815C8.33899 4.02065 8.33899 4.49315 8.63149 4.78565L12.284 8.45315H3.90649C3.49399 8.45315 3.15649 8.79065 3.15649 9.20315C3.15649 9.61565 3.49399 9.95315 3.90649 9.95315Z" fill="currentColor"></mask><g mask="url(#mask0_7608_77511)"><rect y="0.203125" width="18" height="18" fill="currentColor"></g></svg></span></span>
 								</a>
 							</div>
 						</div>
@@ -524,14 +547,12 @@
 		<div style="width:412px;">
 			<div class="card">
 				<div class="card-body">
-					<span class="label label-inverse-success">New</span>
+					<span class="label label-success">New</span>
 					<div class="card-subtitle mb-2">Preheader</div>
 					<div class="card-title mb-2">A social network at the service of employees</div>
 					<div class="card-text mb-2">A social network at the service of employees.</div>
 					<div>
-						<a class="link-primary" href="#1">
-							<span>Read More</span><span class="inline-item inline-item-after"><svg class="lexicon-icon lexicon-icon-order-arrow-right" focusable="false" role="presentation"><use xlink:href="../../images/icons/icons.svg#order-arrow-right"></svg></span>
-						</a>
+						<a class="link-primary single-link" href="#1"><span class="c-inner" tabindex="-2">Read Now<span class="inline-item inline-item-after"><svg class="dialect-icon" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_7608_77511" style="mask-type:alpha" maskunits="userSpaceOnUse" x="3" y="3" width="12" height="12"><path d="M3.90649 9.95315H12.284L8.62399 13.6132C8.33149 13.9057 8.33149 14.3857 8.62399 14.6782C8.91649 14.9707 9.38899 14.9707 9.68149 14.6782L14.624 9.73565C14.9165 9.44315 14.9165 8.97065 14.624 8.67815L9.68899 3.72815C9.54887 3.58771 9.35863 3.50879 9.16024 3.50879C8.96186 3.50879 8.77162 3.58771 8.63149 3.72815C8.33899 4.02065 8.33899 4.49315 8.63149 4.78565L12.284 8.45315H3.90649C3.49399 8.45315 3.15649 8.79065 3.15649 9.20315C3.15649 9.61565 3.49399 9.95315 3.90649 9.95315Z" fill="currentColor"></mask><g mask="url(#mask0_7608_77511)"><rect y="0.203125" width="18" height="18" fill="currentColor"></g></svg></span></span></a>
 					</div>
 				</div>
 			</div>
@@ -557,8 +578,8 @@
 						</div>
 						<div class="card-title mb-2">RSA Rollover</div>
 						<div class="card-text mb-2">Apply for retirement savings account rollover points.</div>
-						<a class="link-primary mb-4" href="#1">
-							<span>Small</span><span class="inline-item inline-item-after"><svg class="lexicon-icon lexicon-icon-order-arrow-right" focusable="false" role="presentation"><use xlink:href="../../images/icons/icons.svg#order-arrow-right"></svg></span>
+						<a class="link-primary link-sm mb-4 single-link" href="#1">
+							<span class="c-inner" tabindex="-2">Small<span class="inline-item inline-item-after"><svg class="dialect-icon" width="18" height="19" viewbox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_7608_77511" style="mask-type:alpha" maskunits="userSpaceOnUse" x="3" y="3" width="12" height="12"><path d="M3.90649 9.95315H12.284L8.62399 13.6132C8.33149 13.9057 8.33149 14.3857 8.62399 14.6782C8.91649 14.9707 9.38899 14.9707 9.68149 14.6782L14.624 9.73565C14.9165 9.44315 14.9165 8.97065 14.624 8.67815L9.68899 3.72815C9.54887 3.58771 9.35863 3.50879 9.16024 3.50879C8.96186 3.50879 8.77162 3.58771 8.63149 3.72815C8.33899 4.02065 8.33899 4.49315 8.63149 4.78565L12.284 8.45315H3.90649C3.49399 8.45315 3.15649 8.79065 3.15649 9.20315C3.15649 9.61565 3.49399 9.95315 3.90649 9.95315Z" fill="currentColor"></mask><g mask="url(#mask0_7608_77511)"><rect y="0.203125" width="18" height="18" fill="currentColor"></g></svg></span></span>
 						</a>
 					</div>
 				</div>

@@ -78,6 +78,10 @@
 		toggleLexiconSiteLink();
 	});
 
+	$('#toggleCadmin').on('click', function(e) {
+		document.getElementsByTagName('body')[0].classList.toggle('cadmin');
+	});
+
 	resetSiteConfig.on('click', function(e) {
 		localStorage.removeItem('nate.lexiconHref');
 		localStorage.removeItem('nate.lexiconSiteHref');

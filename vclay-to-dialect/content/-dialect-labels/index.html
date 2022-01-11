@@ -5,6 +5,7 @@
 	<title>Clay - Labels (Dialect)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../../content/site-scss/site-atlas-font-awesome.css" />
+	<link rel="stylesheet" href="../../content/site-scss/site-atlas.css" />
 	<link rel="stylesheet" href="../../css/cadmin.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +17,7 @@
 	<div id="wrapper">
 		<header id="headerTopBar">
 			<div class="container-fluid">
-				<a class="btn btn-primary" href="#beginContent" id="skipTo">Skip to Content</a>
+				<a class="btn btn-primary" href="#beginContent" id="skipTo" role="button">Skip to Content</a>
 
 				<button class="animated-toggle btn btn-primary d-md-none hidden-sm-up" id="claySiteMobileNavigationToggle" type="button">
 					<span class="docs-icon-bar docs-icon-bar-1"></span>
@@ -50,9 +51,9 @@
 			<div class="dropdown-item">
 				<div class="custom-control custom-checkbox">
 					<label>
-						<input checked class="custom-control-input" id="toggleSiteCss" type="checkbox">
+						<input class="custom-control-input" id="toggleCadmin" type="checkbox">
 						<span class="custom-control-label">
-							<span class="custom-control-label-text">Show Site CSS</span>
+							<span class="custom-control-label-text">Show Cadmin</span>
 						</span>
 					</label>
 				</div>
@@ -90,6 +91,8 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-badges">Badges (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-boolean-input">Boolean Input (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-breadcrumbs">Breadcrumbs (Dialect)</a>
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-buttons">Buttons (Dialect)</a>
@@ -100,9 +103,29 @@
 </li>
 <li class=""><a class="nav-title" href="../../content/-dialect-chips">Chips (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs">Forms (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-inputs-condensed">Forms Condensed (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-hotkey">Hotkey (Dialect)</a>
+</li>
 <li class="active"><a class="nav-title" href="../../content/-dialect-labels">Labels (Dialect)</a>
 </li>
+<li class=""><a class="nav-title" href="../../content/-dialect-link">Link (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-management-bar">Management Bar (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-nav">Nav (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-pagination">Pagination (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-popovers">Popovers (Dialect)</a>
+</li>
 <li class=""><a class="nav-title" href="../../content/-dialect-radio">Radio (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-tabs">Tabs (Dialect)</a>
+</li>
+<li class=""><a class="nav-title" href="../../content/-dialect-toggles">Toggles (Dialect)</a>
 </li>
 </ul>
 </div>
@@ -350,7 +373,271 @@
 		
 <div class="clay-site-row-spacer row">
 	<div class="col-md-12">
+		<h3 id="base-label"><a class="heading-anchor" href="#base-label"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Base Label</h3>
+
+		<span class="label">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+			<span class="label-item label-item-expand">Primary</span>
+		</span>
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
 		<h3 id="filled"><a class="heading-anchor" href="#filled"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Filled</h3>
+
+<span class="label label-primary">
+	<span class="label-item label-item-expand">Primary</span>
+</span>
+<span class="label label-secondary">
+	<span class="label-item label-item-expand">Secondary</span>
+</span>
+<span class="label label-success">
+	<span class="label-item label-item-expand">Success</span>
+</span>
+<span class="label label-info">
+	<span class="label-item label-item-expand">Info</span>
+</span>
+<span class="label label-warning">
+	<span class="label-item label-item-expand">Warning</span>
+</span>
+<span class="label label-danger">
+	<span class="label-item label-item-expand">Danger</span>
+</span>
+<div class="clay-site-light-container">
+	<span class="label label-light">
+		<span class="label-item label-item-expand">Light</span>
+	</span>
+</div>
+<span class="label label-dark">
+	<span class="label-item label-item-expand">Dark</span>
+</span>
+
+<div class="h6 my-2">As Anchor Tag</div>
+
+<a href="#1" class="label label-primary">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Primary</span>
+	</span>
+</a>
+<a href="#1" class="label label-secondary">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Secondary</span>
+	</span>
+</a>
+<a href="#1" class="label label-success">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Success</span>
+	</span>
+</a>
+<a href="#1" class="label label-info">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Info</span>
+	</span>
+</a>
+<a href="#1" class="label label-warning">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Warning</span>
+	</span>
+</a>
+<a href="#1" class="label label-danger">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Danger</span>
+	</span>
+</a>
+<div class="clay-site-light-container">
+	<a href="#1" class="label label-light">
+		<span class="c-inner" tabindex="-2">
+			<span class="label-item label-item-expand">Light</span>
+		</span>
+	</a>
+</div>
+<a href="#1" class="label label-dark">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-expand">Dark</span>
+	</span>
+</a>
+
+<div class="h6 my-2">With Icon</div>
+
+<a href="#1" class="label label-primary">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Primary</span>
+</a>
+<a href="#1" class="label label-secondary">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Secondary</span>
+</a>
+<a href="#1" class="label label-success">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Success</span>
+</a>
+<a href="#1" class="label label-info">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Info</span>
+</a>
+<a href="#1" class="label label-warning">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Warning</span>
+</a>
+<a href="#1" class="label label-danger">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Danger</span>
+</a>
+<div class="clay-site-light-container">
+	<a href="#1" class="label label-light">
+		<span class="c-inner" tabindex="-2">
+			<span class="label-item label-item-before">
+				<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#info-circle">
+				</svg>
+			</span>
+			<span class="label-item label-item-expand">Light</span>
+		</span>
+	</a>
+</div>
+<a href="#1" class="label label-dark">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+		<span class="label-item label-item-expand">Dark</span>
+	</span>
+</a>
+
+<div class="h6 my-2">With Icon Disabled</div>
+
+<a href="#1" class="disabled label label-primary" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Primary</span>
+</a>
+<a href="#1" class="disabled label label-secondary" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Secondary</span>
+</a>
+<a href="#1" class="disabled label label-success" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Success</span>
+</a>
+<a href="#1" class="disabled label label-info" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Info</span>
+</a>
+<a href="#1" class="disabled label label-warning" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Warning</span>
+</a>
+<a href="#1" class="disabled label label-danger" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+	</span>
+	<span class="label-item label-item-expand">Danger</span>
+</a>
+<div class="clay-site-light-container">
+	<a href="#1" class="disabled label label-light" tabindex="-1">
+		<span class="c-inner" tabindex="-2">
+			<span class="label-item label-item-before">
+				<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+					<use xlink:href="../../images/icons/icons.svg#info-circle">
+				</svg>
+			</span>
+			<span class="label-item label-item-expand">Light</span>
+		</span>
+	</a>
+</div>
+<a href="#1" class="disabled label label-dark" tabindex="-1">
+	<span class="c-inner" tabindex="-2">
+		<span class="label-item label-item-before">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+				<use xlink:href="../../images/icons/icons.svg#info-circle">
+			</svg>
+		</span>
+		<span class="label-item label-item-expand">Dark</span>
+	</span>
+</a>
+
+	</div>
+</div>
+
+<div class="clay-site-row-spacer row">
+	<div class="col-md-12">
+		<h3 id="inverted"><a class="heading-anchor" href="#inverted"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Inverted</h3>
 
 <span class="label label-inverse-primary">
 	<span class="label-item label-item-expand">Primary</span>
@@ -411,138 +698,75 @@
 <div class="h6 my-2">With Icon</div>
 
 <a href="#1" class="label label-inverse-primary">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Primary</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Primary</span>
 </a>
 <a href="#1" class="label label-inverse-secondary">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Secondary</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Secondary</span>
 </a>
 <a href="#1" class="label label-inverse-success">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Success</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Success</span>
 </a>
 <a href="#1" class="label label-inverse-info">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Info</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Info</span>
 </a>
 <a href="#1" class="label label-inverse-warning">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Warning</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Warning</span>
 </a>
 <a href="#1" class="label label-inverse-danger">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Danger</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Danger</span>
 </a>
 <div class="clay-site-light-container">
 	<a href="#1" class="label label-inverse-light">
-		<span class="label-item label-item-before">
-			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
-				<use xlink:href="../../images/icons/icons.svg#info-circle">
-			</svg>
-		</span>
 		<span class="label-item label-item-expand">Light</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
 	</a>
 </div>
 <a href="#1" class="label label-inverse-dark">
-	<span class="label-item label-item-before">
+	<span class="label-item label-item-expand">Dark</span>
+	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
 		</svg>
 	</span>
-	<span class="label-item label-item-expand">Dark</span>
 </a>
 
-	</div>
-</div>
+<div class="h6 my-2">With Icon Disabled</div>
 
-<div class="clay-site-row-spacer row">
-	<div class="col-md-12">
-		<h3 id="inverted"><a class="heading-anchor" href="#inverted"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Inverted</h3>
-
-<span class="label label-inverse-primary-2">
-	<span class="label-item label-item-expand">Primary</span>
-</span>
-<span class="label label-inverse-secondary-2">
-	<span class="label-item label-item-expand">Secondary</span>
-</span>
-<span class="label label-inverse-success-2">
-	<span class="label-item label-item-expand">Success</span>
-</span>
-<span class="label label-inverse-info-2">
-	<span class="label-item label-item-expand">Info</span>
-</span>
-<span class="label label-inverse-warning-2">
-	<span class="label-item label-item-expand">Warning</span>
-</span>
-<span class="label label-inverse-danger-2">
-	<span class="label-item label-item-expand">Danger</span>
-</span>
-<div class="clay-site-light-container">
-	<span class="label label-inverse-light-2">
-		<span class="label-item label-item-expand">Light</span>
-	</span>
-</div>
-<span class="label label-inverse-dark-2">
-	<span class="label-item label-item-expand">Dark</span>
-</span>
-
-<div class="h6 my-2">As Anchor Tag</div>
-
-<a href="#1" class="label label-inverse-primary-2">
-	<span class="label-item label-item-expand">Primary</span>
-</a>
-<a href="#1" class="label label-inverse-secondary-2">
-	<span class="label-item label-item-expand">Secondary</span>
-</a>
-<a href="#1" class="label label-inverse-success-2">
-	<span class="label-item label-item-expand">Success</span>
-</a>
-<a href="#1" class="label label-inverse-info-2">
-	<span class="label-item label-item-expand">Info</span>
-</a>
-<a href="#1" class="label label-inverse-warning-2">
-	<span class="label-item label-item-expand">Warning</span>
-</a>
-<a href="#1" class="label label-inverse-danger-2">
-	<span class="label-item label-item-expand">Danger</span>
-</a>
-<div class="clay-site-light-container">
-	<a href="#1" class="label label-inverse-light-2">
-		<span class="label-item label-item-expand">Light</span>
-	</a>
-</div>
-<a href="#1" class="label label-inverse-dark-2">
-	<span class="label-item label-item-expand">Dark</span>
-</a>
-
-<div class="h6 my-2">With Icon</div>
-
-<a href="#1" class="label label-inverse-primary-2">
+<a href="#1" class="disabled label label-inverse-primary" tabindex="-1">
 	<span class="label-item label-item-expand">Primary</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -550,7 +774,7 @@
 		</svg>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-secondary-2">
+<a href="#1" class="disabled label label-inverse-secondary" tabindex="-1">
 	<span class="label-item label-item-expand">Secondary</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -558,7 +782,7 @@
 		</svg>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-success-2">
+<a href="#1" class="disabled label label-inverse-success" tabindex="-1">
 	<span class="label-item label-item-expand">Success</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -566,7 +790,7 @@
 		</svg>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-info-2">
+<a href="#1" class="disabled label label-inverse-info" tabindex="-1">
 	<span class="label-item label-item-expand">Info</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -574,7 +798,7 @@
 		</svg>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-warning-2">
+<a href="#1" class="disabled label label-inverse-warning" tabindex="-1">
 	<span class="label-item label-item-expand">Warning</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -582,7 +806,7 @@
 		</svg>
 	</span>
 </a>
-<a href="#1" class="label label-inverse-danger-2">
+<a href="#1" class="disabled label label-inverse-danger" tabindex="-1">
 	<span class="label-item label-item-expand">Danger</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -591,7 +815,7 @@
 	</span>
 </a>
 <div class="clay-site-light-container">
-	<a href="#1" class="label label-inverse-light-2">
+	<a href="#1" class="disabled label label-inverse-light" tabindex="-1">
 		<span class="label-item label-item-expand">Light</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -600,7 +824,7 @@
 	</span>
 	</a>
 </div>
-<a href="#1" class="label label-inverse-dark-2">
+<a href="#1" class="disabled label label-inverse-dark" tabindex="-1">
 	<span class="label-item label-item-expand">Dark</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -616,64 +840,64 @@
 	<div class="col-md-12">
 		<h3 id="outlined"><a class="heading-anchor" href="#outlined"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Outlined</h3>
 
-<span class="label label-primary">
+<span class="label label-outline-primary">
 	<span class="label-item label-item-expand">Primary</span>
 </span>
-<span class="label label-secondary">
+<span class="label label-outline-secondary">
 	<span class="label-item label-item-expand">Secondary</span>
 </span>
-<span class="label label-success">
+<span class="label label-outline-success">
 	<span class="label-item label-item-expand">Success</span>
 </span>
-<span class="label label-info">
+<span class="label label-outline-info">
 	<span class="label-item label-item-expand">Info</span>
 </span>
-<span class="label label-warning">
+<span class="label label-outline-warning">
 	<span class="label-item label-item-expand">Warning</span>
 </span>
-<span class="label label-danger">
+<span class="label label-outline-danger">
 	<span class="label-item label-item-expand">Danger</span>
 </span>
 <div class="clay-site-light-container">
-	<span class="label label-light">
+	<span class="label label-outline-light">
 		<span class="label-item label-item-expand">Light</span>
 	</span>
 </div>
-<span class="label label-dark">
+<span class="label label-outline-dark">
 	<span class="label-item label-item-expand">Dark</span>
 </span>
 
 <div class="my-2">As Anchor Tag</div>
-<a class="label label-primary" href="#1">
+<a class="label label-outline-primary" href="#1">
 	<span class="label-item label-item-expand">Primary</span>
 </a>
-<a class="label label-secondary" href="#1">
+<a class="label label-outline-secondary" href="#1">
 	<span class="label-item label-item-expand">Secondary</span>
 </a>
-<a class="label label-success" href="#1">
+<a class="label label-outline-success" href="#1">
 	<span class="label-item label-item-expand">Success</span>
 </a>
-<a class="label label-info" href="#1">
+<a class="label label-outline-info" href="#1">
 	<span class="label-item label-item-expand">Info</span>
 </a>
-<a class="label label-warning" href="#1">
+<a class="label label-outline-warning" href="#1">
 	<span class="label-item label-item-expand">Warning</span>
 </a>
-<a class="label label-danger" href="#1">
+<a class="label label-outline-danger" href="#1">
 	<span class="label-item label-item-expand">Danger</span>
 </a>
 <div class="clay-site-light-container">
-	<a class="label label-light" href="#1">
+	<a class="label label-outline-light" href="#1">
 		<span class="label-item label-item-expand">Light</span>
 	</a>
 </div>
-<a class="label label-dark" href="#1">
+<a class="label label-outline-dark" href="#1">
 	<span class="label-item label-item-expand">Dark</span>
 </a>
 
 <div class="h6 my-2">With Icon</div>
 
-<a class="label label-primary" href="#1">
+<a class="label label-outline-primary" href="#1">
 	<span class="label-item label-item-expand">Primary</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -681,7 +905,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-secondary" href="#1">
+<a class="label label-outline-secondary" href="#1">
 	<span class="label-item label-item-expand">Secondary</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -689,7 +913,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-success" href="#1">
+<a class="label label-outline-success" href="#1">
 	<span class="label-item label-item-expand">Success</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -697,7 +921,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-info" href="#1">
+<a class="label label-outline-info" href="#1">
 	<span class="label-item label-item-expand">Info</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -705,7 +929,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-warning" href="#1">
+<a class="label label-outline-warning" href="#1">
 	<span class="label-item label-item-expand">Warning</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -713,7 +937,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-danger" href="#1">
+<a class="label label-outline-danger" href="#1">
 	<span class="label-item label-item-expand">Danger</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -722,7 +946,7 @@
 	</span>
 </a>
 <div class="clay-site-light-container">
-	<a class="label label-light" href="#1">
+	<a class="label label-outline-light" href="#1">
 		<span class="label-item label-item-expand">Light</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -731,7 +955,76 @@
 	</span>
 	</a>
 </div>
-<a class="label label-dark" href="#1">
+<a class="label label-outline-dark" href="#1">
+	<span class="label-item label-item-expand">Dark</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+
+<div class="h6 my-2">With Icon Disabled</div>
+
+<a class="disabled label label-outline-primary" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Primary</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-secondary" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Secondary</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-success" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Success</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-info" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Info</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-warning" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Warning</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-danger" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Danger</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<div class="clay-site-light-container">
+	<a class="disabled label label-outline-light" href="#1" tabindex="-1">
+		<span class="label-item label-item-expand">Light</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+	</a>
+</div>
+<a class="disabled label label-outline-dark" href="#1" tabindex="-1">
 	<span class="label-item label-item-expand">Dark</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -747,65 +1040,65 @@
 	<div class="col-md-12">
 		<h3 id="borderless"><a class="heading-anchor" href="#borderless"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Borderless</h3>
 
-<span class="label label-primary border-transparent">
+<span class="label label-outline-primary border-transparent">
 	<span class="label-item label-item-expand">Primary</span>
 </span>
-<span class="label label-secondary border-transparent">
+<span class="label label-outline-secondary border-transparent">
 	<span class="label-item label-item-expand">Secondary</span>
 </span>
-<span class="label label-success border-transparent">
+<span class="label label-outline-success border-transparent">
 	<span class="label-item label-item-expand">Success</span>
 </span>
-<span class="label label-info border-transparent">
+<span class="label label-outline-info border-transparent">
 	<span class="label-item label-item-expand">Info</span>
 </span>
-<span class="label label-warning border-transparent">
+<span class="label label-outline-warning border-transparent">
 	<span class="label-item label-item-expand">Warning</span>
 </span>
-<span class="label label-danger border-transparent">
+<span class="label label-outline-danger border-transparent">
 	<span class="label-item label-item-expand">Danger</span>
 </span>
 <div class="clay-site-light-container">
-	<span class="label label-light border-transparent">
+	<span class="label label-outline-light border-transparent">
 		<span class="label-item label-item-expand">Light</span>
 	</span>
 </div>
-<span class="label label-dark border-transparent">
+<span class="label label-outline-dark border-transparent">
 	<span class="label-item label-item-expand">Dark</span>
 </span>
 
 <div class="h6 my-2">As Anchor Tag</div>
 
-<a class="label label-primary border-transparent" href="#1">
+<a class="label label-outline-primary border-transparent" href="#1">
 	<span class="label-item label-item-expand">Primary</span>
 </a>
-<a class="label label-secondary border-transparent" href="#1">
+<a class="label label-outline-secondary border-transparent" href="#1">
 	<span class="label-item label-item-expand">Secondary</span>
 </a>
-<a class="label label-success border-transparent" href="#1">
+<a class="label label-outline-success border-transparent" href="#1">
 	<span class="label-item label-item-expand">Success</span>
 </a>
-<a class="label label-info border-transparent" href="#1">
+<a class="label label-outline-info border-transparent" href="#1">
 	<span class="label-item label-item-expand">Info</span>
 </a>
-<a class="label label-warning border-transparent" href="#1">
+<a class="label label-outline-warning border-transparent" href="#1">
 	<span class="label-item label-item-expand">Warning</span>
 </a>
-<a class="label label-danger border-transparent" href="#1">
+<a class="label label-outline-danger border-transparent" href="#1">
 	<span class="label-item label-item-expand">Danger</span>
 </a>
 <div class="clay-site-light-container">
-	<a class="label label-light border-transparent" href="#1">
+	<a class="label label-outline-light border-transparent" href="#1">
 		<span class="label-item label-item-expand">Light</span>
 	</a>
 </div>
-<a class="label label-dark border-transparent" href="#1">
+<a class="label label-outline-dark border-transparent" href="#1">
 	<span class="label-item label-item-expand">Dark</span>
 </a>
 
 <div class="h6 my-2">With Icon</div>
 
-<a class="label label-primary border-transparent" href="#1">
+<a class="label label-outline-primary border-transparent" href="#1">
 	<span class="label-item label-item-expand">Primary</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -813,7 +1106,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-secondary border-transparent" href="#1">
+<a class="label label-outline-secondary border-transparent" href="#1">
 	<span class="label-item label-item-expand">Secondary</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -821,7 +1114,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-success border-transparent" href="#1">
+<a class="label label-outline-success border-transparent" href="#1">
 	<span class="label-item label-item-expand">Success</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -829,7 +1122,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-info border-transparent" href="#1">
+<a class="label label-outline-info border-transparent" href="#1">
 	<span class="label-item label-item-expand">Info</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -837,7 +1130,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-warning border-transparent" href="#1">
+<a class="label label-outline-warning border-transparent" href="#1">
 	<span class="label-item label-item-expand">Warning</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -845,7 +1138,7 @@
 		</svg>
 	</span>
 </a>
-<a class="label label-danger border-transparent" href="#1">
+<a class="label label-outline-danger border-transparent" href="#1">
 	<span class="label-item label-item-expand">Danger</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -854,7 +1147,7 @@
 	</span>
 </a>
 <div class="clay-site-light-container">
-	<a class="label label-light border-transparent" href="#1">
+	<a class="label label-outline-light border-transparent" href="#1">
 		<span class="label-item label-item-expand">Light</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -863,7 +1156,76 @@
 	</span>
 	</a>
 </div>
-<a class="label label-dark border-transparent" href="#1">
+<a class="label label-outline-dark border-transparent" href="#1">
+	<span class="label-item label-item-expand">Dark</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+
+<div class="h6 my-2">With Icon Disabled</div>
+
+<a class="disabled label label-outline-primary border-transparent" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Primary</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-secondary border-transparent" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Secondary</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-success border-transparent" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Success</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-info border-transparent" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Info</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-warning border-transparent" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Warning</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<a class="disabled label label-outline-danger border-transparent" href="#1" tabindex="-1">
+	<span class="label-item label-item-expand">Danger</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+</a>
+<div class="clay-site-light-container">
+	<a class="disabled label label-outline-light border-transparent" href="#1" tabindex="-1">
+		<span class="label-item label-item-expand">Light</span>
+	<span class="label-item label-item-after">
+		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
+			<use xlink:href="../../images/icons/icons.svg#info-circle">
+		</svg>
+	</span>
+	</a>
+</div>
+<a class="disabled label label-outline-dark border-transparent" href="#1" tabindex="-1">
 	<span class="label-item label-item-expand">Dark</span>
 	<span class="label-item label-item-after">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
@@ -879,65 +1241,65 @@
 	<div class="col-md-12">
 		<h3 id="label-lg-filled"><a class="heading-anchor" href="#label-lg-filled"><svg class="lexicon-icon lexicon-icon-link"><use xlink:href="../../images/icons/icons.svg#link"></svg></a>Label Lg Filled</h3>
 
-<span class="label label-inverse-primary label-lg">
+<span class="label label-primary label-lg">
 	<span class="label-item label-item-expand">Primary</span>
 </span>
-<span class="label label-inverse-secondary label-lg">
+<span class="label label-secondary label-lg">
 	<span class="label-item label-item-expand">Secondary</span>
 </span>
-<span class="label label-inverse-success label-lg">
+<span class="label label-success label-lg">
 	<span class="label-item label-item-expand">Success</span>
 </span>
-<span class="label label-inverse-info label-lg">
+<span class="label label-info label-lg">
 	<span class="label-item label-item-expand">Info</span>
 </span>
-<span class="label label-inverse-warning label-lg">
+<span class="label label-warning label-lg">
 	<span class="label-item label-item-expand">Warning</span>
 </span>
-<span class="label label-inverse-danger label-lg">
+<span class="label label-danger label-lg">
 	<span class="label-item label-item-expand">Danger</span>
 </span>
 <div class="clay-site-light-container">
-	<span class="label label-inverse-light label-lg">
+	<span class="label label-light label-lg">
 		<span class="label-item label-item-expand">Light</span>
 	</span>
 </div>
-<span class="label label-inverse-dark label-lg">
+<span class="label label-dark label-lg">
 	<span class="label-item label-item-expand">Dark</span>
 </span>
 
 <div class="h6 my-2">As Anchor Tag</div>
 
-<a href="#1" class="label label-inverse-primary label-lg">
+<a href="#1" class="label label-primary label-lg">
 	<span class="label-item label-item-expand">Primary</span>
 </a>
-<a href="#1" class="label label-inverse-secondary label-lg">
+<a href="#1" class="label label-secondary label-lg">
 	<span class="label-item label-item-expand">Secondary</span>
 </a>
-<a href="#1" class="label label-inverse-success label-lg">
+<a href="#1" class="label label-success label-lg">
 	<span class="label-item label-item-expand">Success</span>
 </a>
-<a href="#1" class="label label-inverse-info label-lg">
+<a href="#1" class="label label-info label-lg">
 	<span class="label-item label-item-expand">Info</span>
 </a>
-<a href="#1" class="label label-inverse-warning label-lg">
+<a href="#1" class="label label-warning label-lg">
 	<span class="label-item label-item-expand">Warning</span>
 </a>
-<a href="#1" class="label label-inverse-danger label-lg">
+<a href="#1" class="label label-danger label-lg">
 	<span class="label-item label-item-expand">Danger</span>
 </a>
 <div class="clay-site-light-container">
-	<a href="#1" class="label label-inverse-light label-lg">
+	<a href="#1" class="label label-light label-lg">
 		<span class="label-item label-item-expand">Light</span>
 	</a>
 </div>
-<a href="#1" class="label label-inverse-dark label-lg">
+<a href="#1" class="label label-dark label-lg">
 	<span class="label-item label-item-expand">Dark</span>
 </a>
 
 <div class="h6 my-2">With Icon</div>
 
-<a href="#1" class="label label-inverse-primary label-lg">
+<a href="#1" class="label label-primary label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -945,7 +1307,7 @@
 	</span>
 	<span class="label-item label-item-expand">Primary</span>
 </a>
-<a href="#1" class="label label-inverse-secondary label-lg">
+<a href="#1" class="label label-secondary label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -953,7 +1315,7 @@
 	</span>
 	<span class="label-item label-item-expand">Secondary</span>
 </a>
-<a href="#1" class="label label-inverse-success label-lg">
+<a href="#1" class="label label-success label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -961,7 +1323,7 @@
 	</span>
 	<span class="label-item label-item-expand">Success</span>
 </a>
-<a href="#1" class="label label-inverse-info label-lg">
+<a href="#1" class="label label-info label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -969,7 +1331,7 @@
 	</span>
 	<span class="label-item label-item-expand">Info</span>
 </a>
-<a href="#1" class="label label-inverse-warning label-lg">
+<a href="#1" class="label label-warning label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -977,7 +1339,7 @@
 	</span>
 	<span class="label-item label-item-expand">Warning</span>
 </a>
-<a href="#1" class="label label-inverse-danger label-lg">
+<a href="#1" class="label label-danger label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -986,7 +1348,7 @@
 	<span class="label-item label-item-expand">Danger</span>
 </a>
 <div class="clay-site-light-container">
-	<a href="#1" class="label label-inverse-light label-lg">
+	<a href="#1" class="label label-light label-lg">
 		<span class="label-item label-item-before">
 			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 				<use xlink:href="../../images/icons/icons.svg#info-circle">
@@ -995,7 +1357,7 @@
 		<span class="label-item label-item-expand">Light</span>
 	</a>
 </div>
-<a href="#1" class="label label-inverse-dark label-lg">
+<a href="#1" class="label label-dark label-lg">
 	<span class="label-item label-item-before">
 		<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation">
 			<use xlink:href="../../images/icons/icons.svg#info-circle">
