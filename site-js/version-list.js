@@ -12,6 +12,7 @@ function localStorageAvailable() {
 
 var clayVersions = [
 	'Select Version',
+	'IFI-3164',
 	'clay-to-dialect',
 	'clay-select',
 	'clay-treeview',
